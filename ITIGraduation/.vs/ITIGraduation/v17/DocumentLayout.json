@@ -1,38 +1,190 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\",
+  "WorkspaceRootPath": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\controllers\\trending.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\trending.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\views\\sports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\sports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\controllers\\sports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\sports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\controllers\\oxfords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\oxfords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\controllers\\boots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\boots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\controllers\\best.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\spark\\20250514200441_new.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\spark\\20250514200441_new.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\20250514193933_9875.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\20250514193933_9875.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\spark\\20250514200633_668.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\spark\\20250514200633_668.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\spark\\20250514201500_78.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\spark\\20250514201500_78.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\spark\\20250514200525_45.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\spark\\20250514200525_45.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\controllers\\best.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\best.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\views\\boots\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\viewmodels\\combied.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:viewmodels\\combied.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\spark\\sparkcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\spark\\sparkcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\data\\sparkcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:data\\sparkcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\20250514193933_9875.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\20250514193933_9875.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\spark\\20250514201500_78.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\spark\\20250514201500_78.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\spark\\20250514200633_668.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\spark\\20250514200633_668.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\spark\\20250514200525_45.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\spark\\20250514200525_45.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\migrations\\spark\\20250514200441_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:migrations\\spark\\20250514200441_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\usersportpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\usersportpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\useroxfordpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\useroxfordpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\sport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\sport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\searchresultvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\searchresultvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\boot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\boot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\bestandtrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\bestandtrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\userbootpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\userbootpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\trendingselling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\trendingselling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\prouduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\prouduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\oxford.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\oxford.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\controllers\\trending.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\trending.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\views\\sports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\sports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\views\\boots\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\boots\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\views\\boots\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\views\\boots\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\boots\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\controllers\\sports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\sports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\controllers\\oxfords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\oxfords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\iti\\graduation\\new repo\\graduation_project\\itigraduation\\controllers\\boots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\boots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +194,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,11 +218,505 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAOcAAAAAAAAAAIAwwOwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T11:34:22.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Sports\\Index.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAA0CAAAAAAAAAAAwwCgCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T11:31:10.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250514193933_9875.Designer.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\20250514193933_9875.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250514193933_9875.Designer.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\20250514193933_9875.Designer.cs",
+              "RelativeToolTip": "Migrations\\20250514193933_9875.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvwsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:26:08.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20250514201500_78.Designer.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514201500_78.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\Spark\\20250514201500_78.Designer.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514201500_78.Designer.cs",
+              "RelativeToolTip": "Migrations\\Spark\\20250514201500_78.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvwsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:26:03.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250514200633_668.Designer.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200633_668.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200633_668.Designer.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200633_668.Designer.cs",
+              "RelativeToolTip": "Migrations\\Spark\\20250514200633_668.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvwsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:25:58.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250514200441_new.Designer.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200441_new.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200441_new.Designer.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200441_new.Designer.cs",
+              "RelativeToolTip": "Migrations\\Spark\\20250514200441_new.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvwsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:25:49.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250514200525_45.Designer.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200525_45.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200525_45.Designer.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200525_45.Designer.cs",
+              "RelativeToolTip": "Migrations\\Spark\\20250514200525_45.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvwsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:25:41.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T11:22:13.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T11:21:41.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:19:22.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:19:07.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SparkContext.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Data\\SparkContext.cs",
+              "RelativeDocumentMoniker": "Data\\SparkContext.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Data\\SparkContext.cs",
+              "RelativeToolTip": "Data\\SparkContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:18:55.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SparkContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\SparkContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\Spark\\SparkContextModelSnapshot.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\SparkContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\Spark\\SparkContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:18:37.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250514201500_78.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514201500_78.cs",
+              "RelativeDocumentMoniker": "Migrations\\Spark\\20250514201500_78.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514201500_78.cs",
+              "RelativeToolTip": "Migrations\\Spark\\20250514201500_78.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:18:32.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20250514200633_668.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200633_668.cs",
+              "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200633_668.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200633_668.cs",
+              "RelativeToolTip": "Migrations\\Spark\\20250514200633_668.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:18:26.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20250514200525_45.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200525_45.cs",
+              "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200525_45.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200525_45.cs",
+              "RelativeToolTip": "Migrations\\Spark\\20250514200525_45.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:18:20.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20250514200441_new.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200441_new.cs",
+              "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200441_new.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250514200441_new.cs",
+              "RelativeToolTip": "Migrations\\Spark\\20250514200441_new.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:18:09.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250514193933_9875.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\20250514193933_9875.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250514193933_9875.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\20250514193933_9875.cs",
+              "RelativeToolTip": "Migrations\\20250514193933_9875.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:17:57.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterVM.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\ViewModels\\RegisterVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterVM.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\ViewModels\\RegisterVM.cs",
+              "RelativeToolTip": "ViewModels\\RegisterVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:17:46.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\ViewModels\\LoginVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginVM.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\ViewModels\\LoginVM.cs",
+              "RelativeToolTip": "ViewModels\\LoginVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:17:22.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Combied.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\ViewModels\\Combied.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Combied.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\ViewModels\\Combied.cs",
+              "RelativeToolTip": "ViewModels\\Combied.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:17:11.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserSportPurchase.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\UserSportPurchase.cs",
+              "RelativeDocumentMoniker": "Models\\UserSportPurchase.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\UserSportPurchase.cs",
+              "RelativeToolTip": "Models\\UserSportPurchase.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:16:21.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserOxfordPurchase.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\UserOxfordPurchase.cs",
+              "RelativeDocumentMoniker": "Models\\UserOxfordPurchase.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\UserOxfordPurchase.cs",
+              "RelativeToolTip": "Models\\UserOxfordPurchase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:16:12.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserBootPurchase.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\UserBootPurchase.cs",
+              "RelativeDocumentMoniker": "Models\\UserBootPurchase.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\UserBootPurchase.cs",
+              "RelativeToolTip": "Models\\UserBootPurchase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:16:04.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:15:58.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "TrendingSelling.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\TrendingSelling.cs",
+              "RelativeDocumentMoniker": "Models\\TrendingSelling.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\TrendingSelling.cs",
+              "RelativeToolTip": "Models\\TrendingSelling.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:15:51.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Sport.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\Sport.cs",
+              "RelativeDocumentMoniker": "Models\\Sport.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\Sport.cs",
+              "RelativeToolTip": "Models\\Sport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:15:45.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SearchResultVM.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\SearchResultVM.cs",
+              "RelativeDocumentMoniker": "Models\\SearchResultVM.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\SearchResultVM.cs",
+              "RelativeToolTip": "Models\\SearchResultVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:15:36.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Prouduct.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\Prouduct.cs",
+              "RelativeDocumentMoniker": "Models\\Prouduct.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\Prouduct.cs",
+              "RelativeToolTip": "Models\\Prouduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:14:51.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Oxford.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\Oxford.cs",
+              "RelativeDocumentMoniker": "Models\\Oxford.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\Oxford.cs",
+              "RelativeToolTip": "Models\\Oxford.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:14:44.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\Inventory.cs",
+              "RelativeDocumentMoniker": "Models\\Inventory.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\Inventory.cs",
+              "RelativeToolTip": "Models\\Inventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:14:36.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:14:14.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Boot.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\Boot.cs",
+              "RelativeDocumentMoniker": "Models\\Boot.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\Boot.cs",
+              "RelativeToolTip": "Models\\Boot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:14:05.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BestAndTrend.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\BestAndTrend.cs",
+              "RelativeDocumentMoniker": "Models\\BestAndTrend.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\BestAndTrend.cs",
+              "RelativeToolTip": "Models\\BestAndTrend.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:13:51.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Models\\AppUser.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Models\\AppUser.cs",
+              "RelativeToolTip": "Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:13:20.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:11:41.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T10:06:27.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-03T10:05:51.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Sports\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Sports\\Index.cshtml",
-              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Sports\\Index.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Sports\\Index.cshtml",
               "RelativeToolTip": "Views\\Sports\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -79,11 +725,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 41,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Details.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Boots\\Details.cshtml",
-              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Details.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Details.cshtml",
               "RelativeToolTip": "Views\\Boots\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -92,11 +738,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 42,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Boots\\Index.cshtml",
-              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml",
               "RelativeToolTip": "Views\\Boots\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -105,37 +751,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "best.cs",
-              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\best.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\best.cs",
               "RelativeDocumentMoniker": "Controllers\\best.cs",
-              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\best.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\best.cs",
               "RelativeToolTip": "Controllers\\best.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-03T08:54:44.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 39,
               "Title": "Trending.cs",
-              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Trending.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\Trending.cs",
               "RelativeDocumentMoniker": "Controllers\\Trending.cs",
-              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Trending.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\Trending.cs",
               "RelativeToolTip": "Controllers\\Trending.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwDAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-03T08:54:19.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 43,
               "Title": "Sports.cs",
-              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Sports.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\Sports.cs",
               "RelativeDocumentMoniker": "Controllers\\Sports.cs",
-              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Sports.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\Sports.cs",
               "RelativeToolTip": "Controllers\\Sports.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -144,11 +790,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 44,
               "Title": "Oxfords.cs",
-              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Oxfords.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\Oxfords.cs",
               "RelativeDocumentMoniker": "Controllers\\Oxfords.cs",
-              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Oxfords.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\Oxfords.cs",
               "RelativeToolTip": "Controllers\\Oxfords.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -157,11 +803,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 45,
               "Title": "Boots.cs",
-              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Boots.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\Boots.cs",
               "RelativeDocumentMoniker": "Controllers\\Boots.cs",
-              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Boots.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Controllers\\Boots.cs",
               "RelativeToolTip": "Controllers\\Boots.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

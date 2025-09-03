@@ -1,17 +1,122 @@
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.min.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\js\modernizr.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-previous.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\js\script.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.slim.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation\LICENSE.md
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\css\normalize.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-menu.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-delete.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-cart.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\js\plugins.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-previous.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-plus.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\login.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\.vscode\settings.json
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\main.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\README-template.md
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\css\vendor.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\cart.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\main.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-next.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\README.md
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\readme.txt
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\js\plugins.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-delete.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\js\modernizr.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\slider.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\js\jquery-1.11.0.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\logo.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\login.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\js\jquery-1.11.0.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-minus.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\style.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-menu.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\style-guide.md
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\LICENSE.txt
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-close.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-close.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\.vscode\settings.json
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.slim.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-minus.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-plus.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-cart.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\js\script.js
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\style.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-next.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\logo.svg
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\ITI\graduation\NEW Repo\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\.vscode\settings.json
 wwwroot\css\ajax-loader.gif
 wwwroot\css\normalize.css
 wwwroot\css\vendor.css
 wwwroot\ecommerce-product-page-html-css-javascript-main\.gitignore
+wwwroot\ecommerce-product-page-html-css-javascript-main\.vscode\settings.json
 wwwroot\ecommerce-product-page-html-css-javascript-main\cart.js
 wwwroot\ecommerce-product-page-html-css-javascript-main\design\active-states-basket-empty.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\design\active-states-basket-filled.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\design\active-states-lightbox.jpg
-wwwroot\ecommerce-product-page-html-css-javascript-main\design\desktop-design-lightbox.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\design\desktop-design.jpg
+wwwroot\ecommerce-product-page-html-css-javascript-main\design\desktop-design-lightbox.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\design\desktop-preview.jpg
+wwwroot\ecommerce-product-page-html-css-javascript-main\design\mobile-design.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\design\mobile-design-basket-empty.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\design\mobile-design-basket-filled.jpg
-wwwroot\ecommerce-product-page-html-css-javascript-main\design\mobile-design.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\design\mobile-menu.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\1.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\ad-image-1.png
@@ -21,8 +126,8 @@ wwwroot\ecommerce-product-page-html-css-javascript-main\images\ad-image-4.png
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\banner-image 1.png
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\banner-image.png
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\chocolat\close.png
-wwwroot\ecommerce-product-page-html-css-javascript-main\images\chocolat\fullscreen-black.png
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\chocolat\fullscreen.png
+wwwroot\ecommerce-product-page-html-css-javascript-main\images\chocolat\fullscreen-black.png
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\chocolat\left.png
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\chocolat\loader.gif
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\chocolat\right.png
@@ -36,14 +141,14 @@ wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-next.svg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-plus.svg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-previous.svg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-avatar.png
-wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-1-thumbnail.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-1.jpg
-wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-2-thumbnail.jpg
+wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-1-thumbnail.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-2.jpg
-wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-3-thumbnail.jpg
+wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-2-thumbnail.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-3.jpg
-wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-4-thumbnail.jpg
+wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-3-thumbnail.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-4.jpg
+wwwroot\ecommerce-product-page-html-css-javascript-main\images\image-product-4-thumbnail.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\large-5.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\logo.png
 wwwroot\ecommerce-product-page-html-css-javascript-main\images\logo.svg
@@ -75,14 +180,14 @@ wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-next
 wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-plus.svg
 wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-previous.svg
 wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-avatar.png
-wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-1-thumbnail.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-1.jpg
-wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-2-thumbnail.jpg
+wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-1-thumbnail.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-2.jpg
-wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-3-thumbnail.jpg
+wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-2-thumbnail.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-3.jpg
-wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-4-thumbnail.jpg
+wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-3-thumbnail.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-4.jpg
+wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\image-product-4-thumbnail.jpg
 wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\logo.svg
 wwwroot\ecommerce-product-page-html-css-javascript-main\js\jquery-1.11.0.min.js
 wwwroot\ecommerce-product-page-html-css-javascript-main\js\modernizr.js
@@ -90,11 +195,11 @@ wwwroot\ecommerce-product-page-html-css-javascript-main\js\plugins.js
 wwwroot\ecommerce-product-page-html-css-javascript-main\js\script.js
 wwwroot\ecommerce-product-page-html-css-javascript-main\main.css
 wwwroot\ecommerce-product-page-html-css-javascript-main\main.js
-wwwroot\ecommerce-product-page-html-css-javascript-main\README-template.md
 wwwroot\ecommerce-product-page-html-css-javascript-main\README.md
+wwwroot\ecommerce-product-page-html-css-javascript-main\README-template.md
 wwwroot\ecommerce-product-page-html-css-javascript-main\slider.js
-wwwroot\ecommerce-product-page-html-css-javascript-main\style-guide.md
 wwwroot\ecommerce-product-page-html-css-javascript-main\style.css
+wwwroot\ecommerce-product-page-html-css-javascript-main\style-guide.md
 wwwroot\images\1.jpg
 wwwroot\images\1.png
 wwwroot\images\10.png
@@ -126,8 +231,8 @@ wwwroot\images\boots\boots\7.jpg
 wwwroot\images\boots\boots\8.jpg
 wwwroot\images\boots\boots\9.jpg
 wwwroot\images\chocolat\close.png
-wwwroot\images\chocolat\fullscreen-black.png
 wwwroot\images\chocolat\fullscreen.png
+wwwroot\images\chocolat\fullscreen-black.png
 wwwroot\images\chocolat\left.png
 wwwroot\images\chocolat\loader.gif
 wwwroot\images\chocolat\right.png
@@ -193,6 +298,14 @@ wwwroot\js\jquery-1.11.0.min.js
 wwwroot\js\modernizr.js
 wwwroot\js\plugins.js
 wwwroot\js\script.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -217,14 +330,6 @@ wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-wwwroot\lib\bootstrap\dist\css\bootstrap.css
-wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
 wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
 wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
@@ -238,16 +343,6 @@ wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 wwwroot\lib\bootstrap\LICENSE
-wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
-wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
-wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
-wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
-wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-wwwroot\lib\jquery-validation\dist\additional-methods.js
-wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-wwwroot\lib\jquery-validation\dist\jquery.validate.js
-wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
@@ -255,112 +350,17 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\login.css
 wwwroot\login.js
 wwwroot\readme.txt
 wwwroot\style.css
-wwwroot\.vscode\settings.json
-wwwroot\ecommerce-product-page-html-css-javascript-main\.vscode\settings.json
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.slim.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.slim.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.slim.min.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\css\normalize.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\css\vendor.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\cart.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-cart.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-close.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-delete.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-menu.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-minus.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-next.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-plus.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\icon-previous.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\images\logo.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-cart.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-close.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-delete.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-menu.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-minus.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-next.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-plus.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\icon-previous.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\img_singlepage\logo.svg
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\js\jquery-1.11.0.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\js\modernizr.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\js\plugins.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\js\script.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\main.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\main.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\README-template.md
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\README.md
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\slider.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\style-guide.md
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\style.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\js\jquery-1.11.0.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\js\modernizr.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\js\plugins.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\js\script.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation\dist\additional-methods.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery-validation\LICENSE.md
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.min.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\dist\jquery.min.map
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\lib\jquery\LICENSE.txt
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\login.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\login.js
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\readme.txt
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\style.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\.vscode\settings.json
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\.vscode\settings.json

@@ -1,8 +1,552 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using System.Collections
+@model IEnumerable<BestAndTrend>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@* <section class="py-4">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="banner-ad bg-secondary-subtle mb-3"
+                style="background: url('images/ad-image-1.png');background-repeat: no-repeat;background-position: right bottom;">
+                    <div class="banner-content p-5">
+
+                        <div class="fs-6 pt-5">Upto 25% Off</div>
+                        <h3 class="banner-title">Sports Shoes</h3>
+                        <a href="#" class="btn btn-dark text-uppercase">Show Now</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="banner-ad bg-secondary-subtle"
+                style="background: url('images/ad-image-2.png');background-repeat: no-repeat;background-position: right bottom;">
+                    <div class="banner-content p-5">
+
+                        <div class="fs-6 pt-5">Upto 25% Off</div>
+                        <h3 class="banner-title">Kids Collection</h3>
+                        <a href="#" class="btn btn-dark text-uppercase">Show Now</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> *@
+
+<section id="trending" class="py-5">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <h3>Trending Products</h3>
+
+                <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+                    @foreach (var item in Model)
+                    {
+                        @foreach (var trend in item.trends)
+                        {
+                            <div class="col">
+                                <div class="product-item">
+                                    <span class="badge bg-success position-absolute m-3">-30%</span>
+                                    <figure>
+                                        <a href="@Url.Action("Details", "TrendingSellings", new { id = trend.ProudId })#ProductView" title="Product Title">
+                                            <img src="@Url.Content(@trend.ImagUrl)" alt="@trend.ProudName" class="img-fluid">
+                                        </a>
+                                    </figure>
+                                    <span>@trend.ProudName</span>
+                                    <div class="d-flex justify-content-between">
+                                        <p><span class="text-dark">$@trend.Price</span><del>$23</del><span class="text-success">-30%</span></p>
+                                        <span class="d-flex">
+                                            <svg width="18" height="18" class="text-warning">
+                                                <use xlink:href="#star-solid"></use>
+                                            </svg>
+                                            <svg width="18" height="18" class="text-warning">
+                                                <use xlink:href="#star-solid"></use>
+                                            </svg>
+                                            <svg width="18" height="18" class="text-warning">
+                                                <use xlink:href="#star-solid"></use>
+                                            </svg>
+                                            <svg width="18" height="18" class="text-warning">
+                                                <use xlink:href="#star-solid"></use>
+                                            </svg>
+                                            <svg width="18" height="18" class="text-warning">
+                                                <use xlink:href="#star-solid"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+
+
+
+                    @* <div class="col">
+                        <div class="product-item">
+                            <span class="badge bg-success position-absolute m-3">-30%</span>
+                            <figure>
+                                <a href="/ecommerce-product-page-html-css-javascript-main/product2.html" title="Product Title">
+                                    <img src="~/images/product-thumb-2.png" alt="Product Thumbnail" class="img-fluid">
+                                </a>
+                            </figure>
+                            <span>Leather Brown</span>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                <span class="d-flex">
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="product-item">
+                            <span class="badge bg-success position-absolute m-3">-30%</span>
+                            <figure>
+                                <a href="/ecommerce-product-page-html-css-javascript-main/product3.html" title="Product Title">
+                                    <img src="~/images/product-thumb-3.png" alt="Product Thumbnail" class="img-fluid">
+                                </a>
+                            </figure>
+                            <span>Trending Shoes Party Wear For Men</span>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                <span class="d-flex">
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="product-item">
+                            <figure>
+                                <a href="/ecommerce-product-page-html-css-javascript-main/product4.html" title="Product Title">
+                                    <img src="~/images/product-thumb-4.png" alt="Product Thumbnail" class="img-fluid">
+                                </a>
+                            </figure>
+                            <span>Sports Shoes Training & Gym Shoes For Men</span>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                <span class="d-flex">
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="product-item">
+                            <figure>
+                                <a href="/ecommerce-product-page-html-css-javascript-main/product1.html" title="Product Title">
+                                    <img src="~/images/product-thumb-5.png" alt="Product Thumbnail" class="img-fluid">
+                                </a>
+                            </figure>
+                            <span>Kids Shoes</span>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                <span class="d-flex">
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="product-item">
+                            <figure>
+                                <a href="/ecommerce-product-page-html-css-javascript-main/product5.html" title="Product Title">
+                                    <img src="~/images/product-thumb-6.png" alt="Product Thumbnail" class="img-fluid">
+                                </a>
+                            </figure>
+                            <span>Super Shoes</span>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                <span class="d-flex">
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="product-item">
+                            <figure>
+                                <a href="/ecommerce-product-page-html-css-javascript-main/product6.html" title="Product Title">
+                                    <img src="~/images/product-thumb-7.png" alt="Product Thumbnail" class="img-fluid">
+                                </a>
+                            </figure>
+                            <span>Super Shoes</span>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                <span class="d-flex">
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="product-item">
+                            <figure>
+                                <a href="/ecommerce-product-page-html-css-javascript-main/product1.html" title="Product Title">
+                                    <img src="~/images/product-thumb-5.png" alt="Product Thumbnail" class="img-fluid">
+                                </a>
+                            </figure>
+                            <span>Super Shoes</span>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                <span class="d-flex">
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="product-item">
+                            <figure>
+                                <a href="/ecommerce-product-page-html-css-javascript-main/product5.html" title="Product Title">
+                                    <img src="~/images/product-thumb-6.png" alt="Product Thumbnail" class="img-fluid">
+                                </a>
+                            </figure>
+                            <span>Super Shoes</span>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                <span class="d-flex">
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="product-item">
+                            <figure>
+                                <a href="/ecommerce-product-page-html-css-javascript-main/product6.html" title="Product Title">
+                                    <img src="~/images/product-thumb-7.png" alt="Product Thumbnail" class="img-fluid">
+                                </a>
+                            </figure>
+                            <span>Super Shoes</span>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                <span class="d-flex">
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div> *@
+
+                </div>
+                <!-- / product-grid -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+@* <section class="py-5">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="banner-ad bg-secondary-subtle mb-3"
+                     style="background: url('images/ad-image-3.png');background-repeat: no-repeat;background-position: right bottom;">
+                    <div class="banner-content p-5">
+
+                        <div class="fs-6 pt-5">Upto 25% Off</div>
+                        <h3 class="banner-title">Gentlemen Classics</h3>
+                        <a href="#" class="btn btn-dark text-uppercase">Show Now</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="banner-ad bg-secondary-subtle"
+                     style="background: url('images/ad-image-4.png');background-repeat: no-repeat;background-position: right bottom;">
+                    <div class="banner-content p-5">
+
+                        <div class="fs-6 pt-5">Upto 25% Off</div>
+                        <h3 class="banner-title">Casual Wears</h3>
+                        <a href="#" class="btn btn-dark text-uppercase">Show Now</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+ *@
+<section class="py-5 overflow-hidden">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="section-header d-flex flex-wrap justify-content-between my-5">
+
+                    <h2 class="section-title">Best selling products</h2>
+
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+                        <div class="swiper-buttons">
+                            <button class="swiper-prev products-carousel-prev btn btn-primary">❮</button>
+                            <button class="swiper-next products-carousel-next btn btn-primary">❯</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="products-carousel swiper">
+                    <div class="swiper-wrapper">
+
+                        @foreach (var item in Model)
+                        {
+                            @foreach (var prod in item.products)
+                            {
+                                <div class="swiper-slide">
+                                    <div class="product-item">
+                                        <span class="badge bg-success position-absolute m-3">-30%</span>
+                                        <figure>
+                                            <a href="@Url.Action("Details", "Products", new { id = prod.ProuductId})#ProductView" title="@prod.ProuductName">
+                                                <img src="@Url.Content(prod.ImagUrl)" alt="@prod.ProuductName" class="img-fluid">
+                                            </a>
+                                        </figure>
+                                        <p>@prod.ProuductName</p>
+                                        <div class="d-flex justify-content-between">
+                                            <p><span class="text-dark">$@prod.Price</span><del>$23</del><span class="text-success">-30%</span></p>
+                                            <span class="d-flex">
+                                                <svg width="18" height="18" class="text-warning">
+                                                    <use xlink:href="#star-solid"></use>
+                                                </svg>
+                                                <svg width="18" height="18" class="text-warning">
+                                                    <use xlink:href="#star-solid"></use>
+                                                </svg>
+                                                <svg width="18" height="18" class="text-warning">
+                                                    <use xlink:href="#star-solid"></use>
+                                                </svg>
+                                                <svg width="18" height="18" class="text-warning">
+                                                    <use xlink:href="#star-solid"></use>
+                                                </svg>
+                                                <svg width="18" height="18" class="text-warning">
+                                                    <use xlink:href="#star-solid"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                        }
+
+
+
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <figure>
+                                    <a href="/ecommerce-product-page-html-css-javascript-main/product5.html" title="Product Title">
+                                        <img src="~/images/product-thumb-6.png" alt="Product Thumbnail" class="img-fluid">
+                                    </a>
+                                </figure>
+                                <p>Super Shoes</p>
+                                <div class="d-flex justify-content-between">
+                                    <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                    <span class="d-flex">
+                                        <svg width="18" height="18" class="text-warning">
+                                            <use xlink:href="#star-solid"></use>
+                                        </svg>
+                                        <svg width="18" height="18" class="text-warning">
+                                            <use xlink:href="#star-solid"></use>
+                                        </svg>
+                                        <svg width="18" height="18" class="text-warning">
+                                            <use xlink:href="#star-solid"></use>
+                                        </svg>
+                                        <svg width="18" height="18" class="text-warning">
+                                            <use xlink:href="#star-solid"></use>
+                                        </svg>
+                                        <svg width="18" height="18" class="text-warning">
+                                            <use xlink:href="#star-solid"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <figure>
+                                    <a href="/ecommerce-product-page-html-css-javascript-main/product6.html" title="Product Title">
+                                        <img src="~/images/product-thumb-7.png" alt="Product Thumbnail" class="img-fluid">
+                                    </a>
+                                </figure>
+                                <p>Super Shoes</p>
+                                <div class="d-flex justify-content-between">
+                                    <p><span class="text-dark">$18.00</span><del>$23</del><span class="text-success">-30%</span></p>
+                                    <span class="d-flex">
+                                        <svg width="18" height="18" class="text-warning">
+                                            <use xlink:href="#star-solid"></use>
+                                        </svg>
+                                        <svg width="18" height="18" class="text-warning">
+                                            <use xlink:href="#star-solid"></use>
+                                        </svg>
+                                        <svg width="18" height="18" class="text-warning">
+                                            <use xlink:href="#star-solid"></use>
+                                        </svg>
+                                        <svg width="18" height="18" class="text-warning">
+                                            <use xlink:href="#star-solid"></use>
+                                        </svg>
+                                        <svg width="18" height="18" class="text-warning">
+                                            <use xlink:href="#star-solid"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- / products-carousel -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

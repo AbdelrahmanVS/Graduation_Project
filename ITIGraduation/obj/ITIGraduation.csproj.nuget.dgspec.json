@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\ITIGraduation.csproj": {}
+    "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\ITIGraduation.csproj": {}
   },
   "projects": {
-    "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\ITIGraduation.csproj": {
+    "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\ITIGraduation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\ITIGraduation.csproj",
+        "projectUniqueName": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\ITIGraduation.csproj",
         "projectName": "ITIGraduation",
-        "projectPath": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\ITIGraduation.csproj",
-        "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-        "outputPath": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\obj\\",
+        "projectPath": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\ITIGraduation.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,12 +45,34 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -74,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

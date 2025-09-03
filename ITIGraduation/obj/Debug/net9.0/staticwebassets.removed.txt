@@ -1,3 +1,0 @@
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\css\site.css
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\favicon.ico
-D:\graduationProject\Graduation_Project\ITIGraduation\wwwroot\js\site.js
