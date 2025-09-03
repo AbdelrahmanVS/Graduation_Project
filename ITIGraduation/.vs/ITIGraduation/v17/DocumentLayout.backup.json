@@ -1,0 +1,176 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\controllers\\trending.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\trending.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\views\\sports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\sports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\controllers\\sports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\sports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\controllers\\oxfords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\oxfords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\controllers\\boots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\boots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\controllers\\best.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\best.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\views\\boots\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\boots\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|d:\\graduationproject\\graduation_project\\itigraduation\\views\\boots\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\boots\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c93a910a-0fa6-4307-93a4-f2bd61ec7828}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Sports\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Sports\\Index.cshtml",
+              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Sports\\Index.cshtml",
+              "RelativeToolTip": "Views\\Sports\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T09:02:32.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Boots\\Details.cshtml",
+              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Details.cshtml",
+              "RelativeToolTip": "Views\\Boots\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T08:58:26.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Boots\\Index.cshtml",
+              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml",
+              "RelativeToolTip": "Views\\Boots\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T08:55:58.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "best.cs",
+              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\best.cs",
+              "RelativeDocumentMoniker": "Controllers\\best.cs",
+              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\best.cs",
+              "RelativeToolTip": "Controllers\\best.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T08:54:44.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Trending.cs",
+              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Trending.cs",
+              "RelativeDocumentMoniker": "Controllers\\Trending.cs",
+              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Trending.cs",
+              "RelativeToolTip": "Controllers\\Trending.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T08:54:19.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sports.cs",
+              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Sports.cs",
+              "RelativeDocumentMoniker": "Controllers\\Sports.cs",
+              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Sports.cs",
+              "RelativeToolTip": "Controllers\\Sports.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T08:54:05.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Oxfords.cs",
+              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Oxfords.cs",
+              "RelativeDocumentMoniker": "Controllers\\Oxfords.cs",
+              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Oxfords.cs",
+              "RelativeToolTip": "Controllers\\Oxfords.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T08:53:43.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Boots.cs",
+              "DocumentMoniker": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Boots.cs",
+              "RelativeDocumentMoniker": "Controllers\\Boots.cs",
+              "ToolTip": "D:\\graduationProject\\Graduation_Project\\ITIGraduation\\Controllers\\Boots.cs",
+              "RelativeToolTip": "Controllers\\Boots.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T08:53:24.722Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
