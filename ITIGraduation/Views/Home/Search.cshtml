@@ -1,0 +1,149 @@
+﻿@model SearchResultVM
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+<div class="product_page" id="ProductView">
+
+    <div class="container mt-4" style="margin-bottom:50px">
+    <h2 class="mb-4">Search Results</h2>
+
+    @if ((Model.Products == null || !Model.Products.Any()) &&
+    (Model.Sports == null || !Model.Sports.Any()) &&
+    (Model.Boots == null || !Model.Boots.Any()) &&
+    (Model.TrendingSellings == null || !Model.TrendingSellings.Any()) &&
+    (Model.Oxfords == null || !Model.Oxfords.Any()))
+    {
+        <div class="alert alert-warning text-center">
+            <strong>No results found.</strong>
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @if (Model.Products?.Any() == true)
+            {
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            Products
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            @foreach (var p in Model.Products)
+                            {
+                                    <a asp-controller="Products" asp-action="Details" asp-route-id="@p.ProuductId" asp-fragment="ProductView"
+
+                                   class="list-group-item d-flex justify-content-between search-item">
+                                    <span>@p.ProuductName</span>
+                                    <span class="fw-bold text-success">@p.Price $</span>
+                                </a>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            }
+
+            @if (Model.Sports?.Any() == true)
+            {
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            Sports
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            @foreach (var s in Model.Sports)
+                            {
+                                    <a asp-controller="Sports" asp-action="Details" asp-route-id="@s.SportId" asp-fragment="ProductView"
+
+                                   class="list-group-item d-flex justify-content-between search-item">
+                                    <span>@s.SportName</span>
+                                    <span class="fw-bold text-success">@s.Price $</span>
+                                </a>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            }
+
+            @if (Model.Boots?.Any() == true)
+            {
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-warning text-dark">
+                            Boots
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            @foreach (var b in Model.Boots)
+                            {
+                                    <a asp-controller="Boots" asp-action="Details" asp-route-id="@b.BootId" asp-fragment="ProductView"
+
+                                   class="list-group-item d-flex justify-content-between search-item">
+                                    <span>@b.BootName</span>
+                                    <span class="fw-bold text-success">@b.Price $</span>
+                                </a>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            }
+
+            @if (Model.TrendingSellings?.Any() == true)
+            {
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-danger text-white">
+                            Trending
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            @foreach (var t in Model.TrendingSellings)
+                            {
+                                    <a asp-controller="TrendingSellings" asp-action="Details" asp-route-id="@t.ProudId" asp-fragment="ProductView"
+
+                                   class="list-group-item d-flex justify-content-between search-item">
+                                    <span>@t.ProudName</span>
+                                    <span class="fw-bold text-success">@t.Price $</span>
+                                </a>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            }
+
+            @if (Model.Oxfords?.Any() == true)
+            {
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            Oxfords
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            @foreach (var o in Model.Oxfords)
+                            {
+                                    <a asp-controller="Oxfords" asp-action="Details" asp-route-id="@o.OxfordId" asp-fragment="ProductView"
+
+                                   class="list-group-item d-flex justify-content-between search-item">
+                                    <span>@o.BootName</span>
+                                    <span class="fw-bold text-success">@o.Price $</span>
+                                </a>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+<style>
+    .search-item {
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.2s ease-in-out;
+    }
+
+        .search-item:hover {
+            background: #f1f1f1;
+            cursor: pointer;
+        }
+</style>
+</div>
