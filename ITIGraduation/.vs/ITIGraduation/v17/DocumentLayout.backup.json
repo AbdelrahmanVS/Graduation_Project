@@ -282,73 +282,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Boots\\Index.cshtml",
-              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml*",
-              "RelativeToolTip": "Views\\Boots\\Index.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:14:27.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Boots\\Edit.cshtml",
-              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Edit.cshtml*",
-              "RelativeToolTip": "Views\\Boots\\Edit.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:14:22.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Boots\\Details.cshtml",
-              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Details.cshtml*",
-              "RelativeToolTip": "Views\\Boots\\Details.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:14:16.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Boots\\Delete.cshtml",
-              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Delete.cshtml*",
-              "RelativeToolTip": "Views\\Boots\\Delete.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:14:09.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Boots\\Create.cshtml",
-              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Create.cshtml*",
-              "RelativeToolTip": "Views\\Boots\\Create.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:14:03.73Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -368,6 +303,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{c93a910a-0fa6-4307-93a4-f2bd61ec7828}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Boots\\Index.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml",
+              "RelativeToolTip": "Views\\Boots\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T12:14:27.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Boots\\Edit.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Boots\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T12:14:22.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Boots\\Details.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Details.cshtml",
+              "RelativeToolTip": "Views\\Boots\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T12:14:16.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Boots\\Delete.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Boots\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T12:14:09.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Boots\\Create.cshtml",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Create.cshtml",
+              "RelativeToolTip": "Views\\Boots\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T12:14:03.73Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

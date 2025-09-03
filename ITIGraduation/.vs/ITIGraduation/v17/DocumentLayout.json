@@ -312,7 +312,7 @@
               "RelativeDocumentMoniker": "Views\\Boots\\Index.cshtml",
               "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Views\\Boots\\Index.cshtml",
               "RelativeToolTip": "Views\\Boots\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-03T12:14:27.596Z",
               "EditorCaption": ""
@@ -327,8 +327,7 @@
               "RelativeToolTip": "Views\\Boots\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:14:22.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:14:22.035Z"
             },
             {
               "$type": "Document",
@@ -340,8 +339,7 @@
               "RelativeToolTip": "Views\\Boots\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:14:16.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:14:16.653Z"
             },
             {
               "$type": "Document",
@@ -353,8 +351,7 @@
               "RelativeToolTip": "Views\\Boots\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:14:09.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:14:09.314Z"
             },
             {
               "$type": "Document",
@@ -366,8 +363,7 @@
               "RelativeToolTip": "Views\\Boots\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:14:03.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:14:03.73Z"
             },
             {
               "$type": "Document",
@@ -379,8 +375,7 @@
               "RelativeToolTip": "Views\\TrendingSellings\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:12:28.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:12:28.356Z"
             },
             {
               "$type": "Document",
@@ -392,8 +387,7 @@
               "RelativeToolTip": "Views\\TrendingSellings\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:12:21.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:12:21.699Z"
             },
             {
               "$type": "Document",
@@ -405,8 +399,7 @@
               "RelativeToolTip": "Views\\TrendingSellings\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:12:16.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:12:16.188Z"
             },
             {
               "$type": "Document",
@@ -418,8 +411,7 @@
               "RelativeToolTip": "Views\\TrendingSellings\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:12:08.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:12:08.961Z"
             },
             {
               "$type": "Document",
@@ -431,8 +423,7 @@
               "RelativeToolTip": "Views\\TrendingSellings\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:11:56.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:11:56.91Z"
             },
             {
               "$type": "Document",
@@ -444,8 +435,7 @@
               "RelativeToolTip": "Views\\Sports\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:07:45.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:07:45.175Z"
             },
             {
               "$type": "Document",
@@ -457,8 +447,7 @@
               "RelativeToolTip": "Views\\Sports\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:07:40.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:07:40.31Z"
             },
             {
               "$type": "Document",
@@ -470,8 +459,7 @@
               "RelativeToolTip": "Views\\Sports\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:07:35.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:07:35.646Z"
             },
             {
               "$type": "Document",
@@ -483,8 +471,7 @@
               "RelativeToolTip": "Views\\Sports\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:07:30.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:07:30.404Z"
             },
             {
               "$type": "Document",
@@ -496,8 +483,7 @@
               "RelativeToolTip": "Views\\Sports\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:07:23.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:07:23.787Z"
             },
             {
               "$type": "Document",
@@ -509,8 +495,7 @@
               "RelativeToolTip": "Views\\Oxfords\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:06:02.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:06:02.038Z"
             },
             {
               "$type": "Document",
@@ -522,8 +507,7 @@
               "RelativeToolTip": "Views\\Oxfords\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:05:56.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:05:56.436Z"
             },
             {
               "$type": "Document",
@@ -535,8 +519,7 @@
               "RelativeToolTip": "Views\\Oxfords\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:05:50.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:05:50.247Z"
             },
             {
               "$type": "Document",
@@ -548,8 +531,7 @@
               "RelativeToolTip": "Views\\Oxfords\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:05:43.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:05:43.779Z"
             },
             {
               "$type": "Document",
@@ -561,8 +543,7 @@
               "RelativeToolTip": "Views\\Oxfords\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:05:33.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:05:33.141Z"
             },
             {
               "$type": "Document",
@@ -574,8 +555,7 @@
               "RelativeToolTip": "Views\\Products\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:03:37.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:03:37.665Z"
             },
             {
               "$type": "Document",
@@ -587,8 +567,7 @@
               "RelativeToolTip": "Views\\Products\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:03:29.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:03:29.66Z"
             },
             {
               "$type": "Document",
@@ -600,8 +579,7 @@
               "RelativeToolTip": "Views\\Products\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:03:22.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:03:22.057Z"
             },
             {
               "$type": "Document",
@@ -613,8 +591,7 @@
               "RelativeToolTip": "Views\\Products\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:03:14.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:03:14.942Z"
             },
             {
               "$type": "Document",
@@ -626,8 +603,7 @@
               "RelativeToolTip": "Views\\Products\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:03:02.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T12:03:02.285Z"
             },
             {
               "$type": "Document",
@@ -639,8 +615,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAOcAAAAAAAAAAIAwwPMAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T11:34:22.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T11:34:22.266Z"
             },
             {
               "$type": "Document",
@@ -1060,8 +1035,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T11:11:41.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T11:11:41.472Z"
             },
             {
               "$type": "Document",
@@ -1097,8 +1071,7 @@
               "RelativeToolTip": "Controllers\\Products.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAxwBkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T08:54:44.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T08:54:44.067Z"
             },
             {
               "$type": "Document",
@@ -1110,8 +1083,7 @@
               "RelativeToolTip": "Controllers\\TrendingSellings.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwBYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T08:54:19.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T08:54:19.495Z"
             },
             {
               "$type": "Document",
@@ -1123,8 +1095,7 @@
               "RelativeToolTip": "Controllers\\Sports.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T08:54:05.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T08:54:05.257Z"
             },
             {
               "$type": "Document",
@@ -1136,8 +1107,7 @@
               "RelativeToolTip": "Controllers\\Oxfords.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAmwAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T08:53:43.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T08:53:43.521Z"
             },
             {
               "$type": "Document",
@@ -1149,8 +1119,7 @@
               "RelativeToolTip": "Controllers\\Boots.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T08:53:24.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T08:53:24.722Z"
             }
           ]
         }
