@@ -4,31 +4,28 @@ using System.Linq;
 using System.Threading.Tasks;
 using ITIGraduation.Data;
 using ITIGraduation.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+
 namespace SparkMain.Controllers
 {
-    [Authorize]
-    public class BootsController : Controller
+    public class TrendingSellingsController : Controller
     {
         private readonly SparkContext _context;
 
-        public BootsController(SparkContext context)
+        public TrendingSellingsController(SparkContext context)
         {
             _context = context;
         }
 
-        // GET: Boots
-        [AllowAnonymous]
+        // GET: TrendingSellings
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Boots.ToListAsync());
+            return View(await _context.TrendingSellings.ToListAsync());
         }
 
-        // GET: Boots/Details/5
-        [AllowAnonymous]
+        // GET: TrendingSellings/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -36,45 +33,39 @@ namespace SparkMain.Controllers
                 return NotFound();
             }
 
-            var boot = await _context.Boots
-                .FirstOrDefaultAsync(m => m.BootId == id);
-            if (boot == null)
+            var trendingSelling = await _context.TrendingSellings
+                .FirstOrDefaultAsync(m => m.ProudId == id);
+            if (trendingSelling == null)
             {
                 return NotFound();
             }
 
-            return View(boot);
+            return View(trendingSelling);
         }
 
-        // GET: Boots/Create
-        [Authorize(Roles = "Admin")]
-
+        // GET: TrendingSellings/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Boots/Create
+        // POST: TrendingSellings/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-
-        public async Task<IActionResult> Create([Bind("BootId,BootName,Size,ImagUrl,Price")] Boot boot)
+        public async Task<IActionResult> Create([Bind("ProudId,ProudName,Size,Price,ImagUrl,Imag2,Imag3,Imag4")] TrendingSelling trendingSelling)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(boot);
+                _context.Add(trendingSelling);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(boot);
+            return View(trendingSelling);
         }
 
-        // GET: Boots/Edit/5
-        [Authorize(Roles = "Admin")]
-
+        // GET: TrendingSellings/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -82,24 +73,22 @@ namespace SparkMain.Controllers
                 return NotFound();
             }
 
-            var boot = await _context.Boots.FindAsync(id);
-            if (boot == null)
+            var trendingSelling = await _context.TrendingSellings.FindAsync(id);
+            if (trendingSelling == null)
             {
                 return NotFound();
             }
-            return View(boot);
+            return View(trendingSelling);
         }
 
-        // POST: Boots/Edit/5
+        // POST: TrendingSellings/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-
-        public async Task<IActionResult> Edit(int id, [Bind("BootId,BootName,Size,ImagUrl,Price")] Boot boot)
+        public async Task<IActionResult> Edit(int id, [Bind("ProudId,ProudName,Size,Price,ImagUrl,Imag2,Imag3,Imag4")] TrendingSelling trendingSelling)
         {
-            if (id != boot.BootId)
+            if (id != trendingSelling.ProudId)
             {
                 return NotFound();
             }
@@ -108,12 +97,12 @@ namespace SparkMain.Controllers
             {
                 try
                 {
-                    _context.Update(boot);
+                    _context.Update(trendingSelling);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BootExists(boot.BootId))
+                    if (!TrendingSellingExists(trendingSelling.ProudId))
                     {
                         return NotFound();
                     }
@@ -124,12 +113,10 @@ namespace SparkMain.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(boot);
+            return View(trendingSelling);
         }
 
-        // GET: Boots/Delete/5
-        [Authorize(Roles = "Admin")]
-
+        // GET: TrendingSellings/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -137,36 +124,34 @@ namespace SparkMain.Controllers
                 return NotFound();
             }
 
-            var boot = await _context.Boots
-                .FirstOrDefaultAsync(m => m.BootId == id);
-            if (boot == null)
+            var trendingSelling = await _context.TrendingSellings
+                .FirstOrDefaultAsync(m => m.ProudId == id);
+            if (trendingSelling == null)
             {
                 return NotFound();
             }
 
-            return View(boot);
+            return View(trendingSelling);
         }
 
-        // POST: Boots/Delete/5
+        // POST: TrendingSellings/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var boot = await _context.Boots.FindAsync(id);
-            if (boot != null)
+            var trendingSelling = await _context.TrendingSellings.FindAsync(id);
+            if (trendingSelling != null)
             {
-                _context.Boots.Remove(boot);
+                _context.TrendingSellings.Remove(trendingSelling);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool BootExists(int id)
+        private bool TrendingSellingExists(int id)
         {
-            return _context.Boots.Any(e => e.BootId == id);
+            return _context.TrendingSellings.Any(e => e.ProudId == id);
         }
     }
 }

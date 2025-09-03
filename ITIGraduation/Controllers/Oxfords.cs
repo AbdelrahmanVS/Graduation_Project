@@ -1,83 +1,169 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using ITIGraduation.Data;
+using ITIGraduation.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
-namespace ITIGraduation.Controllers
+namespace SparkMain.Controllers
 {
-    public class Oxfords : Controller
+    [Authorize]
+    public class OxfordsController : Controller
     {
-        // GET: Oxfords
-        public ActionResult Index()
+        private readonly SparkContext _context;
+
+        public OxfordsController(SparkContext context)
         {
-            return View();
+            _context = context;
+        }
+
+        // GET: Oxfords
+        [AllowAnonymous]
+
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Oxfords.ToListAsync());
         }
 
         // GET: Oxfords/Details/5
-        public ActionResult Details(int id)
+        [AllowAnonymous]
+
+        public async Task<IActionResult> Details(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var oxford = await _context.Oxfords
+                .FirstOrDefaultAsync(m => m.OxfordId == id);
+            if (oxford == null)
+            {
+                return NotFound();
+            }
+
+            return View(oxford);
         }
 
         // GET: Oxfords/Create
-        public ActionResult Create()
+        [Authorize(Roles = "Admin")]
+        public IActionResult Create()
         {
             return View();
         }
 
         // POST: Oxfords/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create([Bind("OxfordId,BootName,Size,Price,ImagUrl")] Oxford oxford)
         {
-            try
+            if (ModelState.IsValid)
             {
+                _context.Add(oxford);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(oxford);
         }
 
         // GET: Oxfords/Edit/5
-        public ActionResult Edit(int id)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var oxford = await _context.Oxfords.FindAsync(id);
+            if (oxford == null)
+            {
+                return NotFound();
+            }
+            return View(oxford);
         }
 
         // POST: Oxfords/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(int id, [Bind("OxfordId,BootName,Size,Price,ImagUrl")] Oxford oxford)
         {
-            try
+            if (id != oxford.OxfordId)
             {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(oxford);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!OxfordExists(oxford.OxfordId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(oxford);
         }
 
         // GET: Oxfords/Delete/5
-        public ActionResult Delete(int id)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Delete(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var oxford = await _context.Oxfords
+                .FirstOrDefaultAsync(m => m.OxfordId == id);
+            if (oxford == null)
+            {
+                return NotFound();
+            }
+
+            return View(oxford);
         }
 
         // POST: Oxfords/Delete/5
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
+            var oxford = await _context.Oxfords.FindAsync(id);
+            if (oxford != null)
             {
-                return RedirectToAction(nameof(Index));
+                _context.Oxfords.Remove(oxford);
             }
-            catch
-            {
-                return View();
-            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool OxfordExists(int id)
+        {
+            return _context.Oxfords.Any(e => e.OxfordId == id);
         }
     }
 }

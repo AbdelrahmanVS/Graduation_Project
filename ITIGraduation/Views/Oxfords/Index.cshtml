@@ -1,1 +1,92 @@
-﻿<h1>Oxfords index</h1>
+﻿@model IEnumerable<ITIGraduation.Models.Oxford>
+
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<AppUser> UserManager
+@inject SignInManager<AppUser> SignInManager
+
+@{
+    var isAdmin = User.IsInRole("Admin");
+}
+
+@{
+    ViewData["Title"] = "SportDetails";
+}
+
+<link rel="stylesheet" href="~/style.css" asp-append-version="true" />
+
+<div class="product_page" id="ProductView">
+    <h1>Oxfords</h1>
+    @if (isAdmin)
+    {
+        <p>
+            <a asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
+        </p>
+    }
+   
+    <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="product-item">
+                    <span class="badge bg-success position-absolute m-3">-30%</span>
+                    <figure>
+                        <a href="@Url.Action("Details", "oxfords", new { id = item.OxfordId })#ProductView" title="Product Title">
+                            <img src="@Url.Content(@item.ImagUrl)" alt="@item.BootName" class="img-fluid">
+                        </a>
+                    </figure>
+                    <div class="content">
+                        <f4>@item.BootName</f4>
+
+                        <div class="d-flex justify-content-between">
+                            <p><span class="text-dark">$@item.Price</span><del>$23</del><span class="text-success">-30%</span></p>
+                            <span class="d-flex">
+                                <svg width="18" height="18" class="text-warning">
+                                    <use xlink:href="#star-solid"></use>
+                                </svg>
+                                <svg width="18" height="18" class="text-warning">
+                                    <use xlink:href="#star-solid"></use>
+                                </svg>
+                                <svg width="18" height="18" class="text-warning">
+                                    <use xlink:href="#star-solid"></use>
+                                </svg>
+                                <svg width="18" height="18" class="text-warning">
+                                    <use xlink:href="#star-solid"></use>
+                                </svg>
+                                <svg width="18" height="18" class="text-warning">
+                                    <use xlink:href="#star-solid"></use>
+                                </svg>
+                            </span>
+
+                        </div>
+                        @* <div class="price-info">
+                            <div class="price">
+                                <span class="current-price">$@Url.Content(item.Price.ToString())</span>
+                                <span class="discount">50%</span>
+                            </div>
+                            <div class="prev-price">$250.00</div>
+                        </div> *@
+
+
+                    </div>
+                    @if (isAdmin)
+                    {
+                        <div class="btnsFromMe">
+                            <a asp-action="Edit" asp-route-id="@item.OxfordId" class="btn Edit text-white ">Edit</a>
+                            <a asp-action="Details" asp-route-id="@item.OxfordId" class="btn Details text-white">Details</a>
+                            <a asp-action="Delete" asp-route-id="@item.OxfordId" class="btn Delete text-white ">Delete</a>
+                        </div>
+                    }
+                   
+                </div>
+
+
+
+            </div>
+        }
+    </div>
+</div>
+
+<script src="~/ecommerce-product-page-html-css-javascript-main/main.js" asp-append-version="true"></script>
+<script src="~/ecommerce-product-page-html-css-javascript-main/cart.js" asp-append-version="true"></script>
+<script src="~/ecommerce-product-page-html-css-javascript-main/slider.js" asp-append-version="true"></script>

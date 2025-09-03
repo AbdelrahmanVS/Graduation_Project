@@ -1,83 +1,171 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using ITIGraduation.Data;
+using ITIGraduation.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
-namespace ITIGraduation.Controllers
+namespace SparkMain.Controllers
 {
-    public class Sports : Controller
+    [Authorize]
+    public class SportsController : Controller
     {
-        // GET: Sports
-        public ActionResult Index()
+        private readonly SparkContext _context;
+
+        public SportsController(SparkContext context)
         {
-            return View();
+            _context = context;
+        }
+
+        // GET: Sports
+        [AllowAnonymous]
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Sports.ToListAsync());
         }
 
         // GET: Sports/Details/5
-        public ActionResult Details(int id)
+        [AllowAnonymous]
+        public async Task<IActionResult> Details(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var sport = await _context.Sports
+                .FirstOrDefaultAsync(m => m.SportId == id);
+            if (sport == null)
+            {
+                return NotFound();
+            }
+
+            return View(sport);
         }
 
         // GET: Sports/Create
-        public ActionResult Create()
+        [Authorize(Roles = "Admin")]
+
+        public IActionResult Create()
         {
             return View();
         }
 
         // POST: Sports/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Create([Bind("SportId,SportName,Size,Price,ImagUrl")] Sport sport)
         {
-            try
+            if (ModelState.IsValid)
             {
+                _context.Add(sport);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(sport);
         }
 
         // GET: Sports/Edit/5
-        public ActionResult Edit(int id)
+        [Authorize(Roles = "Admin")]
+
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var sport = await _context.Sports.FindAsync(id);
+            if (sport == null)
+            {
+                return NotFound();
+            }
+            return View(sport);
         }
 
         // POST: Sports/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        [Authorize(Roles = "Admin")]
+
+        public async Task<IActionResult> Edit(int id, [Bind("SportId,SportName,Size,Price,ImagUrl")] Sport sport)
         {
-            try
+            if (id != sport.SportId)
             {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(sport);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!SportExists(sport.SportId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(sport);
         }
 
         // GET: Sports/Delete/5
-        public ActionResult Delete(int id)
+        [Authorize(Roles = "Admin")]
+
+        public async Task<IActionResult> Delete(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var sport = await _context.Sports
+                .FirstOrDefaultAsync(m => m.SportId == id);
+            if (sport == null)
+            {
+                return NotFound();
+            }
+
+            return View(sport);
         }
 
         // POST: Sports/Delete/5
-        [HttpPost]
+        [Authorize(Roles = "Admin")]
+
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
+            var sport = await _context.Sports.FindAsync(id);
+            if (sport != null)
             {
-                return RedirectToAction(nameof(Index));
+                _context.Sports.Remove(sport);
             }
-            catch
-            {
-                return View();
-            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool SportExists(int id)
+        {
+            return _context.Sports.Any(e => e.SportId == id);
         }
     }
 }

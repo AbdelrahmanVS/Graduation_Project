@@ -28,26 +28,6 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/best/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmVzdFxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/best/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmVzdFxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/best/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmVzdFxEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/best/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmVzdFxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/best/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmVzdFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Boots/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -96,6 +76,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3hmb3Jkc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -124,24 +124,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvcnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Trending/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlbmRpbmdcQ3JlYXRlLmNzaHRtbA==
+[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/TrendingSellings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlbmRpbmdTZWxsaW5nc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Trending/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlbmRpbmdcRGVsZXRlLmNzaHRtbA==
+[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/TrendingSellings/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlbmRpbmdTZWxsaW5nc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Trending/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlbmRpbmdcRGV0YWlscy5jc2h0bWw=
+[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/TrendingSellings/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlbmRpbmdTZWxsaW5nc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Trending/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlbmRpbmdcRWRpdC5jc2h0bWw=
+[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/TrendingSellings/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlbmRpbmdTZWxsaW5nc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/Trending/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlbmRpbmdcSW5kZXguY3NodG1s
+[D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/TrendingSellings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlbmRpbmdTZWxsaW5nc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ITI/graduation/NEW Repo/Graduation_Project/ITIGraduation/Views/_ViewImports.cshtml]

@@ -3,8 +3,6 @@ using ITIGraduation.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ITIGraduation.Data;
-using ITIGraduation.Models;
 using System.Diagnostics;
 
 namespace SparkMain.Controllers

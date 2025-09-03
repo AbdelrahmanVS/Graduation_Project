@@ -1,8 +1,14 @@
-﻿@model ITIGraduation.Models.Oxford
+﻿@model ITIGraduation.Models.Prouduct
 
 <div class="product_page" id="ProductView">
-    <h2>Delete Oxford</h2>
-    <h4>@Model.BootName</h4>
+
+    @{
+        ViewData["Title"] = "Delete Product";
+    }
+
+    <h2>Are you sure you want to delete this product?</h2>
+
+    <h4>@Model.ProuductName</h4>
     <dl class="row">
         <dt class="col-sm-2">Size</dt>
         <dd class="col-sm-10">@Model.Size</dd>
@@ -11,14 +17,12 @@
         <dd class="col-sm-10">@Model.Price</dd>
 
         <dt class="col-sm-2">Image</dt>
-        <dd class="col-sm-10"><img src="@Model.ImagUrl" width="60" /></dd>
+        <dd class="col-sm-10">@Model.ImagUrl</dd>
     </dl>
 
     <form asp-action="Delete">
-        <input type="hidden" asp-for="OxfordId" />
+        <input type="hidden" asp-for="ProuductId" />
         <button type="submit" class="btn btn-danger">Delete</button>
         <a asp-action="Index" class="btn btn-secondary">Cancel</a>
     </form>
-
 </div>
-

@@ -8,26 +8,27 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+
 namespace SparkMain.Controllers
 {
     [Authorize]
-    public class BootsController : Controller
+    public class ProductsController : Controller
     {
         private readonly SparkContext _context;
 
-        public BootsController(SparkContext context)
+        public ProductsController(SparkContext context)
         {
             _context = context;
         }
 
-        // GET: Boots
+        // GET: Products
         [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Boots.ToListAsync());
+            return View(await _context.Prouducts.ToListAsync());
         }
 
-        // GET: Boots/Details/5
+        // GET: Products/Details/5
         [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
@@ -36,45 +37,42 @@ namespace SparkMain.Controllers
                 return NotFound();
             }
 
-            var boot = await _context.Boots
-                .FirstOrDefaultAsync(m => m.BootId == id);
-            if (boot == null)
+            var prouduct = await _context.Prouducts
+                .FirstOrDefaultAsync(m => m.ProuductId == id);
+            if (prouduct == null)
             {
                 return NotFound();
             }
 
-            return View(boot);
+            return View(prouduct);
         }
 
-        // GET: Boots/Create
+        // GET: Products/Create
         [Authorize(Roles = "Admin")]
-
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Boots/Create
+        // POST: Products/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-
-        public async Task<IActionResult> Create([Bind("BootId,BootName,Size,ImagUrl,Price")] Boot boot)
+        public async Task<IActionResult> Create([Bind("ProuductId,ProuductName,Size,Price,ImagUrl")] Prouduct prouduct)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(boot);
+                _context.Add(prouduct);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(boot);
+            return View(prouduct);
         }
 
-        // GET: Boots/Edit/5
+        // GET: Products/Edit/5
         [Authorize(Roles = "Admin")]
-
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -82,24 +80,23 @@ namespace SparkMain.Controllers
                 return NotFound();
             }
 
-            var boot = await _context.Boots.FindAsync(id);
-            if (boot == null)
+            var prouduct = await _context.Prouducts.FindAsync(id);
+            if (prouduct == null)
             {
                 return NotFound();
             }
-            return View(boot);
+            return View(prouduct);
         }
 
-        // POST: Boots/Edit/5
+        // POST: Products/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-
-        public async Task<IActionResult> Edit(int id, [Bind("BootId,BootName,Size,ImagUrl,Price")] Boot boot)
+        public async Task<IActionResult> Edit(int id, [Bind("ProuductId,ProuductName,Size,Price,ImagUrl")] Prouduct prouduct)
         {
-            if (id != boot.BootId)
+            if (id != prouduct.ProuductId)
             {
                 return NotFound();
             }
@@ -108,12 +105,12 @@ namespace SparkMain.Controllers
             {
                 try
                 {
-                    _context.Update(boot);
+                    _context.Update(prouduct);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BootExists(boot.BootId))
+                    if (!ProuductExists(prouduct.ProuductId))
                     {
                         return NotFound();
                     }
@@ -124,12 +121,11 @@ namespace SparkMain.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(boot);
+            return View(prouduct);
         }
 
-        // GET: Boots/Delete/5
+        // GET: Products/Delete/5
         [Authorize(Roles = "Admin")]
-
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -137,36 +133,35 @@ namespace SparkMain.Controllers
                 return NotFound();
             }
 
-            var boot = await _context.Boots
-                .FirstOrDefaultAsync(m => m.BootId == id);
-            if (boot == null)
+            var prouduct = await _context.Prouducts
+                .FirstOrDefaultAsync(m => m.ProuductId == id);
+            if (prouduct == null)
             {
                 return NotFound();
             }
 
-            return View(boot);
+            return View(prouduct);
         }
 
-        // POST: Boots/Delete/5
+        // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var boot = await _context.Boots.FindAsync(id);
-            if (boot != null)
+            var prouduct = await _context.Prouducts.FindAsync(id);
+            if (prouduct != null)
             {
-                _context.Boots.Remove(boot);
+                _context.Prouducts.Remove(prouduct);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool BootExists(int id)
+        private bool ProuductExists(int id)
         {
-            return _context.Boots.Any(e => e.BootId == id);
+            return _context.Prouducts.Any(e => e.ProuductId == id);
         }
     }
 }

@@ -1,7 +1,87 @@
-﻿
+﻿@model IEnumerable<ITIGraduation.Models.Boot>
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
 @{
-    ViewData["Title"] = "Index";
+    var isAdmin = User.IsInRole("Admin");
 }
 
-<h1>Index</h1>
+
+
+<div class="product_page" id="ProductView">
+    <div class="product_page" id="ProductView">
+        <h1>boots</h1>
+        @if(isAdmin)
+        {
+            <p>
+                <a asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
+            </p>
+        }
+        
+        <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+            @foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="product-item">
+                        <span class="badge bg-success position-absolute m-3">-30%</span>
+                        <figure>
+                            <a href="@Url.Action("Details", "boots", new { id = item.BootId })#ProductView" title="Product Title">
+                                <img src="@Url.Content(@item.ImagUrl)" alt="@item.BootName" class="img-fluid">
+                            </a>
+                        </figure>
+                        <div class="content">
+                            <f4>@item.BootName</f4>
+
+                            <div class="d-flex justify-content-between">
+                                <p><span class="text-dark">$@item.Price</span><del>$23</del><span class="text-success">-30%</span></p>
+                                <span class="d-flex">
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                    <svg width="18" height="18" class="text-warning">
+                                        <use xlink:href="#star-solid"></use>
+                                    </svg>
+                                </span>
+
+                            </div>
+                            @* <div class="price-info">
+                            <div class="price">
+                                <span class="current-price">$@Url.Content(item.Price.ToString())</span>
+                                <span class="discount">50%</span>
+                            </div>
+                            <div class="prev-price">$250.00</div>
+                        </div> *@
+
+
+                        </div>
+                        <div class="btnsFromMe">
+                            @if (isAdmin)
+                            {
+                                <a asp-action="Edit" asp-route-id="@item.BootId" class="btn Edit text-white ">Edit</a>
+                                <a asp-action="Details" asp-route-id="@item.BootId" class="btn Details text-white">Details</a>
+                                <a asp-action="Delete" asp-route-id="@item.BootId" class="btn Delete text-white ">Delete</a>
+                            }
+                            
+                        </div>
+                    </div>
+
+
+
+                </div>
+            }
+        </div>
+    </div>
+</div>
 

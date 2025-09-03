@@ -1,1 +1,35 @@
-﻿<h1>Oxfords Create</h1>
+﻿@model ITIGraduation.Models.Oxford
+
+<div class="product_page" id="ProductView">
+    <h2>Create Oxford</h2>
+    <form asp-action="Create">
+        <div class="form-group">
+            <label asp-for="BootName"></label>
+            <input asp-for="BootName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Size"></label>
+            <input asp-for="Size" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ImagUrl"></label>
+            <input asp-for="ImagUrl" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success">Create</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+
+   
+</div>
+
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

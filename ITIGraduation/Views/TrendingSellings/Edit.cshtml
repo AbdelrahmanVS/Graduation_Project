@@ -1,12 +1,18 @@
-﻿@model ITIGraduation.Models.Oxford
+﻿@model ITIGraduation.Models.TrendingSelling
 
 <div class="product_page" id="ProductView">
-    <h2>Edit Oxford</h2>
+    @{
+        ViewData["Title"] = "Edit Trending Product";
+    }
+
+    <h2>Edit Trending Product</h2>
+
     <form asp-action="Edit">
-        <input type="hidden" asp-for="OxfordId" />
+        <input type="hidden" asp-for="ProudId" />
+
         <div class="form-group">
-            <label asp-for="BootName"></label>
-            <input asp-for="BootName" class="form-control" />
+            <label asp-for="ProudName"></label>
+            <input asp-for="ProudName" class="form-control" />
         </div>
         <div class="form-group">
             <label asp-for="Size"></label>
@@ -20,12 +26,24 @@
             <label asp-for="ImagUrl"></label>
             <input asp-for="ImagUrl" class="form-control" />
         </div>
+        <div class="form-group">
+            <label asp-for="Imag2"></label>
+            <input asp-for="Imag2" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Imag3"></label>
+            <input asp-for="Imag3" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Imag4"></label>
+            <input asp-for="Imag4" class="form-control" />
+        </div>
         <button type="submit" class="btn btn-warning">Save Changes</button>
         <a asp-action="Index" class="btn btn-secondary">Cancel</a>
     </form>
-    
-</div>
 
+
+</div>
 
 
 @section Scripts {

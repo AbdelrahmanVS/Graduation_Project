@@ -1,12 +1,4 @@
-﻿@model IEnumerable<ITIGraduation.Models.Sport>
-
-    @using Microsoft.AspNetCore.Identity
-@inject UserManager<AppUser> UserManager
-@inject SignInManager<AppUser> SignInManager
-
-@{
-    var isAdmin = User.IsInRole("Admin");
-}
+﻿@model IEnumerable<ITIGraduation.Models.TrendingSelling>
 
 @{
     ViewData["Title"] = "SportDetails";
@@ -15,14 +7,11 @@
 <link rel="stylesheet" href="~/style.css" asp-append-version="true" />
 
 <div class="product_page" id="ProductView">
-    <h1>Sports</h1>
-    @if (isAdmin)
-    {
-        <p>
-            <a asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
-        </p>
-    }
+    <h1>Trending Sellings</h1>
 
+    <p>
+        <a asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
+    </p>
     <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
         @foreach (var item in Model)
@@ -31,12 +20,12 @@
                 <div class="product-item">
                     <span class="badge bg-success position-absolute m-3">-30%</span>
                     <figure>
-                        <a href="@Url.Action("Details", "sports", new { id = item.SportId })#ProductView" title="Product Title">
-                            <img src="@Url.Content(@item.ImagUrl)" alt="@item.SportName" class="img-fluid">
+                        <a href="@Url.Action("Details", "trendingsellings", new { id = item.ProudId })#ProductView" title="Product Title">
+                            <img src="@Url.Content(@item.ImagUrl)" alt="@item.ProudName" class="img-fluid">
                         </a>
                     </figure>
                     <div class="content">
-                        <f4>@item.SportName</f4>
+                        <f4>@item.ProudName</f4>
 
                         <div class="d-flex justify-content-between">
                             <p><span class="text-dark">$@item.Price</span><del>$23</del><span class="text-success">-30%</span></p>
@@ -70,13 +59,9 @@
 
                     </div>
                     <div class="btnsFromMe">
-                        @if (isAdmin)
-                        {
-                            <a asp-action="Edit" asp-route-id="@item.SportId" class="btn Edit text-white ">Edit</a>
-                            <a asp-action="Details" asp-route-id="@item.SportId" class="btn Details text-white">Details</a>
-                            <a asp-action="Delete" asp-route-id="@item.SportId" class="btn Delete text-white ">Delete</a>
-                        }
-                       
+                        <a asp-action="Edit" asp-route-id="@item.ProudId" class="btn Edit text-white ">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.ProudId" class="btn Details text-white">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.ProudId" class="btn Delete text-white ">Delete</a>
                     </div>
                 </div>
 

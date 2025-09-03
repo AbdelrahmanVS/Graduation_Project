@@ -1,28 +1,26 @@
-﻿@model IEnumerable<ITIGraduation.Models.Sport>
-
-    @using Microsoft.AspNetCore.Identity
+﻿@model IEnumerable<ITIGraduation.Models.Prouduct>
+@using Microsoft.AspNetCore.Identity
 @inject UserManager<AppUser> UserManager
 @inject SignInManager<AppUser> SignInManager
 
-@{
-    var isAdmin = User.IsInRole("Admin");
+@if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+{
+    <a class="btn btn-primary" asp-action="Create">Add New</a>
 }
 
+
+
 @{
-    ViewData["Title"] = "SportDetails";
+    ViewData["Title"] = "Index";
 }
 
-<link rel="stylesheet" href="~/style.css" asp-append-version="true" />
 
 <div class="product_page" id="ProductView">
-    <h1>Sports</h1>
-    @if (isAdmin)
-    {
-        <p>
-            <a asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
-        </p>
-    }
+    <h1>Best Selling</h1>
 
+    <p>
+        <a asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
+    </p>
     <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
         @foreach (var item in Model)
@@ -31,12 +29,12 @@
                 <div class="product-item">
                     <span class="badge bg-success position-absolute m-3">-30%</span>
                     <figure>
-                        <a href="@Url.Action("Details", "sports", new { id = item.SportId })#ProductView" title="Product Title">
-                            <img src="@Url.Content(@item.ImagUrl)" alt="@item.SportName" class="img-fluid">
+                        <a href="@Url.Action("Details", "Products", new { id = item.ProuductId })#ProductView" title="Product Title">
+                            <img src="@Url.Content(@item.ImagUrl)" alt="@item.ProuductName" class="img-fluid">
                         </a>
                     </figure>
                     <div class="content">
-                        <f4>@item.SportName</f4>
+                        <f4>@item.ProuductName</f4>
 
                         <div class="d-flex justify-content-between">
                             <p><span class="text-dark">$@item.Price</span><del>$23</del><span class="text-success">-30%</span></p>
@@ -66,17 +64,13 @@
                             </div>
                             <div class="prev-price">$250.00</div>
                         </div> *@
-
-
-                    </div>
-                    <div class="btnsFromMe">
-                        @if (isAdmin)
-                        {
-                            <a asp-action="Edit" asp-route-id="@item.SportId" class="btn Edit text-white ">Edit</a>
-                            <a asp-action="Details" asp-route-id="@item.SportId" class="btn Details text-white">Details</a>
-                            <a asp-action="Delete" asp-route-id="@item.SportId" class="btn Delete text-white ">Delete</a>
-                        }
                        
+                        
+                    </div>
+                    <div class="btnsFromMe" >
+                        <a asp-action="Edit" asp-route-id="@item.ProuductId" class="btn Edit text-white ">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.ProuductId" class="btn Details text-white">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.ProuductId" class="btn Delete text-white ">Delete</a>
                     </div>
                 </div>
 
@@ -86,7 +80,12 @@
         }
     </div>
 </div>
-
 <script src="~/ecommerce-product-page-html-css-javascript-main/main.js" asp-append-version="true"></script>
 <script src="~/ecommerce-product-page-html-css-javascript-main/cart.js" asp-append-version="true"></script>
 <script src="~/ecommerce-product-page-html-css-javascript-main/slider.js" asp-append-version="true"></script>
+
+
+
+
+
+
