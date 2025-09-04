@@ -4,12 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using ITIGraduation.Data;
 using ITIGraduation.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace SparkMain.Controllers
 {
+    [Authorize]
+
     public class TrendingSellingsController : Controller
     {
         private readonly SparkContext _context;
@@ -20,12 +23,14 @@ namespace SparkMain.Controllers
         }
 
         // GET: TrendingSellings
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.TrendingSellings.ToListAsync());
         }
 
         // GET: TrendingSellings/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,6 +49,8 @@ namespace SparkMain.Controllers
         }
 
         // GET: TrendingSellings/Create
+        [Authorize(Roles = "Admin")]
+
         public IActionResult Create()
         {
             return View();
@@ -66,6 +73,8 @@ namespace SparkMain.Controllers
         }
 
         // GET: TrendingSellings/Edit/5
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -86,6 +95,8 @@ namespace SparkMain.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Edit(int id, [Bind("ProudId,ProudName,Size,Price,ImagUrl,Imag2,Imag3,Imag4")] TrendingSelling trendingSelling)
         {
             if (id != trendingSelling.ProudId)
@@ -117,6 +128,8 @@ namespace SparkMain.Controllers
         }
 
         // GET: TrendingSellings/Delete/5
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -137,6 +150,8 @@ namespace SparkMain.Controllers
         // POST: TrendingSellings/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var trendingSelling = await _context.TrendingSellings.FindAsync(id);
