@@ -1,0 +1,79 @@
+﻿@model ITIGraduation.ViewModels.Combied
+
+@{
+    ViewData["Title"] = "Account";
+}
+
+<link rel="stylesheet" href="~/login.css" asp-append-version="true" />
+
+<section class="forms-section_Edited" id="log-sec" style="align-items:center ;justify-content:center">
+    <h1 class="section-title_Edited">Account</h1>
+    <div class="forms">
+
+        <!-- Login -->
+        <div class="form-wrapper is-active">
+            <button type="button" class="switcher switcher-login">
+                Login
+                <span class="underline"></span>
+            </button>
+            <form asp-action="Login" asp-controller="Account" method="post" class="form form-login">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <fieldset>
+                    <legend>Please, enter your UserName and Password for login.</legend>
+                    <div class="input-block">
+                        <label asp-for="LoginVM.UserName">UserName</label>
+                        <input asp-for="LoginVM.UserName" name="UserName" required />
+                        <span asp-validation-for="LoginVM.UserName" class="text-danger"></span>
+                    </div>
+                    <div class="input-block">
+                        <label asp-for="LoginVM.Password">Password</label>
+                        <input asp-for="LoginVM.Password" type="password" name="Password" required />
+                        <span asp-validation-for="LoginVM.Password" class="text-danger"></span>
+                    </div>
+                    <div class="mb-1 form-check d-flex align-items-center">
+                        <label class="form-check-label">
+                            <input asp-for="LoginVM.RememberMe" class="form-check-input cursor" name="RememberMe" />
+                            @Html.DisplayNameFor(a => a.LoginVM.RememberMe)
+                        </label>
+                    </div>
+                    <input type="submit" value="Login" class="btn-login" />
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Register -->
+        <div class="form-wrapper">
+            <button type="button" class="switcher switcher-signup">
+                Sign Up
+                <span class="underline"></span>
+            </button>
+            <form asp-action="Register" asp-controller="Account" method="post" class="form form-signup">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <fieldset>
+                    <legend>Please, enter your data for sign up.</legend>
+                    <div class="input-block">
+                        <label asp-for="RegisterVM.Name">Name</label>
+                        <input asp-for="RegisterVM.Name" name="Name" required />
+                        <span asp-validation-for="RegisterVM.Name" class="text-danger"></span>
+                    </div>
+                    <div class="input-block">
+                        <label asp-for="RegisterVM.Email">Email</label>
+                        <input asp-for="RegisterVM.Email" type="email" name="Email" required />
+                        <span asp-validation-for="RegisterVM.Email" class="text-danger"></span>
+                    </div>
+                    <div class="input-block">
+                        <label asp-for="RegisterVM.Password">Password</label>
+                        <input asp-for="RegisterVM.Password" type="password" name="Password" required />
+                        <span asp-validation-for="RegisterVM.Password" class="text-danger"></span>
+                    </div>
+                    <div class="input-block">
+                        <label asp-for="RegisterVM.ConfirmPassword">Confirm Password</label>
+                        <input asp-for="RegisterVM.ConfirmPassword" type="password" name="ConfirmPassword" required />
+                        <span asp-validation-for="RegisterVM.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn-signup">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</section>
