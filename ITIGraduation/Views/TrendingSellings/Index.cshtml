@@ -1,8 +1,6 @@
 ﻿@model IEnumerable<ITIGraduation.Models.TrendingSelling>
 
-@{
-    ViewData["Title"] = "SportDetails";
-}
+
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<AppUser> SignInManager
 @inject UserManager<AppUser> UserManager
@@ -11,10 +9,10 @@
     var isAdmin = User.IsInRole("Admin");
 }
 
-
 <link rel="stylesheet" href="~/style.css" asp-append-version="true" />
 
 <div class="product_page" id="ProductView">
+
     <h1>Trending Sellings</h1>
     @if (isAdmin)
     {
@@ -23,7 +21,7 @@
         </p>
     }
 
-    
+
     <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
         @foreach (var item in Model)
@@ -60,27 +58,20 @@
                             </span>
 
                         </div>
-                        @* <div class="price-info">
-                            <div class="price">
-                                <span class="current-price">$@Url.Content(item.Price.ToString())</span>
-                                <span class="discount">50%</span>
-                            </div>
-                            <div class="prev-price">$250.00</div>
-                        </div> *@
 
 
                     </div>
                     <div class="btnsFromMe">
                         @if (isAdmin)
                         {
-                        <a asp-action="Edit" asp-route-id="@item.ProudId" class="btn Edit text-white ">Edit</a>
-                        <a asp-action="Details" asp-route-id="@item.ProudId" class="btn Details text-white">Details</a>
-                        <a asp-action="Delete" asp-route-id="@item.ProudId" class="btn Delete text-white ">Delete</a>
+                            <a asp-action="Edit" asp-route-id="@item.ProudId" class="btn Edit text-white ">Edit</a>
+                            <a asp-action="Details" asp-route-id="@item.ProudId" class="btn Details text-white">Details</a>
+                            <a asp-action="Delete" asp-route-id="@item.ProudId" class="btn Delete text-white ">Delete</a>
                         }
                     </div>
                 </div>
 
-
+                
 
             </div>
         }
