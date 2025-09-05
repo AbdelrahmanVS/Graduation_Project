@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RTs1MJCYryECQMo2Nlz/x3sn9A9W/tt1lF/Ex7cNH3Q=",
+  "Hash": "9sUBaR/3DofOGVQXcsL0AYl96fATmi6kAnl+5+5AvvA=",
   "Source": "ITIGraduation",
   "BasePath": "_content/ITIGraduation",
   "Mode": "Default",
@@ -1046,12 +1046,12 @@
       "OriginalItemSpec": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\e0k0vd0rpw-jzduy4whwf.gz",
+      "Identity": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\e0k0vd0rpw-6kugzioy49.gz",
       "SourceId": "ITIGraduation",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ITIGraduation",
-      "RelativePath": "login#[.{fingerprint=jzduy4whwf}]?.css.gz",
+      "RelativePath": "login#[.{fingerprint=6kugzioy49}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1060,8 +1060,8 @@
       "RelatedAsset": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\wwwroot\\login.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "q7sj9sgdhd",
-      "Integrity": "ahGi5ihWSDCuP9mOG2z6ZomOGXcS5aR1nzgEzJ8tn3E=",
+      "Fingerprint": "nmjnvshiil",
+      "Integrity": "H8JbdPBj/QwoBDY3HNI+u2fi4se9UrDDaHGwRhveogM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\wwwroot\\login.css"
@@ -7717,8 +7717,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jzduy4whwf",
-      "Integrity": "T9TXCS8s3X0Pz0kSOeyIEs+ddRcNS17mytt8vNO93MU=",
+      "Fingerprint": "6kugzioy49",
+      "Integrity": "tomCEFtH4Z1HTYpkTxg8MGVs6oKkJKymbLVCPUQCyfw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\login.css"
@@ -30983,7 +30983,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31044,7 +31044,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31089,7 +31089,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31144,7 +31144,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31205,7 +31205,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31250,7 +31250,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31305,7 +31305,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31358,7 +31358,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31395,7 +31395,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31442,7 +31442,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31495,7 +31495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -31532,7 +31532,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:06 GMT"
+          "Value": "Fri, 05 Sep 2025 12:40:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -51007,13 +51007,13 @@
       ]
     },
     {
-      "Route": "login.css",
-      "AssetFile": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\e0k0vd0rpw-jzduy4whwf.gz",
+      "Route": "login.6kugzioy49.css",
+      "AssetFile": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\e0k0vd0rpw-6kugzioy49.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000698812020"
+          "Quality": "0.000673854447"
         }
       ],
       "ResponseHeaders": [
@@ -51023,15 +51023,176 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1430"
+          "Value": "1483"
         },
         {
           "Name": "ETag",
-          "Value": "\"ahGi5ihWSDCuP9mOG2z6ZomOGXcS5aR1nzgEzJ8tn3E=\""
+          "Value": "\"H8JbdPBj/QwoBDY3HNI+u2fi4se9UrDDaHGwRhveogM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:07 GMT"
+          "Value": "Fri, 05 Sep 2025 12:37:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tomCEFtH4Z1HTYpkTxg8MGVs6oKkJKymbLVCPUQCyfw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6kugzioy49"
+        },
+        {
+          "Name": "label",
+          "Value": "login.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tomCEFtH4Z1HTYpkTxg8MGVs6oKkJKymbLVCPUQCyfw="
+        }
+      ]
+    },
+    {
+      "Route": "login.6kugzioy49.css",
+      "AssetFile": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\wwwroot\\login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6004"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tomCEFtH4Z1HTYpkTxg8MGVs6oKkJKymbLVCPUQCyfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Sep 2025 12:37:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6kugzioy49"
+        },
+        {
+          "Name": "label",
+          "Value": "login.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tomCEFtH4Z1HTYpkTxg8MGVs6oKkJKymbLVCPUQCyfw="
+        }
+      ]
+    },
+    {
+      "Route": "login.6kugzioy49.css.gz",
+      "AssetFile": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\e0k0vd0rpw-6kugzioy49.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1483"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H8JbdPBj/QwoBDY3HNI+u2fi4se9UrDDaHGwRhveogM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Sep 2025 12:37:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6kugzioy49"
+        },
+        {
+          "Name": "label",
+          "Value": "login.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H8JbdPBj/QwoBDY3HNI+u2fi4se9UrDDaHGwRhveogM="
+        }
+      ]
+    },
+    {
+      "Route": "login.css",
+      "AssetFile": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\e0k0vd0rpw-6kugzioy49.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000673854447"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1483"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H8JbdPBj/QwoBDY3HNI+u2fi4se9UrDDaHGwRhveogM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Sep 2025 12:37:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -51051,13 +51212,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"T9TXCS8s3X0Pz0kSOeyIEs+ddRcNS17mytt8vNO93MU=\""
+          "Value": "W/\"tomCEFtH4Z1HTYpkTxg8MGVs6oKkJKymbLVCPUQCyfw=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-T9TXCS8s3X0Pz0kSOeyIEs+ddRcNS17mytt8vNO93MU="
+          "Value": "sha256-tomCEFtH4Z1HTYpkTxg8MGVs6oKkJKymbLVCPUQCyfw="
         }
       ]
     },
@@ -51072,7 +51233,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5260"
+          "Value": "6004"
         },
         {
           "Name": "Content-Type",
@@ -51080,11 +51241,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"T9TXCS8s3X0Pz0kSOeyIEs+ddRcNS17mytt8vNO93MU=\""
+          "Value": "\"tomCEFtH4Z1HTYpkTxg8MGVs6oKkJKymbLVCPUQCyfw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:07 GMT"
+          "Value": "Fri, 05 Sep 2025 12:37:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -51094,13 +51255,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-T9TXCS8s3X0Pz0kSOeyIEs+ddRcNS17mytt8vNO93MU="
+          "Value": "sha256-tomCEFtH4Z1HTYpkTxg8MGVs6oKkJKymbLVCPUQCyfw="
         }
       ]
     },
     {
       "Route": "login.css.gz",
-      "AssetFile": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\e0k0vd0rpw-jzduy4whwf.gz",
+      "AssetFile": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\e0k0vd0rpw-6kugzioy49.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -51109,7 +51270,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1430"
+          "Value": "1483"
         },
         {
           "Name": "Content-Type",
@@ -51117,11 +51278,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ahGi5ihWSDCuP9mOG2z6ZomOGXcS5aR1nzgEzJ8tn3E=\""
+          "Value": "\"H8JbdPBj/QwoBDY3HNI+u2fi4se9UrDDaHGwRhveogM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:07 GMT"
+          "Value": "Fri, 05 Sep 2025 12:37:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -51139,7 +51300,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ahGi5ihWSDCuP9mOG2z6ZomOGXcS5aR1nzgEzJ8tn3E="
+          "Value": "sha256-H8JbdPBj/QwoBDY3HNI+u2fi4se9UrDDaHGwRhveogM="
         }
       ]
     },
@@ -51277,167 +51438,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-doIugRxJhhDJzCtjV7XczN9dUrAjkO1+jJdfAvSvL/Y="
-        }
-      ]
-    },
-    {
-      "Route": "login.jzduy4whwf.css",
-      "AssetFile": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\e0k0vd0rpw-jzduy4whwf.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000698812020"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1430"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ahGi5ihWSDCuP9mOG2z6ZomOGXcS5aR1nzgEzJ8tn3E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"T9TXCS8s3X0Pz0kSOeyIEs+ddRcNS17mytt8vNO93MU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jzduy4whwf"
-        },
-        {
-          "Name": "label",
-          "Value": "login.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-T9TXCS8s3X0Pz0kSOeyIEs+ddRcNS17mytt8vNO93MU="
-        }
-      ]
-    },
-    {
-      "Route": "login.jzduy4whwf.css",
-      "AssetFile": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\wwwroot\\login.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5260"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"T9TXCS8s3X0Pz0kSOeyIEs+ddRcNS17mytt8vNO93MU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jzduy4whwf"
-        },
-        {
-          "Name": "label",
-          "Value": "login.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-T9TXCS8s3X0Pz0kSOeyIEs+ddRcNS17mytt8vNO93MU="
-        }
-      ]
-    },
-    {
-      "Route": "login.jzduy4whwf.css.gz",
-      "AssetFile": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\obj\\Debug\\net9.0\\compressed\\e0k0vd0rpw-jzduy4whwf.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1430"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ahGi5ihWSDCuP9mOG2z6ZomOGXcS5aR1nzgEzJ8tn3E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 03 Sep 2025 09:52:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jzduy4whwf"
-        },
-        {
-          "Name": "label",
-          "Value": "login.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ahGi5ihWSDCuP9mOG2z6ZomOGXcS5aR1nzgEzJ8tn3E="
         }
       ]
     },
