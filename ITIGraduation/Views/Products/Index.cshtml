@@ -66,13 +66,18 @@
                             </div>
                             <div class="prev-price">$250.00</div>
                         </div> *@
-                       
-                        
+
+
                     </div>
                     <div class="btnsFromMe" >
-                        <a asp-action="Edit" asp-route-id="@item.ProuductId" asp-fragment="ProductView" class="btn Edit text-white ">Edit</a>
-                        <a asp-action="Details" asp-route-id="@item.ProuductId" asp-fragment="ProductView" class="btn Details text-white">Details</a>
-                        <a asp-action="Delete" asp-route-id="@item.ProuductId" asp-fragment="ProductView" class="btn Delete text-white ">Delete</a>
+                        @if (isAdmin)
+                        {
+
+
+                            <a asp-action="Edit" asp-route-id="@item.ProuductId" asp-fragment="ProductView" class="btn Edit text-white ">Edit</a>
+                            <a asp-action="Details" asp-route-id="@item.ProuductId" asp-fragment="ProductView" class="btn Details text-white">Details</a>
+                            <a asp-action="Delete" asp-route-id="@item.ProuductId" asp-fragment="ProductView" class="btn Delete text-white ">Delete</a>
+                        }
                     </div>
                 </div>
 
