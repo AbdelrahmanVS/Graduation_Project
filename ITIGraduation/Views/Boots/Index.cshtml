@@ -68,9 +68,9 @@
                         <div class="btnsFromMe">
                             @if (isAdmin)
                             {
-                                <a asp-action="Edit" asp-route-id="@item.BootId" class="btn Edit text-white ">Edit</a>
-                                <a asp-action="Details" asp-route-id="@item.BootId" class="btn Details text-white">Details</a>
-                                <a asp-action="Delete" asp-route-id="@item.BootId" class="btn Delete text-white ">Delete</a>
+                            <a asp-action="Edit" asp-route-id="@item.BootId" asp-fragment="ProductView" class="btn Edit text-white ">Edit</a>
+                            <a asp-action="Details" asp-route-id="@item.BootId" asp-fragment="ProductView" class="btn Details text-white">Details</a>
+                            <a asp-action="Delete" asp-route-id="@item.BootId" asp-fragment="ProductView" class="btn Delete text-white ">Delete</a>
                             }
                             
                         </div>

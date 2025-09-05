@@ -61,8 +61,6 @@ namespace SparkMain.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-
         public async Task<IActionResult> Create([Bind("ProudId,ProudName,Size,Price,ImagUrl,Imag2,Imag3,Imag4")] TrendingSelling trendingSelling)
         {
             if (ModelState.IsValid)

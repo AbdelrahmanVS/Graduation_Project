@@ -3,11 +3,9 @@
 @inject UserManager<AppUser> UserManager
 @inject SignInManager<AppUser> SignInManager
 
-@if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
-{
-    <a class="btn btn-primary" asp-action="Create">Add New</a>
+@{
+    var isAdmin = User.IsInRole("Admin");
 }
-
 
 
 @{
@@ -18,9 +16,13 @@
 <div class="product_page" id="ProductView">
     <h1>Best Selling</h1>
 
-    <p>
-        <a asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
-    </p>
+    @if (isAdmin)
+    {
+        <p>
+            <a asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
+        </p>
+    }
+
     <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
         @foreach (var item in Model)
@@ -68,9 +70,9 @@
                         
                     </div>
                     <div class="btnsFromMe" >
-                        <a asp-action="Edit" asp-route-id="@item.ProuductId" class="btn Edit text-white ">Edit</a>
-                        <a asp-action="Details" asp-route-id="@item.ProuductId" class="btn Details text-white">Details</a>
-                        <a asp-action="Delete" asp-route-id="@item.ProuductId" class="btn Delete text-white ">Delete</a>
+                        <a asp-action="Edit" asp-route-id="@item.ProuductId" asp-fragment="ProductView" class="btn Edit text-white ">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.ProuductId" asp-fragment="ProductView" class="btn Details text-white">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.ProuductId" asp-fragment="ProductView" class="btn Delete text-white ">Delete</a>
                     </div>
                 </div>
 

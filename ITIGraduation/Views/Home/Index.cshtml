@@ -21,7 +21,7 @@
                 @if (isAdmin)
                 {
                     <p>
-                        <a asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
+                        <a asp-controller="Trendingsellings" asp-fragment="ProductView" asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
                     </p>
                 }
 
@@ -64,9 +64,15 @@
                                     <div class="btnsFromMe">
                                         @if (isAdmin)
                                         {
-                                            <a asp-action="Edit" asp-route-id="@trend.ProudId" class="btn Edit text-white ">Edit</a>
-                                            <a asp-action="Details" asp-route-id="@trend.ProudId" class="btn Details text-white">Details</a>
-                                            <a asp-action="Delete" asp-route-id="@trend.ProudId" class="btn Delete text-white ">Delete</a>
+                                            <a asp-controller="TrendingSellings"
+                                               asp-action="Edit"
+                                               asp-route-id="@trend.ProudId"
+                                               asp-fragment="ProductView"
+                                               class="btn Edit text-white">
+                                                Edit
+                                            </a>
+                                            <a asp-controller="TrendingSellings" asp-action="Details" asp-route-id="@trend.ProudId" asp-fragment="ProductView" class="btn Details text-white">Details</a>
+                                            <a asp-controller="TrendingSellings" asp-action="Delete" asp-route-id="@trend.ProudId" asp-fragment="ProductView" class="btn Delete text-white ">Delete</a>
                                         }
                                     </div>
                                 </div>
@@ -97,7 +103,7 @@
                     <h2 class="section-title">Best selling products</h2>
 
                     <div class="d-flex align-items-center">
-                        <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+                        <a href="/Products/index#ProductView" class="btn-link text-decoration-none">View All Best Products →</a>
                         <div class="swiper-buttons">
                             <button class="swiper-prev products-carousel-prev btn btn-primary">❮</button>
                             <button class="swiper-next products-carousel-next btn btn-primary">❯</button>
@@ -110,7 +116,7 @@
         @if (isAdmin)
         {
             <p>
-                <a asp-action="Create" class="btn btn-primary mb-3">+ Add Product</a>
+                <a asp-controller="Products" asp-action="Create" asp-fragment="ProductView" class="btn btn-primary mb-3">+ Add Product</a>
             </p>
         }
         <div class="row">
@@ -159,9 +165,9 @@
                                         <div class="btnsFromMe">
                                             @if (isAdmin)
                                             {
-                                                <a asp-action="Edit" asp-route-id="@prod.ProuductId" class="btn Edit text-white ">Edit</a>
-                                                <a asp-action="Details" asp-route-id="@prod.ProuductId" class="btn Details text-white">Details</a>
-                                                <a asp-action="Delete" asp-route-id="@prod.ProuductId" class="btn Delete text-white ">Delete</a>
+                                                <a asp-controller="Products" asp-action="Edit" asp-route-id="@prod.ProuductId" asp-fragment="ProductView" class="btn Edit text-white ">Edit</a>
+                                                <a asp-controller="Products" asp-action="Details" asp-route-id="@prod.ProuductId" asp-fragment="ProductView" class="btn Details text-white">Details</a>
+                                                <a asp-controller="Products" asp-action="Delete" asp-route-id="@prod.ProuductId" asp-fragment="ProductView" class="btn Delete text-white ">Delete</a>
                                             }
                                         </div>
                                     </div>
