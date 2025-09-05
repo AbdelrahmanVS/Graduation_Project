@@ -255,12 +255,12 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\login.css
 wwwroot\login.js
 wwwroot\readme.txt
 wwwroot\style.css
 wwwroot\.vscode\settings.json
 wwwroot\ecommerce-product-page-html-css-javascript-main\.vscode\settings.json
+wwwroot\login.css
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\css\normalize.css
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\css\vendor.css
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\cart.js
@@ -358,9 +358,9 @@ C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\lib\jquery\dist\jqu
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\login.css
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\login.js
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\readme.txt
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\style.css
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\.vscode\settings.json
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\ecommerce-product-page-html-css-javascript-main\.vscode\settings.json
+C:\Users\BULLET\source\repos\git_clone\ITIGraduation\wwwroot\login.css

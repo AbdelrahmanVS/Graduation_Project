@@ -1078,7 +1078,6 @@ C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\compressed
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\compressed\5bs753kitl-9vr69e8ynj.gz
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\compressed\4dobn68yzt-87fc7y1x7t.gz
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\compressed\r8xq3btlcy-mlv21k5csn.gz
-C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\compressed\e0k0vd0rpw-jzduy4whwf.gz
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\compressed\o60urd069q-nf60cn5l3f.gz
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\compressed\ir0i0b1gjy-lxqi3edhv3.gz
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\compressed\qh63g446xo-qebwet0i3v.gz
@@ -1097,3 +1096,4 @@ C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\refint\ITI
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\ITIGraduation.pdb
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\ITIGraduation.genruntimeconfig.cache
 C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\ref\ITIGraduation.dll
+C:\Users\BULLET\source\repos\git_clone\ITIGraduation\obj\Debug\net9.0\compressed\e0k0vd0rpw-6kugzioy49.gz

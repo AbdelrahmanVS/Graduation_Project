@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\views\\shared\\_loginpartail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\shared\\_loginpartail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\wwwroot\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:wwwroot\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,6 +13,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\itigraduation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:itigraduation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\views\\shared\\_loginpartail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\shared\\_loginpartail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|solutionrelative:controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56263E41-7D5D-4B48-9D90-70959380F9E6}|ITIGraduation.csproj|c:\\users\\bullet\\source\\repos\\git_clone\\itigraduation\\controllers\\boots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -297,7 +305,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -321,54 +329,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Account\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Index.cshtml",
-              "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Account\\Index.cshtml",
-              "RelativeToolTip": "Views\\Account\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-04T09:29:11.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Controllers\\Account.cs",
-              "RelativeDocumentMoniker": "Controllers\\Account.cs",
-              "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Controllers\\Account.cs",
-              "RelativeToolTip": "Controllers\\Account.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T09:21:46.102Z",
+              "DocumentIndex": 0,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\wwwroot\\login.css",
+              "RelativeDocumentMoniker": "wwwroot\\login.css",
+              "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\wwwroot\\login.css",
+              "RelativeToolTip": "wwwroot\\login.css",
+              "ViewState": "AgIAACcBAAAAAAAAAAAIwDABAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-04T13:54:53.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "20250903214237_changtrend.cs",
-              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250903214237_changtrend.cs",
-              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250903214237_changtrend.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T21:42:37.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Boots\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Boots\\Index.cshtml",
-              "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Boots\\Index.cshtml",
-              "RelativeToolTip": "Views\\Boots\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T12:14:27.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Boots\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Boots\\Edit.cshtml",
@@ -380,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Boots\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Boots\\Details.cshtml",
@@ -392,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Boots\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Boots\\Delete.cshtml",
@@ -404,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Boots\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Boots\\Create.cshtml",
@@ -416,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\TrendingSellings\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\TrendingSellings\\Index.cshtml",
@@ -428,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\TrendingSellings\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\TrendingSellings\\Edit.cshtml",
@@ -440,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\TrendingSellings\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\TrendingSellings\\Details.cshtml",
@@ -452,32 +426,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEcDAAAAAAAAAAAIwFIDAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T11:34:22.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T11:34:22.266Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "_LoginPartail.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Shared\\_LoginPartail.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartail.cshtml",
               "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Shared\\_LoginPartail.cshtml",
               "RelativeToolTip": "Views\\Shared\\_LoginPartail.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-04T09:45:23.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\TrendingSellings\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\TrendingSellings\\Delete.cshtml",
@@ -489,7 +462,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwC8AAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T10:06:27.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20250903214237_changtrend.cs",
+              "DocumentMoniker": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250903214237_changtrend.cs",
+              "ToolTip": "D:\\ITI\\graduation\\NEW Repo\\Graduation_Project\\ITIGraduation\\Migrations\\Spark\\20250903214237_changtrend.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T21:42:37.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Controllers\\Account.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account.cs",
+              "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Controllers\\Account.cs",
+              "RelativeToolTip": "Controllers\\Account.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T09:21:46.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Account\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Account\\Index.cshtml",
+              "RelativeToolTip": "Views\\Account\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-04T09:29:11.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITIGraduation.csproj",
+              "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\ITIGraduation.csproj",
+              "RelativeDocumentMoniker": "ITIGraduation.csproj",
+              "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\ITIGraduation.csproj",
+              "RelativeToolTip": "ITIGraduation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-04T13:46:58.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Boots\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Boots\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Boots\\Index.cshtml",
+              "RelativeToolTip": "Views\\Boots\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T12:14:27.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\TrendingSellings\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\TrendingSellings\\Create.cshtml",
@@ -501,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Sports\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Sports\\Index.cshtml",
@@ -513,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Sports\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Sports\\Edit.cshtml",
@@ -525,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Sports\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Sports\\Details.cshtml",
@@ -537,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Sports\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Sports\\Delete.cshtml",
@@ -549,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Sports\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Sports\\Create.cshtml",
@@ -561,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Oxfords\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Oxfords\\Index.cshtml",
@@ -573,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Oxfords\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Oxfords\\Edit.cshtml",
@@ -585,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Oxfords\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Oxfords\\Details.cshtml",
@@ -597,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Oxfords\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Oxfords\\Delete.cshtml",
@@ -609,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Oxfords\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Oxfords\\Create.cshtml",
@@ -621,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Products\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
@@ -633,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Products\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Products\\Edit.cshtml",
@@ -645,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Products\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Products\\Details.cshtml",
@@ -657,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Products\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Products\\Delete.cshtml",
@@ -669,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Products\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Products\\Create.cshtml",
@@ -681,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -693,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "20250514193933_9875.Designer.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\20250514193933_9875.Designer.cs",
               "RelativeDocumentMoniker": "Migrations\\20250514193933_9875.Designer.cs",
@@ -705,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "20250514201500_78.Designer.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\Spark\\20250514201500_78.Designer.cs",
               "RelativeDocumentMoniker": "Migrations\\Spark\\20250514201500_78.Designer.cs",
@@ -717,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "20250514200633_668.Designer.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\Spark\\20250514200633_668.Designer.cs",
               "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200633_668.Designer.cs",
@@ -729,7 +772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "20250514200441_new.Designer.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\Spark\\20250514200441_new.Designer.cs",
               "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200441_new.Designer.cs",
@@ -741,7 +784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "20250514200525_45.Designer.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\Spark\\20250514200525_45.Designer.cs",
               "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200525_45.Designer.cs",
@@ -753,7 +796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
@@ -765,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -777,7 +820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -789,7 +832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -801,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "SparkContext.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Data\\SparkContext.cs",
               "RelativeDocumentMoniker": "Data\\SparkContext.cs",
@@ -813,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "SparkContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\Spark\\SparkContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\Spark\\SparkContextModelSnapshot.cs",
@@ -825,7 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "20250514201500_78.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\Spark\\20250514201500_78.cs",
               "RelativeDocumentMoniker": "Migrations\\Spark\\20250514201500_78.cs",
@@ -837,7 +880,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "20250514200633_668.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\Spark\\20250514200633_668.cs",
               "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200633_668.cs",
@@ -849,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "20250514200525_45.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\Spark\\20250514200525_45.cs",
               "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200525_45.cs",
@@ -861,7 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "20250514200441_new.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\Spark\\20250514200441_new.cs",
               "RelativeDocumentMoniker": "Migrations\\Spark\\20250514200441_new.cs",
@@ -873,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "20250514193933_9875.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Migrations\\20250514193933_9875.cs",
               "RelativeDocumentMoniker": "Migrations\\20250514193933_9875.cs",
@@ -885,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "RegisterVM.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\ViewModels\\RegisterVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\RegisterVM.cs",
@@ -897,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "LoginVM.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\ViewModels\\LoginVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\LoginVM.cs",
@@ -909,7 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "Combied.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\ViewModels\\Combied.cs",
               "RelativeDocumentMoniker": "ViewModels\\Combied.cs",
@@ -921,7 +964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "UserSportPurchase.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\UserSportPurchase.cs",
               "RelativeDocumentMoniker": "Models\\UserSportPurchase.cs",
@@ -933,7 +976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "UserOxfordPurchase.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\UserOxfordPurchase.cs",
               "RelativeDocumentMoniker": "Models\\UserOxfordPurchase.cs",
@@ -945,7 +988,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "UserBootPurchase.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\UserBootPurchase.cs",
               "RelativeDocumentMoniker": "Models\\UserBootPurchase.cs",
@@ -957,7 +1000,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -969,7 +1012,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "TrendingSelling.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\TrendingSelling.cs",
               "RelativeDocumentMoniker": "Models\\TrendingSelling.cs",
@@ -981,7 +1024,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Sport.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\Sport.cs",
               "RelativeDocumentMoniker": "Models\\Sport.cs",
@@ -993,7 +1036,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "SearchResultVM.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\SearchResultVM.cs",
               "RelativeDocumentMoniker": "Models\\SearchResultVM.cs",
@@ -1005,7 +1048,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "Prouduct.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\Prouduct.cs",
               "RelativeDocumentMoniker": "Models\\Prouduct.cs",
@@ -1017,7 +1060,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 71,
               "Title": "Oxford.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\Oxford.cs",
               "RelativeDocumentMoniker": "Models\\Oxford.cs",
@@ -1029,7 +1072,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "Inventory.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\Inventory.cs",
               "RelativeDocumentMoniker": "Models\\Inventory.cs",
@@ -1041,7 +1084,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -1053,7 +1096,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "Boot.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\Boot.cs",
               "RelativeDocumentMoniker": "Models\\Boot.cs",
@@ -1065,7 +1108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "BestAndTrend.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\BestAndTrend.cs",
               "RelativeDocumentMoniker": "Models\\BestAndTrend.cs",
@@ -1077,7 +1120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 72,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Models\\AppUser.cs",
               "RelativeDocumentMoniker": "Models\\AppUser.cs",
@@ -1089,7 +1132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -1101,19 +1144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwAwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T10:06:27.186Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -1125,7 +1156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "Products.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Controllers\\Products.cs",
               "RelativeDocumentMoniker": "Controllers\\Products.cs",
@@ -1137,7 +1168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "TrendingSellings.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Controllers\\TrendingSellings.cs",
               "RelativeDocumentMoniker": "Controllers\\TrendingSellings.cs",
@@ -1149,7 +1180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "Sports.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Controllers\\Sports.cs",
               "RelativeDocumentMoniker": "Controllers\\Sports.cs",
@@ -1161,7 +1192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "Oxfords.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Controllers\\Oxfords.cs",
               "RelativeDocumentMoniker": "Controllers\\Oxfords.cs",
@@ -1173,7 +1204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Boots.cs",
               "DocumentMoniker": "C:\\Users\\BULLET\\source\\repos\\git_clone\\ITIGraduation\\Controllers\\Boots.cs",
               "RelativeDocumentMoniker": "Controllers\\Boots.cs",
