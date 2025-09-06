@@ -10,6 +10,7 @@ const cartCount = document.querySelector(".cart-count");
 
 let count = 0;
 let totalCartQty = 0;
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const updateCount = (newCount) => {
   count = newCount;
@@ -45,10 +46,10 @@ const updateTotalCartQty = () => {
 const addItemToCart = (name, price, imageSrc) => {
   const totalPrice = count * price;
 
-  const cartItem = document.createElement("div");
-  cartItem.classList.add("cart-item");
+    const cartItem = document.createElement("div");
+    cartItem.classList.add("cart-item");
   cartItem.dataset.quantity = count;
-  cartItem.innerHTML = `
+    cartItem.innerHTML = `
       <img src="${imageSrc}" alt="${name}" />
       <div class="item-details">
         <div>${name}</div>
@@ -64,9 +65,9 @@ const addItemToCart = (name, price, imageSrc) => {
         </button>
     `;
 
-  cartItems.appendChild(cartItem);
+    cartItems.appendChild(cartItem);
 
-  updateTotalCartQty();
+      updateTotalCartQty();
 
   if (cartItems.classList.contains("empty")) {
     cartItems.classList.remove("empty");
@@ -93,15 +94,16 @@ addToCartBtn.addEventListener("click", () => {
 
   addItemToCart(productName, productPrice, productImg);
   cartContainer.classList.add("active");
-
   updateCount(0);
 });
 
-// remove item from cart
-
-const removeItemFromCart = (cartItem) => {
-  cartItem.remove();
-  updateTotalCartQty();
+checkout.addEventListener("click", () => {
+  // Build query string for payment page with all items
+  if (cart.length === 0) return;
+  let itemsParam = cart.map((i) => `${encodeURIComponent(i.name)}:${i.count}:${i.price}`).join(",");
+  let totalAmount = cart.reduce((sum, i) => sum + i.price * i.count, 0);
+  window.location.href = `/pay/Index?amount=${totalAmount}&items=${itemsParam}`;
+});
 
   if (cartItems.children.length === 1) {
     cartItems.classList.add("empty");

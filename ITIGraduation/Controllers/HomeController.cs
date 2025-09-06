@@ -23,38 +23,52 @@ namespace SparkMain.Controllers
         public IActionResult Index()
         {
             List<BestAndTrend> bestandtrend = new List<BestAndTrend> { new BestAndTrend(_context.TrendingSellings.ToList(), _context.Prouducts.ToList()) };
-
-
             return View(bestandtrend);
         }
 
         public async Task<IActionResult> Search(string? searchTerm)
         {
             var result = new SearchResultVM();
-
-            if (!string.IsNullOrWhiteSpace(searchTerm))
+            try
             {
-                result.Products = await _context.Prouducts
-                    .Where(p => p.ProuductName != null && p.ProuductName.Contains(searchTerm))
-                    .ToListAsync();
+                if (!string.IsNullOrWhiteSpace(searchTerm))
+                {
+                    result.Products = await _context.Prouducts
+                        .Where(p => p.ProuductName != null && p.ProuductName.Contains(searchTerm))
+                        .ToListAsync();
 
-                result.Sports = await _context.Sports
-                    .Where(s => s.SportName != null && s.SportName.Contains(searchTerm))
-                    .ToListAsync();
+                    result.Sports = await _context.Sports
+                        .Where(s => s.SportName != null && s.SportName.Contains(searchTerm))
+                        .ToListAsync();
 
-                result.Boots = await _context.Boots
-                    .Where(b => b.BootName != null && b.BootName.Contains(searchTerm))
-                    .ToListAsync();
+                    result.Boots = await _context.Boots
+                        .Where(b => b.BootName != null && b.BootName.Contains(searchTerm))
+                        .ToListAsync();
 
-                result.TrendingSellings = await _context.TrendingSellings
-                    .Where(t => t.ProudName != null && t.ProudName.Contains(searchTerm))
-                    .ToListAsync();
+                    result.TrendingSellings = await _context.TrendingSellings
+                        .Where(t => t.ProudName != null && t.ProudName.Contains(searchTerm))
+                        .ToListAsync();
 
-                result.Oxfords = await _context.Oxfords
-                    .Where(o => o.BootName != null && o.BootName.Contains(searchTerm))
-                    .ToListAsync();
+                    result.Oxfords = await _context.Oxfords
+                        .Where(o => o.BootName != null && o.BootName.Contains(searchTerm))
+                        .ToListAsync();
+
+                    // If no results found, set a message
+                    if (!result.Products.Any() && !result.Sports.Any() && !result.Boots.Any() && !result.TrendingSellings.Any() && !result.Oxfords.Any())
+                    {
+                        ViewData["SearchMessage"] = "No results found for '" + searchTerm + "'.";
+                    }
+                }
+                else
+                {
+                    ViewData["SearchMessage"] = "Please enter a search term.";
+                }
             }
-
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred during search.");
+                ViewData["SearchMessage"] = "An error occurred while searching. Please try again later.";
+            }
             return View(result);
         }
 
