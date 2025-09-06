@@ -7,7 +7,7 @@
 
     <h2>Edit Sport</h2>
 
-    <form asp-action="Edit">
+    <form asp-action="Edit" enctype="multipart/form-data">
         <input type="hidden" asp-for="SportId" />
 
         <div class="form-group">
@@ -22,19 +22,29 @@
             <label asp-for="Price"></label>
             <input asp-for="Price" class="form-control" />
         </div>
+
+        <!-- صورة حالية -->
+        @if (!string.IsNullOrEmpty(Model.ImagUrl))
+        {
+            <div class="form-group">
+                <label>Current Image:</label><br />
+                <img src="@Url.Content(Model.ImagUrl)" alt="Product Image" width="150" />
+            </div>
+        }
+
+        <!-- رفع صورة جديدة -->
         <div class="form-group">
-            <label asp-for="ImagUrl"></label>
-            <input asp-for="ImagUrl" class="form-control" />
+            <label>Upload New Image</label>
+            <input type="file" name="ImageFile" class="form-control" />
         </div>
+
         <button type="submit" class="btn btn-warning">Save Changes</button>
         <a asp-action="Index" asp-fragment="ProductView" class="btn btn-secondary">Cancel</a>
-       
     </form>
-
-    </div>
-
-
+</div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

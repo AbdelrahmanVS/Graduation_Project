@@ -60,17 +60,30 @@ namespace SparkMain.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("SportId,SportName,Size,Price,ImagUrl")] Sport sport)
+        public async Task<IActionResult> Create([Bind("SportId,SportName,Size,Price")] Sport sport, IFormFile ImageFile)
         {
             if (ModelState.IsValid)
             {
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    var fileName = Path.GetFileName(ImageFile.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+
+                    // هنا نحط مسار الصورة اللي هيتخزن في SQL
+                    sport.ImagUrl = "~/images/" + fileName;
+                }
+
                 _context.Add(sport);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(sport);
         }
-
         // GET: Sports/Edit/5
         [Authorize(Roles = "Admin")]
 
@@ -96,30 +109,39 @@ namespace SparkMain.Controllers
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
 
-        public async Task<IActionResult> Edit(int id, [Bind("SportId,SportName,Size,Price,ImagUrl")] Sport sport)
+        public async Task<IActionResult> Edit(int id, Sport sport, IFormFile? ImageFile)
         {
             if (id != sport.SportId)
-            {
                 return NotFound();
-            }
 
             if (ModelState.IsValid)
             {
                 try
                 {
+                    // لو المستخدم رفع صورة جديدة
+                    if (ImageFile != null && ImageFile.Length > 0)
+                    {
+                        var fileName = Path.GetFileName(ImageFile.FileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await ImageFile.CopyToAsync(stream);
+                        }
+
+                        // نخزن المسار بصيغة ~/
+                        sport.ImagUrl = "~/images/" + fileName;
+                    }
+
                     _context.Update(sport);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!SportExists(sport.SportId))
-                    {
+                    if (!_context.Sports.Any(e => e.SportId == sport.SportId))
                         return NotFound();
-                    }
                     else
-                    {
                         throw;
-                    }
                 }
                 return RedirectToAction(nameof(Index));
             }

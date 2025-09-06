@@ -62,16 +62,30 @@ namespace SparkMain.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([Bind("OxfordId,BootName,Size,Price,ImagUrl")] Oxford oxford)
+        public async Task<IActionResult> Create(Oxford oxford, IFormFile? ImageFile)
         {
             if (ModelState.IsValid)
             {
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    var fileName = Path.GetFileName(ImageFile.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+
+                    oxford.ImagUrl = "~/images/NewOxfords/" + fileName;
+                }
+
                 _context.Add(oxford);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(oxford);
         }
+
 
         // GET: Oxfords/Edit/5
         [Authorize(Roles = "Admin")]

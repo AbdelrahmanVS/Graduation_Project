@@ -61,15 +61,15 @@ namespace SparkMain.Controllers
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
 
-        public async Task<IActionResult> Create([Bind("BootId,BootName,Size,ImagUrl,Price")] Boot boot)
+        public async Task<IActionResult> Create([Bind("OxfordId,BootName,Size,Price,ImagUrl")] Oxford oxford)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(boot);
+                _context.Add(oxford);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(boot);
+            return View(oxford);
         }
 
         // GET: Boots/Edit/5

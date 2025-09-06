@@ -49,8 +49,10 @@ public partial class SparkContext : DbContext
             entity.ToTable("boots");
 
             entity.Property(e => e.BootId)
-                .ValueGeneratedNever()
-                .HasColumnName("boot_id");
+                .ValueGeneratedOnAdd()
+                .HasColumnName("boot_id")
+                .HasAnnotation("SqlServer:Identity", "1000, 1"); // يبدأ من 1000 ويزيد 1
+
             entity.Property(e => e.BootName)
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -95,8 +97,10 @@ public partial class SparkContext : DbContext
             entity.ToTable("oxford");
 
             entity.Property(e => e.OxfordId)
-                .ValueGeneratedNever()
-                .HasColumnName("oxford_id");
+                .ValueGeneratedOnAdd()
+                .HasColumnName("oxford_id")
+                        .HasAnnotation("SqlServer:Identity", "1000, 1"); // يبدأ من 1000 ويزيد 1
+
             entity.Property(e => e.BootName)
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -118,7 +122,7 @@ public partial class SparkContext : DbContext
             entity.ToTable("Prouduct");
 
             entity.Property(e => e.ProuductId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("Prouduct_id");
             entity.Property(e => e.ImagUrl)
                 .HasMaxLength(300)
@@ -141,7 +145,7 @@ public partial class SparkContext : DbContext
             entity.ToTable("sport");
 
             entity.Property(e => e.SportId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("sport_id");
             entity.Property(e => e.ImagUrl)
                 .HasMaxLength(300)
@@ -164,7 +168,7 @@ public partial class SparkContext : DbContext
             entity.ToTable("Trending_selling");
 
             entity.Property(e => e.ProudId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("Proud_id");
             entity.Property(e => e.Imag2)
                 .HasMaxLength(300)

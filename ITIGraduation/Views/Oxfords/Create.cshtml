@@ -16,14 +16,14 @@
             <input asp-for="Price" class="form-control" />
         </div>
         <div class="form-group">
-            <label asp-for="ImagUrl"></label>
-            <input asp-for="ImagUrl" class="form-control" />
+            <label>Upload Image</label>
+            <input type="file" name="ImageFile" class="form-control" />
         </div>
         <button type="submit" class="btn btn-success">Create</button>
-        <a asp-action="Index" asp-fragment="ProductView" class="btn btn-secondary">Cancel</a>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
     </form>
 
-   
+
 </div>
 
 
@@ -31,5 +31,7 @@
 
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

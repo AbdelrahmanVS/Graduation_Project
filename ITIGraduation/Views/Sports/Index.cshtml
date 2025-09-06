@@ -32,7 +32,7 @@
                     <span class="badge bg-success position-absolute m-3">-30%</span>
                     <figure>
                         <a href="@Url.Action("Details", "sports", new { id = item.SportId })#ProductView" title="Product Title">
-                            <img src="@Url.Content(@item.ImagUrl)" alt="@item.SportName" class="img-fluid">
+                            <img src="@Url.Content(item.ImagUrl)" alt="@item.SportName" width="150" />
                         </a>
                     </figure>
                     <div class="content">
