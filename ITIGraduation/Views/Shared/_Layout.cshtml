@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using ITIGraduation.Helper
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -106,46 +107,69 @@
         <div class="preloader">
         </div>
     </div>
-
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart">
-        <div class="offcanvas-header justify-content-center">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasCartLabel">Shopping Cart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-            <div class="order-md-last">
-                <h4 class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="text-primary">Your cart</span>
-                    <span class="badge bg-primary rounded-pill">3</span>
-                </h4>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex justify-content-between lh-sm">
-                        <div>
-                            <h6 class="my-0">Product One</h6>
-                            <small class="text-body-secondary">Brief description</small>
+
+        @{
+            var cart = Context.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+        }
+
+        <div class="offcanvas-body p-0">
+            @if (cart.Any())
+            {
+                <div class="container-fluid p-3">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h6 class="fw-bold mb-0">Your Items</h6>
+                        <h6 class="mb-0 text-muted">@cart.Sum(c => c.Quantity) items</h6>
+                    </div>
+                    <hr />
+
+                    @foreach (var item in cart)
+                    {
+                        <div class="row mb-3 d-flex justify-content-between align-items-center">
+                            <div class="col-3">
+                            </div>
+                            <div class="col-5">
+                                <h6 class="text-muted">@item.ProductType</h6>
+                                <h6 class="mb-0">@item.ProductName</h6>
+                            </div>
+                            <div class="col-4 d-flex justify-content-end align-items-center">
+                                <button class="btn btn-link px-2"
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+
+                                <input min="1" name="quantity" value="@item.Quantity" type="number"
+                                       class="form-control form-control-sm text-center" style="width: 60px;" />
+
+                                <button class="btn btn-link px-2"
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="col-12 d-flex justify-content-between mt-2">
+                                <span class="fw-bold">€ @item.Price</span>
+                                <span class="fw-bold">Total: € @(item.Price* item.Quantity)</span>
+                            </div>
                         </div>
-                        <span class="text-body-secondary">$120</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between lh-sm">
-                        <div>
-                            <h6 class="my-0">Product Two</h6>
-                            <small class="text-body-secondary">Brief description</small>
-            </div>
-                        <span class="text-body-secondary">$80</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between lh-sm">
-                        <div>
-                            <h6 class="my-0">Product Three</h6>
-                            <small class="text-body-secondary">Brief description</small>
-        </div>
-                        <span class="text-body-secondary">$50</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <span>Total (USD)</span>
-                        <strong>$300</strong>
-                    </li>
-                </ul>
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
-    </div>
+                        <hr />
+                    }
+
+                    <div class="d-flex justify-content-between fw-bold mb-3">
+                        <span>Total:</span>
+                        <span>€ @cart.Sum(i => i.Price * i.Quantity)</span>
+                    </div>
+
+                    <a href="/Cart/Index" class="btn btn-dark w-100">Complete Your Purchase</a>
+                </div>
+            }
+            else
+            {
+                <p class="text-muted text-center mt-3">The Cart Is Empty</p>
+            }
         </div>
     </div>
 

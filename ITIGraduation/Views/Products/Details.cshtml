@@ -128,6 +128,67 @@
     </section>
 </div>
 
+
+
+<script>
+    // كمية المنتج (كم عدد القطع اللي عايز تضيفها)
+    let quantity = 1;
+    const quantitySpan = document.getElementById('quantity');
+    const minusBtn = document.querySelector('.minus');
+    const plusBtn = document.querySelector('.plus');
+    const addToCartBtn = document.getElementById('addToCartBtn');
+
+    minusBtn.addEventListener('click', () => {
+        if (quantity > 1) {
+            quantity--;
+            quantitySpan.textContent = quantity;
+        }
+    });
+
+    plusBtn.addEventListener('click', () => {
+        quantity++;
+        quantitySpan.textContent = quantity;
+    });
+       addToCartBtn.addEventListener('click', () => {
+        const productId = addToCartBtn.getAttribute('data-id');
+
+        fetch('/Cart/AddToCart', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                productId: parseInt(productId),
+                quantity: quantity,
+                productType: 'Sport' // غيّر دا حسب نوع المنتج لو مش Oxford
+            })
+        })
+            .then(response => {
+                if (response.redirected) {
+                    // تم توجيه المستخدم لصفحة تسجيل الدخول
+                    alert("يجب تسجيل الدخول أولاً لإضافة المنتج إلى السلة.");
+                    window.location.href = response.url; // نحوله يدويًا
+                    return;
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (!data) return; // تم التحويل
+                if (data.success) {
+                    alert(`تم إضافة ${quantity} قطعة إلى السلة. عدد القطع في السلة الآن: ${data.cartCount}`);
+                    quantity = 1;
+                    quantitySpan.textContent = quantity;
+                } else {
+                    alert('حدث خطأ أثناء إضافة المنتج إلى السلة');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('تعذر الاتصال بالخادم. تأكد من أن السيرفر يعمل.');
+            });
+    });
+</script>
+
 <script src="~/ecommerce-product-page-html-css-javascript-main/main.js" asp-append-version="true"></script>
 <script src="~/ecommerce-product-page-html-css-javascript-main/cart.js" asp-append-version="true"></script>
 <script src="~/ecommerce-product-page-html-css-javascript-main/slider.js" asp-append-version="true"></script>

@@ -3,9 +3,8 @@
 @{
     ViewData["Title"] = "Search Results";
 }
-
 <div class="product_page" id="ProductView">
-    <div class="container mt-4 mb-5">
+    <div class="container mt-4" style="margin-bottom:50px">
         <h2 class="mb-4">Search Results</h2>
 
         @if (ViewData["SearchMessage"] != null)
@@ -16,9 +15,9 @@
         }
 
         @if ((Model.Sports == null || !Model.Sports.Any()) &&
-        (Model.Boots == null || !Model.Boots.Any()) &&
-        (Model.TrendingSellings == null || !Model.TrendingSellings.Any()) &&
-        (Model.Oxfords == null || !Model.Oxfords.Any()))
+                (Model.Boots == null || !Model.Boots.Any()) &&
+                (Model.TrendingSellings == null || !Model.TrendingSellings.Any()) &&
+                (Model.Oxfords == null || !Model.Oxfords.Any()))
         {
             <div class="alert alert-warning text-center">
                 <strong>No results found.</strong>
@@ -26,104 +25,83 @@
         }
         else
         {
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
-
+            <div class="row g-4">
                 @* Sports *@
                 @if (Model.Sports?.Any() == true)
                 {
-                    <h4 class="col-12 mb-3">Sports</h4>
+                    <h4 class="mb-3">Sports</h4>
                     @foreach (var s in Model.Sports)
                     {
-                        <div class="col">
-                            <a asp-controller="Sports" asp-action="Details" asp-route-id="@s.SportId" asp-fragment="ProductView" class="card-link-wrapper text-decoration-none">
+                        <div class="col-md-4 col-lg-3">
+                            <a asp-controller="Sports" asp-action="Details" asp-route-id="@s.SportId" asp-fragment="ProductView" class="card-link-wrapper">
                                 <div class="card h-100 shadow-sm card-hover">
-<<<<<<< HEAD
-                                    <img src="@Url.Content(s.ImagUrl)" class="card-img-top" alt="@s.SportName" style="height:180px; object-fit:cover;">
-=======
                                     <img src="@Url.Content(s.ImagUrl)" class="card-img-top flex-img" alt="@s.SportName">
->>>>>>> 0dca3224cc0d07e396346efd573a8918aea7e9b9
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title text-dark">@s.SportName</h5>
-                                        <p class="card-text text-success fw-bold">$@s.Price</p>
+                                        <h5 class="card-title">@s.SportName</h5>
+                                        <p class="card-text text-success fw-bold">@s.Price $</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     }
                 }
-
                 @* Boots *@
                 @if (Model.Boots?.Any() == true)
                 {
-                    <h4 class="col-12 mb-3">Boots</h4>
+                    <h4 class="mb-3">Boots</h4>
                     @foreach (var b in Model.Boots)
                     {
-                        <div class="col">
-                            <a asp-controller="Boots" asp-action="Details" asp-route-id="@b.BootId" asp-fragment="ProductView" class="card-link-wrapper text-decoration-none">
+                        <div class="col-md-4 col-lg-3">
+                            <a asp-controller="Boots" asp-action="Details" asp-route-id="@b.BootId" asp-fragment="ProductView" class="card-link-wrapper">
                                 <div class="card h-100 shadow-sm card-hover">
-<<<<<<< HEAD
-                                    <img src="@Url.Content(b.ImagUrl)" class="card-img-top" alt="@b.BootName" style="height:180px; object-fit:cover;">
-=======
                                     <img src="@Url.Content(b.ImagUrl)" class="card-img-top flex-img" alt="@b.BootName">
->>>>>>> 0dca3224cc0d07e396346efd573a8918aea7e9b9
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title text-dark">@b.BootName</h5>
-                                        <p class="card-text text-success fw-bold">$@b.Price</p>
+                                        <h5 class="card-title">@b.BootName</h5>
+                                        <p class="card-text text-success fw-bold">@b.Price $</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     }
                 }
-
                 @* Trending Sellings *@
                 @if (Model.TrendingSellings?.Any() == true)
                 {
-                    <h4 class="col-12 mb-3">Trending</h4>
+                    <h4 class="mb-3">Trending</h4>
                     @foreach (var t in Model.TrendingSellings)
                     {
-                        <div class="col">
-                            <a asp-controller="TrendingSellings" asp-action="Details" asp-route-id="@t.ProudId" asp-fragment="ProductView" class="card-link-wrapper text-decoration-none">
+                        <div class="col-md-4 col-lg-3">
+                            <a asp-controller="TrendingSellings" asp-action="Details" asp-route-id="@t.ProudId" asp-fragment="ProductView" class="card-link-wrapper">
                                 <div class="card h-100 shadow-sm card-hover">
-<<<<<<< HEAD
-                                    <img src="@Url.Content(t.ImagUrl)" class="card-img-top" alt="@t.ProudName" style="height:180px; object-fit:cover;">
-=======
                                     <img src="@Url.Content(t.ImagUrl)" class="card-img-top flex-img" alt="@t.ProudName">
->>>>>>> 0dca3224cc0d07e396346efd573a8918aea7e9b9
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title text-dark">@t.ProudName</h5>
-                                        <p class="card-text text-success fw-bold">$@t.Price</p>
+                                        <h5 class="card-title">@t.ProudName</h5>
+                                        <p class="card-text text-success fw-bold">@t.Price $</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     }
                 }
-
                 @* Oxfords *@
                 @if (Model.Oxfords?.Any() == true)
                 {
-                    <h4 class="col-12 mb-3">Oxfords</h4>
+                    <h4 class="mb-3">Oxfords</h4>
                     @foreach (var o in Model.Oxfords)
                     {
-                        <div class="col">
-                            <a asp-controller="Oxfords" asp-action="Details" asp-route-id="@o.OxfordId" asp-fragment="ProductView" class="card-link-wrapper text-decoration-none">
+                        <div class="col-md-4 col-lg-3">
+                            <a asp-controller="Oxfords" asp-action="Details" asp-route-id="@o.OxfordId" asp-fragment="ProductView" class="card-link-wrapper">
                                 <div class="card h-100 shadow-sm card-hover">
-<<<<<<< HEAD
-                                    <img src="@Url.Content(o.ImagUrl)" class="card-img-top" alt="@o.BootName" style="height:180px; object-fit:cover;">
-=======
                                     <img src="@Url.Content(o.ImagUrl)" class="card-img-top flex-img" alt="@o.BootName">
->>>>>>> 0dca3224cc0d07e396346efd573a8918aea7e9b9
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title text-dark">@o.BootName</h5>
-                                        <p class="card-text text-success fw-bold">$@o.Price</p>
+                                        <h5 class="card-title">@o.BootName</h5>
+                                        <p class="card-text text-success fw-bold">@o.Price $</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     }
                 }
-
             </div>
         }
     </div>
@@ -144,6 +122,7 @@
             transform: translateY(-4px) scale(1.02);
             cursor: pointer;
         }
+
         .flex-img {
             width: 100%;
             height: auto;
@@ -153,6 +132,7 @@
             margin-right: auto;
             max-height: 350px;
         }
+
         .card {
             display: flex;
             flex-direction: column;

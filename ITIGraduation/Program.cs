@@ -1,7 +1,7 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using ITIGraduation.Data;
 using ITIGraduation.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace SparkMain
 {
@@ -22,6 +22,10 @@ namespace SparkMain
             var connew = builder.Configuration.GetConnectionString("spark") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<SparkContext>(options =>
                 options.UseSqlServer(connew));
+
+
+            builder.Services.AddControllersWithViews();
+            builder.Services.AddSession();
 
 
 
@@ -94,6 +98,9 @@ namespace SparkMain
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+
+            app.UseSession();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
