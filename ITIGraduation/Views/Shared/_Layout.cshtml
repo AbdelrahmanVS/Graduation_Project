@@ -1,4 +1,11 @@
 ﻿@using ITIGraduation.Helper
+@using ITIGraduation.Models
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore
+@inject SparkContext _dbContext
+
+    @inject ITIGraduation.Data.SparkContext _dbContext
+    @inject UserManager<AppUser> _userManager
 <!DOCTYPE html>
 <html lang="en">
 
@@ -107,63 +114,63 @@
         <div class="preloader">
         </div>
     </div>
+    
+
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasCartLabel">Shopping Cart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
-        @{
-            var cart = Context.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
-        }
-
         <div class="offcanvas-body p-0">
-            @if (cart.Any())
+            @{
+                var userId = User.Identity.Name;
+                var cartItems = await _dbContext.CartItems
+                .Where(c => c.UserId == userId)
+                .ToListAsync();
+                var total = cartItems.Sum(i => i.Price * i.Quantity);
+            }
+
+            @if (cartItems.Any())
             {
                 <div class="container-fluid p-3">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h6 class="fw-bold mb-0">Your Items</h6>
-                        <h6 class="mb-0 text-muted">@cart.Sum(c => c.Quantity) items</h6>
+                        <h6 class="mb-0 text-muted">@cartItems.Sum(c => c.Quantity) items</h6>
                     </div>
                     <hr />
 
-                    @foreach (var item in cart)
+                    @foreach (var item in cartItems)
                     {
-                        <div class="row mb-3 d-flex justify-content-between align-items-center">
-                            <div class="col-3">
-                            </div>
+                        <div class="row mb-3 d-flex justify-content-between align-items-center cart-item"
+                             data-id="@item.ProductId" data-type="@item.ProductType">
                             <div class="col-5">
                                 <h6 class="text-muted">@item.ProductType</h6>
                                 <h6 class="mb-0">@item.ProductName</h6>
+                                <p>€@item.Price</p>
                             </div>
                             <div class="col-4 d-flex justify-content-end align-items-center">
-                                <button class="btn btn-link px-2"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                    <i class="fas fa-minus"></i>
-                                </button>
-
-                                <input min="1" name="quantity" value="@item.Quantity" type="number"
-                                       class="form-control form-control-sm text-center" style="width: 60px;" />
-
-                                <button class="btn btn-link px-2"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                    <i class="fas fa-plus"></i>
-                                </button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm minus-btn">-</button>
+                                <input min="1" value="@item.Quantity" type="number"
+                                       class="form-control form-control-sm text-center quantity-input"
+                                       style="width: 60px;" />
+                                <button type="button" class="btn btn-outline-secondary btn-sm plus-btn">+</button>
                             </div>
-                            <div class="col-12 d-flex justify-content-between mt-2">
-                                <span class="fw-bold">€ @item.Price</span>
-                                <span class="fw-bold">Total: € @(item.Price* item.Quantity)</span>
+                            <div class="col-3 d-flex justify-content-end align-items-center">
+                                <span class="fw-bold total-item">€ @(item.Price * item.Quantity)</span>
                             </div>
+                            <button type="button" class="btn btn-danger btn-sm ms-2 remove-btn">🗑️</button>
+                            <hr />
+
                         </div>
-                        <hr />
                     }
 
                     <div class="d-flex justify-content-between fw-bold mb-3">
                         <span>Total:</span>
-                        <span>€ @cart.Sum(i => i.Price * i.Quantity)</span>
+                        <span id="cartTotal">€ @total</span>
                     </div>
 
-                    <a href="/Cart/Index" class="btn btn-dark w-100">Complete Your Purchase</a>
+                    <a href="/Cart/Index#PoductView" class="btn btn-dark w-100">Complete Your Purchase</a>
                 </div>
             }
             else
@@ -172,6 +179,74 @@
             }
         </div>
     </div>
+
+    <!-- ====== JS لتحديث الكمية ديناميكياً ====== -->
+    <script>
+                document.querySelectorAll('.cart-item').forEach(row => {
+            const minusBtn = row.querySelector('.minus-btn');
+            const plusBtn = row.querySelector('.plus-btn');
+            const input = row.querySelector('.quantity-input');
+            const totalItemSpan = row.querySelector('.total-item');
+            const itemId = row.getAttribute('data-id');
+            const productType = row.getAttribute('data-type');
+            const removeBtn = row.querySelector('.remove-btn');
+
+                    function updateCart(quantity) {
+            fetch('/Cart/UpdateQuantity', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ProductId: itemId, ProductType: productType, Quantity: parseInt(quantity) })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    totalItemSpan.textContent = '€ ' + (data.itemPrice * data.quantity);
+                    document.getElementById('cartTotal').textContent = '€ ' + data.cartTotal;
+                    document.getElementById('totalItems').textContent = data.totalItems + ' items'; // ✅ تحديث العدد
+                }
+            });
+        }
+
+
+            // زرار الحذف
+            removeBtn.addEventListener('click', () => {
+                fetch('/Cart/Remove', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ ProductId: itemId, ProductType: productType })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        row.remove();
+                        document.getElementById('cartTotal').textContent = '€ ' + data.cartTotal;
+                        document.getElementById('totalItems').textContent = data.totalItems + ' items';
+                    }
+                });
+            });
+
+            // نفس كود + و -
+            minusBtn.addEventListener('click', () => {
+                if (parseInt(input.value) > 1) {
+                    input.value = parseInt(input.value) - 1;
+                    updateCart(input.value);
+                }
+            });
+
+            plusBtn.addEventListener('click', () => {
+                input.value = parseInt(input.value) + 1;
+                updateCart(input.value);
+            });
+
+            input.addEventListener('change', () => {
+                if (parseInt(input.value) < 1) input.value = 1;
+                updateCart(input.value);
+            });
+        });
+
+    </script>
+
+
 
     <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch">
         <div class="offcanvas-header justify-content-center">

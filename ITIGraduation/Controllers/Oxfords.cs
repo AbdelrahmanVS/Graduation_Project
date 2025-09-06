@@ -76,7 +76,7 @@ namespace SparkMain.Controllers
                         await ImageFile.CopyToAsync(stream);
                     }
 
-                    oxford.ImagUrl = "~/images/NewOxfords/" + fileName;
+                    oxford.ImagUrl = "~/images/" + fileName;
                 }
 
                 _context.Add(oxford);

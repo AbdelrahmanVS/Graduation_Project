@@ -16,11 +16,6 @@ namespace ITIGraduation.Models
         public string? Imag3 { get; set; }
         public string? Imag4 { get; set; }
 
-        // روابط للمنتجات
-        [NotMapped]
-        public string? CategoryType { get; set; } = "";   // Boot / Oxford / Sport
-        [NotMapped]
-
-        public int? CategoryProductId { get; set; }
+        
     }
 }

@@ -1,14 +1,14 @@
 ﻿using ITIGraduation.Data;
-using ITIGraduation.Helper;
 using ITIGraduation.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ITIGraduation.Controllers
 {
+    [Authorize] // كل الأكشنز تتطلب تسجيل الدخول
     public class CartController : Controller
     {
-        private const string SessionCartKey = "Cart";
         private readonly SparkContext _dbContext;
 
         public CartController(SparkContext dbContext)
@@ -16,124 +16,215 @@ namespace ITIGraduation.Controllers
             _dbContext = dbContext;
         }
 
-        public List<CartItem> GetCart()
+        // GET: /Cart
+        public async Task<IActionResult> Index()
         {
-            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>(SessionCartKey);
-            if (cart == null)
-            {
-                cart = new List<CartItem>();
-                HttpContext.Session.SetObjectAsJson(SessionCartKey, cart);
-            }
-            return cart;
-        }
-        private void SaveCart(List<CartItem> cart)
-        {
-            HttpContext.Session.SetObjectAsJson("Cart", cart);
-        }
-        public IActionResult Index()
-        {
-            var cartItems = GetCart();
+            var userId = User.Identity.Name;
+            var cartItems = await _dbContext.CartItems
+                .Where(c => c.UserId == userId)
+                .ToListAsync();
+
             var model = new CartViewModel
             {
-                Items = cartItems
+                Items = cartItems.Select(c => new CartItem
+                {
+                    ProductId = c.ProductId,
+                    ProductName = c.ProductName,
+                    ProductType = c.ProductType,
+                    Quantity = c.Quantity,
+                    Price = c.Price
+                }).ToList()
             };
+
+            return View(model);
+        }
+
+        public async Task<IActionResult> Checkout()
+        {
+            var userId = User.Identity.Name;
+            var cartItems = await _dbContext.CartItems
+                .Where(c => c.UserId == userId)
+                .ToListAsync();
+
+            var model = new CartViewModel
+            {
+                Items = cartItems.Select(c => new CartItem
+                {
+                    ProductId = c.ProductId,
+                    ProductName = c.ProductName,
+                    ProductType = c.ProductType,
+                    Quantity = c.Quantity,
+                    Price = c.Price
+                }).ToList()
+            };
+
             return View(model);
         }
 
 
-
+        // POST: /Cart/AddToCart
         [HttpPost]
-        [Authorize]
-        public IActionResult AddToCart([FromBody] CartItem CartItem)
+        public async Task<IActionResult> AddToCart([FromBody] CartItem cartItem)
         {
-            if (CartItem == null || CartItem.ProductId <= 0)
+            if (cartItem == null || cartItem.ProductId <= 0)
                 return BadRequest("Invalid data");
 
-            if (string.IsNullOrEmpty(CartItem.ProductType))
+            if (string.IsNullOrEmpty(cartItem.ProductType))
                 return BadRequest("Product type required");
 
-            object entity = null;
             string productName = "";
             decimal price = 0;
 
-            // ✅ اختار DbSet على حسب الـ ProductType
-            switch (CartItem.ProductType.ToLower())
+            // جلب المنتج حسب النوع
+            switch (cartItem.ProductType.ToLower())
             {
                 case "boot":
-                    entity = _dbContext.Boots.FirstOrDefault(p => p.BootId == CartItem.ProductId);
+                    var boot = await _dbContext.Boots.FindAsync(cartItem.ProductId);
+                    if (boot == null) return NotFound();
+                    productName = boot.BootName;
+                    price = boot.Price ?? 0;
                     break;
 
                 case "product":
-                    entity = _dbContext.Prouducts.FirstOrDefault(p => p.ProuductId == CartItem.ProductId);
+                    var product = await _dbContext.Prouducts.FindAsync(cartItem.ProductId);
+                    if (product == null) return NotFound();
+                    productName = product.ProuductName;
+                    price = product.Price ?? 0;
                     break;
 
                 case "oxford":
-                    entity = _dbContext.Oxfords.FirstOrDefault(p => p.OxfordId == CartItem.ProductId);
+                    var oxford = await _dbContext.Oxfords.FindAsync(cartItem.ProductId);
+                    if (oxford == null) return NotFound();
+                    productName = oxford.BootName;
+                    price = oxford.Price ?? 0;
+                    break;
+
+
+                case "trending":
+                    var trending = await _dbContext.TrendingSellings.FindAsync(cartItem.ProductId);
+                    if (trending == null) return NotFound();
+                    productName = trending.ProudName;
+                    price = trending.Price ?? 0;
                     break;
 
                 case "sport":
-                    entity = _dbContext.Sports.FirstOrDefault(p => p.SportId == CartItem.ProductId);
+                    var sport = await _dbContext.Sports.FindAsync(cartItem.ProductId);
+                    if (sport == null) return NotFound();
+                    productName = sport.SportName;
+                    price = sport.Price ?? 0;
                     break;
 
-                // ضيف أي types تانية هنا
                 default:
-                    return BadRequest("unknown Product Type");
+                    return BadRequest("Unknown Product Type");
             }
 
-            if (entity == null) return NotFound();
+            var userId = User.Identity.Name;
 
-            // ✅ نجيب البيانات (Name + Price) بشكل صريح
-            if (entity is Boot boot)
-            {
-                productName = boot.BootName;
-                price = boot.Price ?? 0;
-            }
-            else if (entity is Prouduct product)
-            {
-                productName = product.ProuductName;
-                price = product.Price ?? 0;
-            }
-            else if (entity is Sport sport)
-            {
-                productName = sport.SportName;
-                price = sport.Price ?? 0;
-            }
-            else if (entity is Oxford oxford)
-            {
-                productName = oxford.BootName;
-                price = oxford.Price ?? 0;
-            }
+            // تحقق إذا المنتج موجود في السلة مسبقًا
+            var existingItem = await _dbContext.CartItems
+                .FirstOrDefaultAsync(c =>
+                    c.ProductId == cartItem.ProductId &&
+                    c.ProductType.ToLower() == cartItem.ProductType.ToLower() &&
+                    c.UserId == userId);
 
-            // ✅ أضف للكارت
-            var cart = GetCart();
-            var cartItem = cart.FirstOrDefault(c =>
-                c.ProductId == CartItem.ProductId &&
-                c.ProductType.Equals(CartItem.ProductType, StringComparison.OrdinalIgnoreCase));
-
-            if (cartItem != null)
+            if (existingItem != null)
             {
-                cartItem.Quantity += CartItem.Quantity; // ياخد الكمية المطلوبة
+                existingItem.Quantity += cartItem.Quantity;
+                _dbContext.CartItems.Update(existingItem);
             }
             else
             {
-                cart.Add(new CartItem
+                var newItem = new CartItemEntity
                 {
-                    ProductId = CartItem.ProductId,
+                    ProductId = cartItem.ProductId,
                     ProductName = productName,
                     Price = price,
-                    Quantity = CartItem.Quantity,
-                    ProductType = CartItem.ProductType
-                });
+                    Quantity = cartItem.Quantity,
+                    ProductType = cartItem.ProductType,
+                    UserId = userId
+                };
+                await _dbContext.CartItems.AddAsync(newItem);
             }
 
-            SaveCart(cart);
+            await _dbContext.SaveChangesAsync();
 
-            // هنا ترجع JSON للـ frontend مش Redirect (عشان الـ fetch بيتوقع JSON)
+            var cartCount = await _dbContext.CartItems
+                .Where(c => c.UserId == userId)
+                .SumAsync(c => c.Quantity);
+
+            var totalItems = await _dbContext.CartItems
+    .Where(c => c.UserId == userId)
+    .SumAsync(c => c.Quantity);
+
+
+            return Json(new { success = true, cartCount,totalItems });
+        }
+
+        // POST: /Cart/UpdateQuantity
+        [HttpPost]
+        public async Task<IActionResult> UpdateQuantity([FromBody] CartItem cartItem)
+        {
+            if (cartItem == null || cartItem.ProductId <= 0) return BadRequest();
+
+            var userId = User.Identity.Name;
+            var item = await _dbContext.CartItems.FirstOrDefaultAsync(c =>
+                c.ProductId == cartItem.ProductId &&
+                c.ProductType.ToLower() == cartItem.ProductType.ToLower() &&
+                c.UserId == userId);
+
+            if (item == null) return NotFound();
+
+            item.Quantity = cartItem.Quantity > 0 ? cartItem.Quantity : 1;
+
+            _dbContext.CartItems.Update(item);
+            await _dbContext.SaveChangesAsync();
+
+            // ارجع السعر الفردي والعدد الإجمالي
+            var cartTotal = await _dbContext.CartItems
+                .Where(c => c.UserId == userId)
+                .SumAsync(c => c.Price * c.Quantity);
+
+            var totalItems = await _dbContext.CartItems
+                .Where(c => c.UserId == userId)
+                .SumAsync(c => c.Quantity);
+
             return Json(new
             {
                 success = true,
-                cartCount = cart.Sum(c => c.Quantity)
+                itemPrice = item.Price,
+                quantity = item.Quantity,
+                cartTotal,
+                totalItems
             });
+        }
+
+        // POST: /Cart/Remove
+        [HttpPost]
+        [HttpPost]
+        public async Task<IActionResult> Remove([FromBody] CartItem cartItem)
+        {
+            if (cartItem == null || cartItem.ProductId <= 0) return BadRequest();
+
+            var userId = User.Identity.Name;
+            var item = await _dbContext.CartItems.FirstOrDefaultAsync(c =>
+                c.ProductId == cartItem.ProductId &&
+                c.ProductType.ToLower() == cartItem.ProductType.ToLower() &&
+                c.UserId == userId);
+
+            if (item == null) return NotFound();
+
+            _dbContext.CartItems.Remove(item);
+            await _dbContext.SaveChangesAsync();
+
+            var cartTotal = await _dbContext.CartItems
+                .Where(c => c.UserId == userId)
+                .SumAsync(c => c.Price * c.Quantity);
+
+            var totalItems = await _dbContext.CartItems
+                .Where(c => c.UserId == userId)
+                .SumAsync(c => c.Quantity);
+
+            return Json(new { success = true, cartTotal, totalItems });
         }
 
     }

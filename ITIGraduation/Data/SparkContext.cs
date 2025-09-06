@@ -36,12 +36,19 @@ public partial class SparkContext : DbContext
 
     public virtual DbSet<UserSportPurchase> UserSportPurchases { get; set; }
 
+    public DbSet<CartItemEntity> CartItems { get; set; }
+
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Spark;Integrated Security=True;Trust Server Certificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<CartItemEntity>()
+    .Property(c => c.Price)
+    .HasPrecision(18, 2);
+
         modelBuilder.Entity<Boot>(entity =>
         {
             entity.HasKey(e => e.BootId).HasName("PK__boots__A1BFC0423832348B");
@@ -95,7 +102,7 @@ public partial class SparkContext : DbContext
             entity.ToTable("oxford");
 
             entity.Property(e => e.OxfordId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("oxford_id");
             entity.Property(e => e.BootName)
                 .HasMaxLength(100)

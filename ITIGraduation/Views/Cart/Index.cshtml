@@ -1,163 +1,75 @@
-﻿@model CartViewModel
+﻿@model ITIGraduation.Models.CartViewModel
 
-<section class="h-100 h-custom" style="background-color: #d2c9ff;">
+<section class="h-100 h-custom" id="PoductView" style="background-color: #d2c9ff;">
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12">
                 <div class="card card-registration card-registration-2" style="border-radius: 15px;">
                     <div class="card-body p-0">
                         <div class="row g-0">
+                            <!-- قائمة المنتجات -->
                             <div class="col-lg-8">
                                 <div class="p-5">
                                     <div class="d-flex justify-content-between align-items-center mb-5">
                                         <h1 class="fw-bold mb-0">Shopping Cart</h1>
-                                        <h6 class="mb-0 text-muted">3 items</h6>
+                                        <h6 class="mb-0 text-muted">@Model.Items.Sum(i => i.Quantity) items</h6>
                                     </div>
                                     <hr class="my-4">
 
-                                    <div class="row mb-4 d-flex justify-content-between align-items-center">
-                                       
-                                        <div class="col-md-3 col-lg-3 col-xl-3">
-                                            <h6 class="text-muted">Shirt</h6>
-                                            <h6 class="mb-0">Cotton T-shirt</h6>
+                                    @foreach(var item in Model.Items)
+                                    {
+                                        <div class="row mb-4 d-flex justify-content-between align-items-center cart-item" data-id="@item.ProductId" data-type="@item.ProductType">
+                                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                                <h6 class="text-muted">@item.ProductType</h6>
+                                                <h6 class="mb-0">@item.ProductName</h6>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                                <button class="btn btn-link px-2 minus-btn">-</button>
+                                                <input min="1" value="@item.Quantity" type="number" class="form-control form-control-sm text-center quantity-input" style="width: 60px;" />
+                                                <button class="btn btn-link px-2 plus-btn">+</button>
+                                            </div>
+                                            <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                                <h6 class="mb-0">€ @item.Price</h6>
+                                            </div>
+                                            <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                                <a href="#" class="remove-item text-muted" data-id="@item.ProductId">
+                                                    <i class="fas fa-times"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between mt-2">
+                                                <span class="fw-bold total-item">Total: € @(item.Price * item.Quantity)</span>
+                                            </div>
                                         </div>
-                                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                <i class="fas fa-minus"></i>
-                                            </button>
-
-                                            <input id="form1" min="0" name="quantity" value="1" type="number"
-                                                   class="form-control form-control-sm" />
-
-                                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                            <h6 class="mb-0">€ 44.00</h6>
-                                        </div>
-                                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                                        </div>
-                                    </div>
-
-                                    <hr class="my-4">
-
-                                    <div class="row mb-4 d-flex justify-content-between align-items-center">
-                                        
-                                        <div class="col-md-3 col-lg-3 col-xl-3">
-                                            <h6 class="text-muted">Shirt</h6>
-                                            <h6 class="mb-0">Cotton T-shirt</h6>
-                                        </div>
-                                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                <i class="fas fa-minus"></i>
-                                            </button>
-
-                                            <input id="form1" min="0" name="quantity" value="1" type="number"
-                                                   class="form-control form-control-sm" />
-
-                                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                            <h6 class="mb-0">€ 44.00</h6>
-                                        </div>
-                                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                                        </div>
-                                    </div>
-
-                                    <hr class="my-4">
-
-                                    <div class="row mb-4 d-flex justify-content-between align-items-center">
-                                        
-                                        <div class="col-md-3 col-lg-3 col-xl-3">
-                                            <h6 class="text-muted">Shirt</h6>
-                                            <h6 class="mb-0">Cotton T-shirt</h6>
-                                        </div>
-                                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                <i class="fas fa-minus"></i>
-                                            </button>
-
-                                            <input id="form1" min="0" name="quantity" value="1" type="number"
-                                                   class="form-control form-control-sm" />
-
-                                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                            <h6 class="mb-0">€ 44.00</h6>
-                                        </div>
-                                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                                        </div>
-                                    </div>
-
-                                    <hr class="my-4">
+                                        <hr class="my-4">
+                                    }
 
                                     <div class="pt-5">
                                         <h6 class="mb-0">
-                                            <a href="#!" class="text-body">
+                                            <a href="/Shop" class="text-body">
                                                 <i class="fas fa-long-arrow-alt-left me-2"></i>Back to shop
                                             </a>
                                         </h6>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Summary -->
                             <div class="col-lg-4 bg-body-tertiary">
                                 <div class="p-5">
                                     <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
                                     <hr class="my-4">
 
                                     <div class="d-flex justify-content-between mb-4">
-                                        <h5 class="text-uppercase">items 3</h5>
-                                        <h5>€ 132.00</h5>
+                                        <h5 class="text-uppercase">Total Items: @Model.Items.Sum(i => i.Quantity)</h5>
+                                        <h5 id="cartTotal">€ @Model.Total</h5>
                                     </div>
 
-                                    <h5 class="text-uppercase mb-3">Shipping</h5>
-
-                                    <div class="mb-4 pb-2">
-                                        <select data-mdb-select-init>
-                                            <option value="1">Standard-Delivery- €5.00</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                            <option value="4">Four</option>
-                                        </select>
-                                    </div>
-
-                                    <h5 class="text-uppercase mb-3">Give code</h5>
-
-                                    <div class="mb-5">
-                                        <div data-mdb-input-init class="form-outline">
-                                            <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
-                                            <label class="form-label" for="form3Examplea2">Enter your code</label>
-                                        </div>
-                                    </div>
-
-                                    <hr class="my-4">
-
-                                    <div class="d-flex justify-content-between mb-5">
-                                        <h5 class="text-uppercase">Total price</h5>
-                                        <h5>€ 137.00</h5>
-                                    </div>
-
-                                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-block btn-lg"
-                                            data-mdb-ripple-color="dark">
-                                        Register
-                                    </button>
-
+                                    <a href="/Cart/Checkout#PoductView" class="btn btn-dark btn-block btn-lg">
+                                        Complete Purchase
+                                    </a>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -165,4 +77,67 @@
         </div>
     </div>
 </section>
-   
+
+<script>
+document.querySelectorAll('.cart-item').forEach(row => {
+    const minusBtn = row.querySelector('.minus-btn');
+    const plusBtn = row.querySelector('.plus-btn');
+    const input = row.querySelector('.quantity-input');
+    const totalItemSpan = row.querySelector('.total-item');
+    const cartItemId = row.getAttribute('data-id');
+    const productType = row.getAttribute('data-type');
+    const removeBtn = row.querySelector('.remove-item');
+
+    function updateCart(quantity) {
+        fetch('/Cart/UpdateQuantity', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ProductId: parseInt(cartItemId), ProductType: productType, Quantity: parseInt(quantity) })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.success) {
+                totalItemSpan.textContent = 'Total: € ' + (data.itemPrice * data.quantity);
+                document.getElementById('cartTotal').textContent = '€ ' + data.cartTotal;
+            }
+        });
+    }
+
+    minusBtn.addEventListener('click', () => {
+        if(parseInt(input.value) > 1) {
+            input.value = parseInt(input.value) - 1;
+            updateCart(input.value);
+        }
+    });
+
+    plusBtn.addEventListener('click', () => {
+        input.value = parseInt(input.value) + 1;
+        updateCart(input.value);
+    });
+
+    input.addEventListener('change', () => {
+        if(parseInt(input.value) < 1) input.value = 1;
+        updateCart(input.value);
+    });
+
+    removeBtn?.addEventListener('click', (e) => {
+        e.preventDefault();
+        fetch('/Cart/Remove', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ProductId: parseInt(cartItemId), ProductType: productType })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.success) {
+                row.remove();
+                fetch('/Cart/GetCartTotal')
+                .then(r => r.json())
+                .then(t => {
+                    document.getElementById('cartTotal').textContent = '€ ' + t.cartTotal;
+                });
+            }
+        });
+    });
+});
+</script>

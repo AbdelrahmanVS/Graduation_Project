@@ -54,6 +54,41 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("boots", (string)null);
                 });
 
+            modelBuilder.Entity("ITIGraduation.Models.CartItemEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("Price")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProductType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CartItems");
+                });
+
             modelBuilder.Entity("ITIGraduation.Models.Inventory", b =>
                 {
                     b.Property<int>("InventoryId")
@@ -102,8 +137,11 @@ namespace ITIGraduation.Migrations.Spark
             modelBuilder.Entity("ITIGraduation.Models.Oxford", b =>
                 {
                     b.Property<int>("OxfordId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("oxford_id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OxfordId"));
 
                     b.Property<string>("BootName")
                         .HasMaxLength(100)
