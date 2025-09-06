@@ -52,7 +52,12 @@
                                         <h5>€ @Model.Total</h5>
                                     </div>
 
-                                    <button type="button" class="btn btn-dark btn-lg w-100">Place Order</button>
+                                    <form method="get" action="/Payment/Index">
+                                        <input type="hidden" name="amount" value="@Model.Total" />
+                                        <input type="hidden" name="name" value="@User.Identity.Name" />
+                                        <input type="hidden" name="quantity" value="@Model.Items.Sum(i => i.Quantity)" />
+                                        <button type="submit" class="btn btn-success btn-lg w-100">Proceed to Payment</button>
+                                    </form>
                                 </div>
                             </div>
 

@@ -43,7 +43,22 @@ namespace ITIGraduation.Controllers
         }
 
         [HttpGet]
-        public IActionResult Success() => View();
+        public async Task<IActionResult> Success()
+        {
+            // Clear the cart for the current user after successful payment
+            var userId = User.Identity.Name;
+            if (!string.IsNullOrEmpty(userId))
+            {
+                using (var scope = HttpContext.RequestServices.CreateScope())
+                {
+                    var dbContext = scope.ServiceProvider.GetRequiredService<ITIGraduation.Data.SparkContext>();
+                    var userCartItems = dbContext.CartItems.Where(c => c.UserId == userId);
+                    dbContext.CartItems.RemoveRange(userCartItems);
+                    await dbContext.SaveChangesAsync();
+                }
+            }
+            return View();
+        }
 
         [HttpGet]
         public IActionResult Cancel() => View();
