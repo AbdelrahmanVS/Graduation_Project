@@ -44,6 +44,8 @@ namespace SparkMain
                 .AddDefaultTokenProviders();
             builder.Services.AddControllersWithViews();
 
+            // Register PaymobService for dependency injection
+            builder.Services.AddHttpClient<ITIGraduation.Services.IPaymobService, ITIGraduation.Services.PaymobService>();
 
             var app = builder.Build();
 
