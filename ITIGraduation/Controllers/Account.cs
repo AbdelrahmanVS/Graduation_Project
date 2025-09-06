@@ -3,72 +3,72 @@ using ITIGraduation.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-public class Account : Controller
-{
-    private readonly SignInManager<AppUser> _signInManager;
-    private readonly UserManager<AppUser> _userManager;
-
-    public Account(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
+    public class Account : Controller
     {
-        _signInManager = signInManager;
-        _userManager = userManager;
-    }
+        private readonly SignInManager<AppUser> _signInManager;
+        private readonly UserManager<AppUser> _userManager;
 
-    public IActionResult Index()
-    {
-        return View(new Combied
+        public Account(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
         {
-            LoginVM = new LoginVM(),
-            RegisterVM = new RegisterVM()
-        });
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> Login(LoginVM model)
-    {
-        if (ModelState.IsValid)
-        {
-            var result = await _signInManager.PasswordSignInAsync(
-                model.UserName!, model.Password!, model.RememberMe, false);
-
-            if (result.Succeeded)
-                return RedirectToAction("Index", "Home");
-
-            ModelState.AddModelError("", "Invalid login attempt");
+            _signInManager = signInManager;
+            _userManager = userManager;
         }
 
-        return View("Index", new Combied { LoginVM = model, RegisterVM = new RegisterVM() });
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> Register(RegisterVM model)
-    {
-        if (ModelState.IsValid)
+        public IActionResult Index()
         {
-            AppUser user = new()
+            return View(new Combied
             {
-                Name = model.Name,
-                UserName = model.Name,
-                Email = model.Email
-            };
+                LoginVM = new LoginVM(),
+                RegisterVM = new RegisterVM()
+            });
+        }
 
-            var result = await _userManager.CreateAsync(user, model.Password!);
-
-            if (result.Succeeded)
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginVM model)
+        {
+            if (ModelState.IsValid)
             {
-                await _signInManager.SignInAsync(user, true);
-                return RedirectToAction("Index", "Home");
+                var result = await _signInManager.PasswordSignInAsync(
+                    model.UserName!, model.Password!, model.RememberMe, false);
+
+                if (result.Succeeded)
+                    return RedirectToAction("Index", "Home");
+
+                ModelState.AddModelError("", "Invalid login attempt. Please check your username and password.");
             }
 
-            foreach (var error in result.Errors)
-                ModelState.AddModelError("", error.Description);
+            return View("Index", new Combied { LoginVM = model, RegisterVM = new RegisterVM() });
         }
 
-        return View("Index", new Combied { LoginVM = new LoginVM(), RegisterVM = model });
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                AppUser user = new()
+                {
+                    Name = model.Name,
+                    UserName = model.Name,
+                    Email = model.Email
+                };
+
+                var result = await _userManager.CreateAsync(user, model.Password!);
+
+                if (result.Succeeded)
+                {
+                    await _signInManager.SignInAsync(user, true);
+                    return RedirectToAction("Index", "Home");
+                }
+
+                foreach (var error in result.Errors)
+                    ModelState.AddModelError("", error.Description);
+            }
+
+            return View("Index", new Combied { LoginVM = new LoginVM(), RegisterVM = model });
+        }
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
     }
-    public async Task<IActionResult> Logout()
-    {
-        await _signInManager.SignOutAsync();
-        return RedirectToAction("Index", "Home");
-    }
-}
