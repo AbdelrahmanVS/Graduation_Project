@@ -75,26 +75,6 @@ namespace ITIGraduation.Models
         public int AmountCents { get; set; }
     }
 
-    // View Models
-    public class PaymentViewModel
-    {
-        [Required]
-        [Range(1, 10000)]
-        public decimal Amount { get; set; }
-
-        [Required]
-        public string CustomerName { get; set; } = "";
-
-        [Required]
-        [EmailAddress]
-        public string CustomerEmail { get; set; } = "";
-
-        [Required]
-        public string CustomerPhone { get; set; } = "";
-
-        public string? Description { get; set; }
-    }
-
     public class PaymentResultViewModel
     {
         public bool Success { get; set; }
