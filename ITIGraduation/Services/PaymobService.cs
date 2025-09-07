@@ -139,9 +139,15 @@ namespace ITIGraduation.Services
                     var key = JsonConvert.DeserializeObject<PaymobPaymentKeyResponse>(result);
                     return key?.Token ?? "";
                 }
+                // Log the error response for debugging
+                System.Diagnostics.Debug.WriteLine($"Paymob payment key error: {result}");
                 return "";
             }
-            catch { return ""; }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Exception in GetPaymentKeyAsync: {ex.Message}");
+                return "";
+            }
         }
     }
 }
