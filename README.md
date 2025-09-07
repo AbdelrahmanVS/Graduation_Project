@@ -253,9 +253,24 @@ To enable payment functionality:
 
 ---
 
-## 🤝 Contributing
+## 👥 Team
 
-This is an educational project developed as part of ITI graduation requirements. Contributions and suggestions are welcome for learning purposes.
+**ITI Graduation Project Team**
+
+### Team Members
+- **Ahmed Mohamed Taha**
+- **Ahmed Saad Saad Mhesin**
+- **Mohamed Salah Shaban**
+- **Abdoelrahman Ebrahim Mahmoud**
+- **Yossef Hady Atef**
+- **Mohamed Suliman Mohamed**
+- **Mohamed Anter Ahmed**
+
+### Project Details
+- **Project Type**: E-commerce Platform
+- **Institution**: Information Technology Institute (ITI)
+- **Technology Stack**: ASP.NET Core 9.0, Entity Framework Core, SQL Server
+- **Project Name**: Spark Shoes E-commerce Platform
 
 ---
 
@@ -276,25 +291,10 @@ This project was developed for educational purposes as part of ITI graduation re
 
 ---
 
-## 👥 Team
+## 🤝 Contributing
 
-**ITI Graduation Project Team**
-
-### Team Members
-- **Ahmed Mohamed Taha**
-- **Ahmed Saad Saad Mhesin**
-- **Mohamed Salah Shaban**
-- **Abdoelrahman Ebrahim Mahmoud**
-- **Yossef Hady Atef**
-- **Mohamed Suliman Mohamed**
-- **Mohamed Anter Ahmed**
-
-### Project Details
-- **Project Type**: E-commerce Platform
-- **Institution**: Information Technology Institute (ITI)
-- **Technology Stack**: ASP.NET Core 9.0, Entity Framework Core, SQL Server
-- **Project Name**: Spark Shoes E-commerce Platform
-
+This is an educational project developed as part of ITI graduation requirements. Contributions and suggestions are welcome for learning purposes.
 
 ---
+
 > ❤️ Star this repo if you find it useful or want to follow development!
