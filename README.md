@@ -276,22 +276,6 @@ This project was developed for educational purposes as part of ITI graduation re
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-**MIT License Summary:**
-- ✅ Commercial use
-- ✅ Modification  
-- ✅ Distribution
-- ✅ Private use
-- ❌ Liability
-- ❌ Warranty
-
-This project was developed for educational purposes as part of ITI graduation requirements.
-
----
-
 ## 👥 Team
 
 **ITI Graduation Project Team**
