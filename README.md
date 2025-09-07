@@ -1,217 +1,316 @@
-# Spark
-## A Modern E-Commerce Shoes Store
+# ITI Graduation Project - Spark Shoes E-commerce Platform
 
-Spark is a comprehensive e-commerce web application built with ASP.NET Core MVC, specializing in footwear sales. It provides a modern, responsive shopping experience with product management, user authentication, and advanced search capabilities.
+![.NET 9](https://img.shields.io/badge/.NET-9.0-512BD4)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-Razor%20Pages-0066CC)
+![Entity Framework](https://img.shields.io/badge/Entity%20Framework-Core-5C2D91)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-Database-CC2927)
 
-## 🚀 Features
+## 📖 Project Overview
 
-### User Features
-- **User Registration & Authentication** - Secure user accounts with ASP.NET Core Identity
-- **Product Browsing** - Browse shoes by categories: Boots, Oxfords, Sports, and Trending Products
-- **Advanced Search** - Global search across all product categories
-- **Product Details** - Detailed product views with multiple images
-- **Responsive Design** - Mobile-friendly interface with Bootstrap
+**Spark** is a comprehensive e-commerce platform specializing in footwear sales, developed as a graduation project for ITI (Information Technology Institute). The application provides a modern, responsive web interface for browsing, searching, and purchasing various types of shoes including sports shoes, boots, oxfords, and trending products.
 
-### Admin Features
-- **Product Management** - Full CRUD operations for all product categories
-- **Inventory Management** - Track stock levels and product availability
-- **User Management** - Role-based access control (Admin/User roles)
-- **Admin Dashboard** - Comprehensive product and user management
+---
 
-### E-commerce Features
-- **Shopping Cart** - Add products to cart, manage quantities, and view totals
-- **Payment Integration** - Secure payment processing via Paymob gateway
-- **Order Management** - Complete checkout process with order tracking
+## ✨ Key Features
 
-## 🛠️ Technologies Used
+### 🛍️ E-commerce Functionality
+- **Product Catalog**: Browse multiple categories of footwear
+  - Sports shoes
+  - Boots
+  - Oxford shoes
+  - Trending/Featured products
+- **Shopping Cart**: Add, update, and remove items with real-time calculations
+- **Secure Checkout**: Integrated payment processing with Paymob payment gateway
+- **Search & Filter**: Advanced product search across all categories
+- **Product Management**: CRUD operations for administrators
 
-### Backend
-- **ASP.NET Core 9.0** - Web framework
-- **Entity Framework Core** - ORM for database operations
-- **SQL Server** - Primary database
-- **ASP.NET Core Identity** - Authentication and authorization
-- **Paymob Payment Gateway** - Secure payment processing
-- **Microsoft.EntityFrameworkCore.Tools** - Database migrations
+### 🔐 Authentication & Authorization
+- **User Registration/Login**: Custom identity system using ASP.NET Core Identity
+- **Role-based Access Control**: 
+  - Admin users can manage products
+  - Regular users can browse and purchase
+- **Session Management**: Persistent shopping cart across sessions
 
-### Frontend
-- **Razor Pages** - Server-side rendering
-- **Bootstrap 5.3** - CSS framework for responsive design
-- **HTML5 & CSS3** - Modern web standards
-- **JavaScript & jQuery** - Client-side interactivity
-- **Swiper.js** - Touch slider components
+### 📱 User Experience
+- **Responsive Design**: Mobile-first responsive layout
+- **Interactive UI**: Dynamic cart updates without page refresh
+- **Modern Frontend**: Bootstrap-based responsive design
+- **Product Gallery**: Multiple product images with lightbox view
 
-### Development Tools
-- **.NET 9.0 SDK** - Development framework
-- **Visual Studio** - IDE support
-- **SQL Server Management Studio** - Database management
+### 💳 Payment Integration
+- **Paymob Payment Gateway**: Secure online payment processing
+- **Multiple Payment Options**: Credit cards, debit cards
+- **Order Management**: Track purchases and payment status
+- **Secure Transactions**: SSL encryption and secure payment handling
 
-## 📁 Project Structure
+---
 
-```
-ITIGraduation/
-├── Controllers/          # MVC Controllers
-│   ├── HomeController.cs # Main homepage and search
-│   ├── Account.cs       # User authentication
-│   ├── Products.cs      # Product management
-│   ├── Boots.cs         # Boot category management
-│   ├── Oxfords.cs       # Oxford shoes management
-│   ├── Sports.cs        # Sports shoes management
-│   └── TrendingSellings.cs # Trending products
-├── Data/                # Database context and configurations
-│   ├── ApplicationDbContext.cs # Identity context
-│   ├── SparkContext.cs  # Main application context
-│   └── Migrations/      # Database migrations
-├── Models/              # Domain models
-│   ├── AppUser.cs       # User identity model
-│   ├── Boot.cs          # Boot product model
-│   ├── Oxford.cs        # Oxford shoe model
-│   ├── Sport.cs         # Sports shoe model
-│   ├── TrendingSelling.cs # Trending product model
-│   ├── Inventory.cs     # Inventory management
-│   └── SearchResultVM.cs # Search result view model
-├── ViewModels/          # Data transfer objects
-│   ├── LoginVM.cs       # Login view model
-│   ├── RegisterVM.cs    # Registration view model
-│   └── Combied.cs       # Combined view models
-├── Views/               # Razor view templates
-│   ├── Home/           # Homepage views
-│   ├── Account/        # Authentication views
-│   ├── Products/       # Product management views
-│   ├── Boots/          # Boot category views
-│   ├── Oxfords/        # Oxford category views
-│   ├── Sports/         # Sports category views
-│   ├── TrendingSellings/ # Trending products views
-│   └── Shared/         # Shared layout and components
-└── wwwroot/            # Static files (CSS, JS, images)
-```
+## 🏗️ Technical Architecture
+
+### Backend Stack
+- **Framework**: ASP.NET Core 9.0 (Razor Pages)
+- **Database**: SQL Server with Entity Framework Core
+- **Authentication**: ASP.NET Core Identity
+- **ORM**: Entity Framework Core 9.0
+- **Payment**: Paymob payment gateway integration
+
+### Frontend Stack
+- **Razor Pages**: Server-side rendering with C#
+- **Bootstrap**: Responsive CSS framework
+- **JavaScript**: Interactive cart functionality
+- **AJAX**: Asynchronous operations for cart management
+
+### Database Design
+- **Dual Context Architecture**:
+  - `ApplicationDbContext`: User authentication and identity
+  - `SparkContext`: E-commerce data (products, cart, orders)
+
+#### Key Entities
+- **Products**: `Product`, `Sport`, `Boot`, `Oxford`, `TrendingSelling`
+- **User Management**: `AppUser`, `User`
+- **Shopping**: `CartItemEntity`, `CartItem`
+- **Orders**: `UserBootPurchase`, `UserSportPurchase`, `UserOxfordPurchase`
+- **Inventory**: `Inventory` (stock management)
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **.NET 9.0 SDK** or higher
-- **SQL Server** or SQL Server Express LocalDB
-- **Visual Studio 2022** or VS Code with C# extension
+- .NET 9.0 SDK
+- SQL Server (LocalDB or full instance)
+- Visual Studio 2022 or VS Code
 
-### Installation & Setup
+### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/AbdelrahmanVS/Graduation_Project.git
-   cd Graduation_Project/ITIGraduation
+   git clone https://github.com/AbdelrahmanVS/Graduation_Project
+   cd ITIGraduation
    ```
 
-2. **Configure Database Connection & Payment Settings**
-   - Update connection strings and Paymob configuration in `appsettings.json`:
+2. **Configure Database Connection**
+   Update `appsettings.json` with your SQL Server connection strings:
    ```json
    {
      "ConnectionStrings": {
-       "DefaultConnection": "Server=.;Database=Spark;Initial Catalog=CustomIdentityDB;Integrated Security=True;TrustServerCertificate=True",
+       "DefaultConnection": "Server=.;Database=CustomIdentityDB;Integrated Security=True;TrustServerCertificate=True",
        "spark": "Data Source=.;Initial Catalog=Spark;Integrated Security=True;TrustServerCertificate=True"
-     },
-     "Paymob": {
-       "API_Key": "your_paymob_api_key_here",
-       "Iframe_ID": "your_iframe_id_here",
-       "Integration_ID": "your_integration_id_here",
      }
    }
    ```
 
-3. **Install Dependencies**
+3. **Configure Paymob Settings**
+   Add your Paymob credentials to `appsettings.json`:
+   ```json
+   {
+     "Paymob": {
+       "ApiKey": "your-paymob-api-key",
+       "IntegrationId": "your-integration-id",
+       "IframeId": "your-iframe-id"
+     }
+   }
+   ```
+
+4. **Install Dependencies**
    ```bash
    dotnet restore
    ```
 
-4. **Apply Database Migrations**
+5. **Run Database Migrations**
    ```bash
    dotnet ef database update --context ApplicationDbContext
    dotnet ef database update --context SparkContext
    ```
 
-5. **Run the Application**
+6. **Run the Application**
    ```bash
    dotnet run
    ```
 
-6. **Access the Application**
-   - Open your browser and navigate to `https://localhost:7xxx` or `http://localhost:5xxx`
-   - Default admin account: `admin@example.com` / `Admin123!`
+7. **Access the Application**
+   Navigate to `https://localhost:5001` or `http://localhost:5000`
 
-## 🗄️ Database Schema
+### Default Admin Account
+- **Email**: `admin@example.com`
+- **Password**: `Admin123!`
 
-The application uses two database contexts:
-- **ApplicationDbContext** - Manages user authentication and authorization
-- **SparkContext** - Manages product data, inventory, purchase history, and cart data
+---
 
-### Key Tables:
-- **Users** - Customer information
-- **Boots, Oxfords, Sports, Products, TrendingSellings** - Product categories
-- **Inventory** - Stock management
-- **UserBootPurchases, UserOxfordPurchases, UserSportPurchases** - Purchase history
-- **Cart** - Shopping cart items
-- **Orders** - Order management and payment tracking
+## 📁 Project Structure
 
-## 🔐 User Roles
+```
+ITIGraduation/
+├── Controllers/           # MVC Controllers
+│   ├── HomeController.cs     # Main site navigation
+│   ├── CartController.cs     # Shopping cart management
+│   ├── PaymentController.cs  # Payment processing
+│   ├── ProductsController.cs # Product CRUD operations
+│   ├── SportsController.cs   # Sports shoes management
+│   ├── BootsController.cs    # Boots management
+│   └── OxfordsController.cs  # Oxford shoes management
+├── Models/               # Data models and view models
+│   ├── Product.cs           # Product entities
+│   ├── AppUser.cs           # User identity model
+│   ├── CartItem.cs          # Shopping cart models
+│   └── PaymobModels.cs      # Payment gateway models
+├── Data/                 # Database contexts
+│   ├── ApplicationDbContext.cs # Identity context
+│   └── SparkContext.cs         # E-commerce context
+├── Services/             # Business logic services
+│   └── PaymobService.cs     # Payment gateway service
+├── Views/                # Razor views
+│   ├── Home/               # Home page views
+│   ├── Cart/               # Shopping cart views
+│   ├── Products/           # Product management views
+│   └── Shared/             # Shared layouts and partials
+├── wwwroot/              # Static files (CSS, JS, images)
+├── Migrations/           # Database migrations
+└── Program.cs            # Application startup
+```
 
-- **Admin** - Full access to product management, user management, and system configuration
-- **User** - Can browse products, search, view details, add items to cart, and complete purchases
+---
 
 ## 🔧 Configuration
 
-### Paymob Payment Gateway Setup
-1. Create a Paymob account at [paymob.com](https://paymob.com)
-2. Obtain your API credentials from the Paymob dashboard
-3. Add the following configuration to your `appsettings.json`:
-   ```json
-   "Paymob": {
-     "API_Key": "your_paymob_api_key",
-     "Iframe_ID": "your_iframe_id", 
-     "Integration_ID": "your_integration_id",
-   }
-   ```
+### Database Configuration
+The application uses two separate database contexts:
+- **Identity Database**: User authentication and roles
+- **Spark Database**: Product catalog and e-commerce data
 
-### Admin Account Setup
-The application automatically creates an admin account on first run:
-- **Email**: admin@example.com
-- **Password**: Admin123!
+### Payment Gateway Setup
+To enable payment functionality:
+1. Register with Paymob payment gateway
+2. Obtain API keys and integration IDs
+3. Update `appsettings.json` with your credentials
 
-### Identity Configuration
-- Minimum password length: 8 characters
-- Special characters: Not required
-- Email confirmation: Disabled (for development)
+### Environment Settings
+- **Development**: Uses local SQL Server and detailed error pages
+- **Production**: Implements proper error handling and security headers
 
-## 📝 API Endpoints
+---
 
-### Public Endpoints
-- `GET /` - Homepage with trending products
-- `GET /Products` - Product catalog
-- `GET /Boots` - Boot collection
-- `GET /Oxfords` - Oxford shoes collection
-- `GET /Sports` - Sports shoes collection
-- `GET /Home/Search` - Global search
-- `GET /Cart` - Shopping cart (authenticated users)
-- `POST /Cart/Add` - Add item to cart
-- `POST /Payment/Process` - Process payment via Paymob
+## 🛡️ Security Features
 
-### Admin Endpoints (Requires Admin Role)
-- `POST /Products/Create` - Create new product
-- `PUT /Products/Edit/{id}` - Update product
-- `DELETE /Products/Delete/{id}` - Delete product
-- Similar CRUD operations for all product categories
+- **Input Validation**: Model validation and anti-forgery tokens
+- **Authentication**: Secure user login/registration
+- **Authorization**: Role-based access control
+- **SQL Injection Protection**: Entity Framework parameterized queries
+- **HTTPS**: Enforced SSL/TLS encryption
+- **Session Security**: Secure session management
+
+---
+
+## 🎯 API Endpoints
+
+### Cart Management (AJAX)
+- `POST /Cart/AddToCart` - Add item to cart
+- `POST /Cart/UpdateQuantity` - Update item quantity
+- `POST /Cart/Remove` - Remove item from cart
+
+### Payment Processing
+- `GET /Payment/Index` - Payment form
+- `POST /Payment/CreatePayment` - Process payment
+- `GET /Payment/Success` - Payment success callback
+- `POST /api/paymob/callback` - Paymob webhook
+
+---
+
+## 🧪 Testing
+
+### Manual Testing Checklist
+- [ ] User registration and login
+- [ ] Product browsing and search
+- [ ] Add to cart functionality
+- [ ] Cart operations (update, remove)
+- [ ] Checkout process
+- [ ] Payment integration
+- [ ] Admin product management
+
+---
+
+## 📦 Dependencies
+
+### NuGet Packages
+- **Microsoft.AspNetCore.Identity.EntityFrameworkCore** (9.0.8)
+- **Microsoft.EntityFrameworkCore.SqlServer** (9.0.8)
+- **Microsoft.EntityFrameworkCore.Tools** (9.0.8)
+- **Microsoft.VisualStudio.Web.CodeGeneration.Design** (9.0.0)
+- **Newtonsoft.Json** (for payment processing)
+
+---
+
+## 🚧 Future Enhancements
+
+- [ ] Order tracking and history
+- [ ] Product reviews and ratings
+- [ ] Wishlist functionality
+- [ ] Email notifications
+- [ ] Advanced inventory management
+- [ ] Multi-language support
+- [ ] Social media integration
+- [ ] Analytics dashboard
+
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+This is an educational project developed as part of ITI graduation requirements. Contributions and suggestions are welcome for learning purposes.
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+---
+
+## 📄 License
+
+This project is developed for educational purposes as part of ITI graduation requirements.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**MIT License Summary:**
+- ✅ Commercial use
+- ✅ Modification  
+- ✅ Distribution
+- ✅ Private use
+- ❌ Liability
+- ❌ Warranty
+
+This project was developed for educational purposes as part of ITI graduation requirements.
+
+---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+**MIT License Summary:**
+- ✅ Commercial use
+- ✅ Modification  
+- ✅ Distribution
+- ✅ Private use
+- ❌ Liability
+- ❌ Warranty
+
+This project was developed for educational purposes as part of ITI graduation requirements.
+
+---
+
 ## 👥 Team
 
-This project was developed as part of a graduation project at ITI (Information Technology Institute).
+**ITI Graduation Project Team**
+
+### Team Members
+- **Ahmed Mohamed Taha**
+- **Ahmed Saad Saad Mhesin**
+- **Mohamed Salah Shaban**
+- **Abdoelrahman Ebrahim Mahmoud**
+- **Yossef Hady Atef**
+- **Mohamed Suliman Mohamed**
+- **Mohamed Anter Ahmed**
+
+### Project Details
+- **Project Type**: E-commerce Platform
+- **Institution**: Information Technology Institute (ITI)
+- **Technology Stack**: ASP.NET Core 9.0, Entity Framework Core, SQL Server
+- **Project Name**: Spark Shoes E-commerce Platform
+
+
+---
+> ❤️ Star this repo if you find it useful or want to follow development!
