@@ -2,9 +2,9 @@
 
 <div class="product_page" id="ProductView">
     <h2>Create Oxford</h2>
-    <form asp-action="Create">
+    <form asp-action="Create" enctype="multipart/form-data">
         <div class="form-group">
-            <label asp-for="BootName"></label>
+            <label asp-for="BootName">OxfordName</label>
             <input asp-for="BootName" class="form-control" />
         </div>
         <div class="form-group">
@@ -15,22 +15,30 @@
             <label asp-for="Price"></label>
             <input asp-for="Price" class="form-control" />
         </div>
+
         <div class="form-group">
             <label>Upload Image</label>
-            <input type="file" name="ImageFile" class="form-control" />
+            <input type="file" name="ImageFile" class="form-control" onchange="previewImage(event)" />
         </div>
+
+        <!-- preview -->
+        <div class="form-group mt-2">
+            <img id="preview" src="#" alt="Preview Image" style="max-width:150px; display:none;" />
+        </div>
+
         <button type="submit" class="btn btn-success">Create</button>
         <a asp-action="Index" class="btn btn-secondary">Cancel</a>
     </form>
-
-
 </div>
 
-
-
-
-
 @section Scripts {
+    <script>
+        function previewImage(event) {
+            var output = document.getElementById('preview');
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.style.display = 'block';
+        }
+    </script>
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }

@@ -61,10 +61,60 @@ namespace SparkMain.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProudId,ProudName,Size,Price,ImagUrl,Imag2,Imag3,Imag4")] TrendingSelling trendingSelling)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create(TrendingSelling trendingSelling,
+            IFormFile? ImageFile1, IFormFile? ImageFile2, IFormFile? ImageFile3, IFormFile? ImageFile4)
         {
             if (ModelState.IsValid)
             {
+                // صورة 1
+                if (ImageFile1 != null && ImageFile1.Length > 0)
+                {
+                    var fileName = Path.GetFileName(ImageFile1.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile1.CopyToAsync(stream);
+                    }
+                    trendingSelling.ImagUrl = "/images/" + fileName;
+                }
+
+                // صورة 2
+                if (ImageFile2 != null && ImageFile2.Length > 0)
+                {
+                    var fileName = Path.GetFileName(ImageFile2.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile2.CopyToAsync(stream);
+                    }
+                    trendingSelling.Imag2 = "/images/" + fileName;
+                }
+
+                // صورة 3
+                if (ImageFile3 != null && ImageFile3.Length > 0)
+                {
+                    var fileName = Path.GetFileName(ImageFile3.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile3.CopyToAsync(stream);
+                    }
+                    trendingSelling.Imag3 = "/images/" + fileName;
+                }
+
+                // صورة 4
+                if (ImageFile4 != null && ImageFile4.Length > 0)
+                {
+                    var fileName = Path.GetFileName(ImageFile4.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile4.CopyToAsync(stream);
+                    }
+                    trendingSelling.Imag4 = "/images/" + fileName;
+                }
+
                 _context.Add(trendingSelling);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,8 +146,8 @@ namespace SparkMain.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-
-        public async Task<IActionResult> Edit(int id, [Bind("ProudId,ProudName,Size,Price,ImagUrl,Imag2,Imag3,Imag4")] TrendingSelling trendingSelling)
+        public async Task<IActionResult> Edit(int id, TrendingSelling trendingSelling,
+    IFormFile? ImageFile1, IFormFile? ImageFile2, IFormFile? ImageFile3, IFormFile? ImageFile4)
         {
             if (id != trendingSelling.ProudId)
             {
@@ -108,12 +158,71 @@ namespace SparkMain.Controllers
             {
                 try
                 {
-                    _context.Update(trendingSelling);
+                    var existingProduct = await _context.TrendingSellings.FindAsync(id);
+                    if (existingProduct == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // تحديث البيانات الأساسية
+                    existingProduct.ProudName = trendingSelling.ProudName;
+                    existingProduct.Size = trendingSelling.Size;
+                    existingProduct.Price = trendingSelling.Price;
+
+                    // صورة 1
+                    if (ImageFile1 != null && ImageFile1.Length > 0)
+                    {
+                        var fileName = Path.GetFileName(ImageFile1.FileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await ImageFile1.CopyToAsync(stream);
+                        }
+                        existingProduct.ImagUrl = "/images/" + fileName;
+                    }
+
+                    // صورة 2
+                    if (ImageFile2 != null && ImageFile2.Length > 0)
+                    {
+                        var fileName = Path.GetFileName(ImageFile2.FileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await ImageFile2.CopyToAsync(stream);
+                        }
+                        existingProduct.Imag2 = "/images/" + fileName;
+                    }
+
+                    // صورة 3
+                    if (ImageFile3 != null && ImageFile3.Length > 0)
+                    {
+                        var fileName = Path.GetFileName(ImageFile3.FileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await ImageFile3.CopyToAsync(stream);
+                        }
+                        existingProduct.Imag3 = "/images/" + fileName;
+                    }
+
+                    // صورة 4
+                    if (ImageFile4 != null && ImageFile4.Length > 0)
+                    {
+                        var fileName = Path.GetFileName(ImageFile4.FileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await ImageFile4.CopyToAsync(stream);
+                        }
+                        existingProduct.Imag4 = "/images/" + fileName;
+                    }
+
+                    _context.Update(existingProduct);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TrendingSellingExists(trendingSelling.ProudId))
+                    if (!_context.TrendingSellings.Any(e => e.ProudId == trendingSelling.ProudId))
                     {
                         return NotFound();
                     }

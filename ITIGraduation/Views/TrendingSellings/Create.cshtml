@@ -7,7 +7,7 @@
 
     <h2>Create Trending Product</h2>
 
-    <form asp-action="Create">
+    <form asp-action="Create" enctype="multipart/form-data">
         <div class="form-group">
             <label asp-for="ProudName"></label>
             <input asp-for="ProudName" class="form-control" />
@@ -20,24 +20,27 @@
             <label asp-for="Price"></label>
             <input asp-for="Price" class="form-control" />
         </div>
+
+        <!-- صور -->
         <div class="form-group">
-            <label asp-for="ImagUrl"></label>
-            <input asp-for="ImagUrl" class="form-control" />
+            <label>Upload Image 1</label>
+            <input type="file" name="ImageFile1" class="form-control" />
         </div>
         <div class="form-group">
-            <label asp-for="Imag2"></label>
-            <input asp-for="Imag2" class="form-control" />
+            <label>Upload Image 2</label>
+            <input type="file" name="ImageFile2" class="form-control" />
         </div>
         <div class="form-group">
-            <label asp-for="Imag3"></label>
-            <input asp-for="Imag3" class="form-control" />
+            <label>Upload Image 3</label>
+            <input type="file" name="ImageFile3" class="form-control" />
         </div>
         <div class="form-group">
-            <label asp-for="Imag4"></label>
-            <input asp-for="Imag4" class="form-control" />
+            <label>Upload Image 4</label>
+            <input type="file" name="ImageFile4" class="form-control" />
         </div>
+
         <button type="submit" class="btn btn-success">Create</button>
-        <a asp-action="Index" asp-fragment="ProductView" class="btn btn-secondary">Cancel</a>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
     </form>
 
 

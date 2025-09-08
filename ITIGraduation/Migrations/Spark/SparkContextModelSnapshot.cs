@@ -22,7 +22,7 @@ namespace ITIGraduation.Migrations.Spark
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ITIGraduation.Models.Boot", b =>
+            modelBuilder.Entity("SparkMain.Models.Boot", b =>
                 {
                     b.Property<int>("BootId")
                         .HasColumnType("int")
@@ -54,42 +54,7 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("boots", (string)null);
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.CartItemEntity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<decimal>("Price")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ProductName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ProductType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("CartItems");
-                });
-
-            modelBuilder.Entity("ITIGraduation.Models.Inventory", b =>
+            modelBuilder.Entity("SparkMain.Models.Inventory", b =>
                 {
                     b.Property<int>("InventoryId")
                         .ValueGeneratedOnAdd()
@@ -134,14 +99,11 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("inventory", (string)null);
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.Oxford", b =>
+            modelBuilder.Entity("SparkMain.Models.Oxford", b =>
                 {
                     b.Property<int>("OxfordId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("oxford_id");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OxfordId"));
 
                     b.Property<string>("BootName")
                         .HasMaxLength(100)
@@ -169,7 +131,7 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("oxford", (string)null);
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.Prouduct", b =>
+            modelBuilder.Entity("SparkMain.Models.Prouduct", b =>
                 {
                     b.Property<int>("ProuductId")
                         .HasColumnType("int")
@@ -201,7 +163,7 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("Prouduct", (string)null);
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.Sport", b =>
+            modelBuilder.Entity("SparkMain.Models.Sport", b =>
                 {
                     b.Property<int>("SportId")
                         .HasColumnType("int")
@@ -233,7 +195,7 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("sport", (string)null);
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.TrendingSelling", b =>
+            modelBuilder.Entity("SparkMain.Models.TrendingSelling", b =>
                 {
                     b.Property<int>("ProudId")
                         .HasColumnType("int")
@@ -283,7 +245,7 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("Trending_selling", (string)null);
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.User", b =>
+            modelBuilder.Entity("SparkMain.Models.User", b =>
                 {
                     b.Property<int>("UsersId")
                         .HasColumnType("int")
@@ -317,7 +279,7 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("USERS", (string)null);
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.UserBootPurchase", b =>
+            modelBuilder.Entity("SparkMain.Models.UserBootPurchase", b =>
                 {
                     b.Property<int>("PurchaseId")
                         .HasColumnType("int")
@@ -353,7 +315,7 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("user_boot_purchases", (string)null);
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.UserOxfordPurchase", b =>
+            modelBuilder.Entity("SparkMain.Models.UserOxfordPurchase", b =>
                 {
                     b.Property<int>("PurchaseId")
                         .HasColumnType("int")
@@ -389,7 +351,7 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("user_oxford_purchases", (string)null);
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.UserSportPurchase", b =>
+            modelBuilder.Entity("SparkMain.Models.UserSportPurchase", b =>
                 {
                     b.Property<int>("PurchaseId")
                         .HasColumnType("int")
@@ -425,14 +387,14 @@ namespace ITIGraduation.Migrations.Spark
                     b.ToTable("user_sport_purchases", (string)null);
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.UserBootPurchase", b =>
+            modelBuilder.Entity("SparkMain.Models.UserBootPurchase", b =>
                 {
-                    b.HasOne("ITIGraduation.Models.Boot", "Boot")
+                    b.HasOne("SparkMain.Models.Boot", "Boot")
                         .WithMany("UserBootPurchases")
                         .HasForeignKey("BootId")
                         .HasConstraintName("FK__user_boot__boot___7D439ABD");
 
-                    b.HasOne("ITIGraduation.Models.User", "User")
+                    b.HasOne("SparkMain.Models.User", "User")
                         .WithMany("UserBootPurchases")
                         .HasForeignKey("UserId")
                         .HasConstraintName("FK__user_boot__user___7C4F7684");
@@ -442,14 +404,14 @@ namespace ITIGraduation.Migrations.Spark
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.UserOxfordPurchase", b =>
+            modelBuilder.Entity("SparkMain.Models.UserOxfordPurchase", b =>
                 {
-                    b.HasOne("ITIGraduation.Models.Oxford", "Oxford")
+                    b.HasOne("SparkMain.Models.Oxford", "Oxford")
                         .WithMany("UserOxfordPurchases")
                         .HasForeignKey("OxfordId")
                         .HasConstraintName("FK__user_oxfo__oxfor__08B54D69");
 
-                    b.HasOne("ITIGraduation.Models.User", "User")
+                    b.HasOne("SparkMain.Models.User", "User")
                         .WithMany("UserOxfordPurchases")
                         .HasForeignKey("UserId")
                         .HasConstraintName("FK__user_oxfo__user___07C12930");
@@ -459,14 +421,14 @@ namespace ITIGraduation.Migrations.Spark
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.UserSportPurchase", b =>
+            modelBuilder.Entity("SparkMain.Models.UserSportPurchase", b =>
                 {
-                    b.HasOne("ITIGraduation.Models.Sport", "Sport")
+                    b.HasOne("SparkMain.Models.Sport", "Sport")
                         .WithMany("UserSportPurchases")
                         .HasForeignKey("SportId")
                         .HasConstraintName("FK__user_spor__sport__02FC7413");
 
-                    b.HasOne("ITIGraduation.Models.User", "User")
+                    b.HasOne("SparkMain.Models.User", "User")
                         .WithMany("UserSportPurchases")
                         .HasForeignKey("UserId")
                         .HasConstraintName("FK__user_spor__user___02084FDA");
@@ -476,22 +438,22 @@ namespace ITIGraduation.Migrations.Spark
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.Boot", b =>
+            modelBuilder.Entity("SparkMain.Models.Boot", b =>
                 {
                     b.Navigation("UserBootPurchases");
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.Oxford", b =>
+            modelBuilder.Entity("SparkMain.Models.Oxford", b =>
                 {
                     b.Navigation("UserOxfordPurchases");
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.Sport", b =>
+            modelBuilder.Entity("SparkMain.Models.Sport", b =>
                 {
                     b.Navigation("UserSportPurchases");
                 });
 
-            modelBuilder.Entity("ITIGraduation.Models.User", b =>
+            modelBuilder.Entity("SparkMain.Models.User", b =>
                 {
                     b.Navigation("UserBootPurchases");
 

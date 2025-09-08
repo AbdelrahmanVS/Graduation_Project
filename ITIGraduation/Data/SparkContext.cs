@@ -18,7 +18,6 @@ public partial class SparkContext : DbContext
 
     public virtual DbSet<Boot> Boots { get; set; }
 
-    public virtual DbSet<Inventory> Inventories { get; set; }
 
     public virtual DbSet<Oxford> Oxfords { get; set; }
 
@@ -30,11 +29,7 @@ public partial class SparkContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    public virtual DbSet<UserBootPurchase> UserBootPurchases { get; set; }
-
-    public virtual DbSet<UserOxfordPurchase> UserOxfordPurchases { get; set; }
-
-    public virtual DbSet<UserSportPurchase> UserSportPurchases { get; set; }
+    
 
     public DbSet<CartItemEntity> CartItems { get; set; }
 
@@ -56,7 +51,7 @@ public partial class SparkContext : DbContext
             entity.ToTable("boots");
 
             entity.Property(e => e.BootId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("boot_id");
             entity.Property(e => e.BootName)
                 .HasMaxLength(100)
@@ -70,30 +65,7 @@ public partial class SparkContext : DbContext
             entity.Property(e => e.Size).HasColumnName("size");
         });
 
-        modelBuilder.Entity<Inventory>(entity =>
-        {
-            entity.HasKey(e => e.InventoryId).HasName("PK__inventor__B59ACC4925EA3DC3");
-
-            entity.ToTable("inventory");
-
-            entity.HasIndex(e => new { e.ShoeType, e.ShoeId }, "UQ_inventory_shoe").IsUnique();
-
-            entity.Property(e => e.InventoryId).HasColumnName("inventory_id");
-            entity.Property(e => e.LastUpdated)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime")
-                .HasColumnName("last_updated");
-            entity.Property(e => e.QuantityAvailable).HasColumnName("quantity_available");
-            entity.Property(e => e.ShoeId).HasColumnName("shoe_id");
-            entity.Property(e => e.ShoeName)
-                .HasMaxLength(100)
-                .IsUnicode(false)
-                .HasColumnName("shoe_name");
-            entity.Property(e => e.ShoeType)
-                .HasMaxLength(10)
-                .IsUnicode(false)
-                .HasColumnName("shoe_type");
-        });
+        
 
         modelBuilder.Entity<Oxford>(entity =>
         {
@@ -125,7 +97,7 @@ public partial class SparkContext : DbContext
             entity.ToTable("Prouduct");
 
             entity.Property(e => e.ProuductId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("Prouduct_id");
             entity.Property(e => e.ImagUrl)
                 .HasMaxLength(300)
@@ -148,7 +120,7 @@ public partial class SparkContext : DbContext
             entity.ToTable("sport");
 
             entity.Property(e => e.SportId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("sport_id");
             entity.Property(e => e.ImagUrl)
                 .HasMaxLength(300)
@@ -171,7 +143,7 @@ public partial class SparkContext : DbContext
             entity.ToTable("Trending_selling");
 
             entity.Property(e => e.ProudId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("Proud_id");
             entity.Property(e => e.Imag2)
                 .HasMaxLength(300)
@@ -223,83 +195,7 @@ public partial class SparkContext : DbContext
                 .HasColumnName("user_name");
         });
 
-        modelBuilder.Entity<UserBootPurchase>(entity =>
-        {
-            entity.HasKey(e => e.PurchaseId).HasName("PK__user_boo__87071CB9E02D8182");
-
-            entity.ToTable("user_boot_purchases");
-
-            entity.Property(e => e.PurchaseId)
-                .ValueGeneratedNever()
-                .HasColumnName("purchase_id");
-            entity.Property(e => e.BootId).HasColumnName("boot_id");
-            entity.Property(e => e.BootPrice)
-                .HasColumnType("decimal(10, 2)")
-                .HasColumnName("boot_price");
-            entity.Property(e => e.PurchaseDate).HasColumnName("purchase_date");
-            entity.Property(e => e.Quantity).HasColumnName("quantity");
-            entity.Property(e => e.UserId).HasColumnName("user_id");
-
-            entity.HasOne(d => d.Boot).WithMany(p => p.UserBootPurchases)
-                .HasForeignKey(d => d.BootId)
-                .HasConstraintName("FK__user_boot__boot___7D439ABD");
-
-            entity.HasOne(d => d.User).WithMany(p => p.UserBootPurchases)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__user_boot__user___7C4F7684");
-        });
-
-        modelBuilder.Entity<UserOxfordPurchase>(entity =>
-        {
-            entity.HasKey(e => e.PurchaseId).HasName("PK__user_oxf__87071CB9735CB860");
-
-            entity.ToTable("user_oxford_purchases");
-
-            entity.Property(e => e.PurchaseId)
-                .ValueGeneratedNever()
-                .HasColumnName("purchase_id");
-            entity.Property(e => e.BootPrice)
-                .HasColumnType("decimal(10, 2)")
-                .HasColumnName("boot_price");
-            entity.Property(e => e.OxfordId).HasColumnName("oxford_id");
-            entity.Property(e => e.PurchaseDate).HasColumnName("purchase_date");
-            entity.Property(e => e.Quantity).HasColumnName("quantity");
-            entity.Property(e => e.UserId).HasColumnName("user_id");
-
-            entity.HasOne(d => d.Oxford).WithMany(p => p.UserOxfordPurchases)
-                .HasForeignKey(d => d.OxfordId)
-                .HasConstraintName("FK__user_oxfo__oxfor__08B54D69");
-
-            entity.HasOne(d => d.User).WithMany(p => p.UserOxfordPurchases)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__user_oxfo__user___07C12930");
-        });
-
-        modelBuilder.Entity<UserSportPurchase>(entity =>
-        {
-            entity.HasKey(e => e.PurchaseId).HasName("PK__user_spo__87071CB9435D3EEE");
-
-            entity.ToTable("user_sport_purchases");
-
-            entity.Property(e => e.PurchaseId)
-                .ValueGeneratedNever()
-                .HasColumnName("purchase_id");
-            entity.Property(e => e.BootPrice)
-                .HasColumnType("decimal(10, 2)")
-                .HasColumnName("boot_price");
-            entity.Property(e => e.PurchaseDate).HasColumnName("purchase_date");
-            entity.Property(e => e.Quantity).HasColumnName("quantity");
-            entity.Property(e => e.SportId).HasColumnName("sport_id");
-            entity.Property(e => e.UserId).HasColumnName("user_id");
-
-            entity.HasOne(d => d.Sport).WithMany(p => p.UserSportPurchases)
-                .HasForeignKey(d => d.SportId)
-                .HasConstraintName("FK__user_spor__sport__02FC7413");
-
-            entity.HasOne(d => d.User).WithMany(p => p.UserSportPurchases)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__user_spor__user___02084FDA");
-        });
+        
 
         OnModelCreatingPartial(modelBuilder);
     }

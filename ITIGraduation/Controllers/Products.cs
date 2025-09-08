@@ -60,10 +60,23 @@ namespace SparkMain.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([Bind("ProuductId,ProuductName,Size,Price,ImagUrl")] Prouduct prouduct)
+        public async Task<IActionResult> Create([Bind("ProuductId,ProuductName,Size,Price")] Prouduct prouduct, IFormFile ImageFile)
         {
             if (ModelState.IsValid)
             {
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    var fileName = Path.GetFileName(ImageFile.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+
+                    prouduct.ImagUrl = "/images/" + fileName;
+                }
+
                 _context.Add(prouduct);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -94,7 +107,7 @@ namespace SparkMain.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("ProuductId,ProuductName,Size,Price,ImagUrl")] Prouduct prouduct)
+        public async Task<IActionResult> Edit(int id, Prouduct prouduct, IFormFile? ImageFile)
         {
             if (id != prouduct.ProuductId)
             {
@@ -105,19 +118,36 @@ namespace SparkMain.Controllers
             {
                 try
                 {
-                    _context.Update(prouduct);
+                    var existingProduct = await _context.Prouducts.FindAsync(id);
+                    if (existingProduct == null)
+                        return NotFound();
+
+                    existingProduct.ProuductName = prouduct.ProuductName;
+                    existingProduct.Size = prouduct.Size;
+                    existingProduct.Price = prouduct.Price;
+
+                    if (ImageFile != null && ImageFile.Length > 0)
+                    {
+                        var fileName = Path.GetFileName(ImageFile.FileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await ImageFile.CopyToAsync(stream);
+                        }
+
+                        existingProduct.ImagUrl = "/images/" + fileName;
+                    }
+
+                    _context.Update(existingProduct);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!ProuductExists(prouduct.ProuductId))
-                    {
                         return NotFound();
-                    }
                     else
-                    {
                         throw;
-                    }
                 }
                 return RedirectToAction(nameof(Index));
             }

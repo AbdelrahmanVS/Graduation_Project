@@ -15,5 +15,4 @@ public partial class Oxford
 
     public string? ImagUrl { get; set; }
 
-    public virtual ICollection<UserOxfordPurchase> UserOxfordPurchases { get; set; } = new List<UserOxfordPurchase>();
 }

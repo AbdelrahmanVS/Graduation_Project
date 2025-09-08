@@ -62,7 +62,7 @@ namespace SparkMain.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create(Oxford oxford, IFormFile? ImageFile)
+        public async Task<IActionResult> Create([Bind("OxfordId,BootName,Size,Price")] Oxford oxford, IFormFile? ImageFile)
         {
             if (ModelState.IsValid)
             {
@@ -110,7 +110,7 @@ namespace SparkMain.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("OxfordId,BootName,Size,Price,ImagUrl")] Oxford oxford)
+        public async Task<IActionResult> Edit(int id, [Bind("OxfordId,BootName,Size,Price,ImagUrl")] Oxford oxford, IFormFile? ImageFile)
         {
             if (id != oxford.OxfordId)
             {
@@ -121,7 +121,33 @@ namespace SparkMain.Controllers
             {
                 try
                 {
-                    _context.Update(oxford);
+                    var existingOxford = await _context.Oxfords.FindAsync(id);
+                    if (existingOxford == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // تحديث القيم الأساسية
+                    existingOxford.BootName = oxford.BootName;
+                    existingOxford.Size = oxford.Size;
+                    existingOxford.Price = oxford.Price;
+
+                    // لو المستخدم رفع صورة جديدة
+                    if (ImageFile != null && ImageFile.Length > 0)
+                    {
+                        var fileName = Path.GetFileName(ImageFile.FileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await ImageFile.CopyToAsync(stream);
+                        }
+
+                        existingOxford.ImagUrl = "~/images/" + fileName;
+                    }
+                    // لو ما رفعش → نحافظ على الصورة القديمة (ImagUrl زي ما هو)
+
+                    _context.Update(existingOxford);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)

@@ -15,5 +15,4 @@ public partial class Sport
 
     public string? ImagUrl { get; set; }
 
-    public virtual ICollection<UserSportPurchase> UserSportPurchases { get; set; } = new List<UserSportPurchase>();
 }

@@ -61,15 +61,28 @@ namespace SparkMain.Controllers
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
 
-        public async Task<IActionResult> Create([Bind("OxfordId,BootName,Size,Price,ImagUrl")] Oxford oxford)
+        public async Task<IActionResult> Create([Bind("BootId,BootName,Size,Price")] Boot boot, IFormFile? ImageFile)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(oxford);
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    var fileName = Path.GetFileName(ImageFile.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+
+                    boot.ImagUrl = "~/images/" + fileName;
+                }
+
+                _context.Add(boot);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(oxford);
+            return View(boot);
         }
 
         // GET: Boots/Edit/5
@@ -97,7 +110,8 @@ namespace SparkMain.Controllers
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
 
-        public async Task<IActionResult> Edit(int id, [Bind("BootId,BootName,Size,ImagUrl,Price")] Boot boot)
+        
+        public async Task<IActionResult> Edit(int id, [Bind("BootId,BootName,Size,Price,ImagUrl")] Boot boot, IFormFile? ImageFile)
         {
             if (id != boot.BootId)
             {
@@ -108,7 +122,32 @@ namespace SparkMain.Controllers
             {
                 try
                 {
-                    _context.Update(boot);
+                    var existingBoot = await _context.Boots.FindAsync(id);
+                    if (existingBoot == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // تحديث البيانات الأساسية
+                    existingBoot.BootName = boot.BootName;
+                    existingBoot.Size = boot.Size;
+                    existingBoot.Price = boot.Price;
+
+                    // لو تم رفع صورة جديدة
+                    if (ImageFile != null && ImageFile.Length > 0)
+                    {
+                        var fileName = Path.GetFileName(ImageFile.FileName);
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await ImageFile.CopyToAsync(stream);
+                        }
+
+                        existingBoot.ImagUrl = "/images/" + fileName;
+                    }
+
+                    _context.Update(existingBoot);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)

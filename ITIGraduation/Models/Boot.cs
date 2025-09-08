@@ -15,5 +15,4 @@ public partial class Boot
 
     public int? Price { get; set; }
 
-    public virtual ICollection<UserBootPurchase> UserBootPurchases { get; set; } = new List<UserBootPurchase>();
 }

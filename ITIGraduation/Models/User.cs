@@ -15,9 +15,5 @@ public partial class User
 
     public string? Gmail { get; set; }
 
-    public virtual ICollection<UserBootPurchase> UserBootPurchases { get; set; } = new List<UserBootPurchase>();
-
-    public virtual ICollection<UserOxfordPurchase> UserOxfordPurchases { get; set; } = new List<UserOxfordPurchase>();
-
-    public virtual ICollection<UserSportPurchase> UserSportPurchases { get; set; } = new List<UserSportPurchase>();
+    
 }

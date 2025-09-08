@@ -8,26 +8,26 @@
 
 <h2>Create Product</h2>
 
-<form asp-action="Create">
-    <div class="form-group">
-        <label asp-for="ProuductName"></label>
-        <input asp-for="ProuductName" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Size"></label>
-        <input asp-for="Size" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Price"></label>
-        <input asp-for="Price" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="ImagUrl"></label>
-        <input asp-for="ImagUrl" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-success">Create</button>
-        <a asp-action="Index" asp-fragment="ProductView" class="btn btn-secondary">Cancel</a>
-</form>
+    <form asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="ProuductName"></label>
+            <input asp-for="ProuductName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Size"></label>
+            <input asp-for="Size" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Upload Image</label>
+            <input type="file" name="ImageFile" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success">Create</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
 
 <div>
         <a asp-action="Index" asp-fragment="ProductView">Back to List</a>

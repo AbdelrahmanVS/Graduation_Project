@@ -6,28 +6,39 @@
 }
 
 <h2>Edit Product</h2>
-<form asp-action="Edit">
-    <input type="hidden" asp-for="ProuductId" />
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <input type="hidden" asp-for="ProuductId" />
 
-    <div class="form-group">
-        <label asp-for="ProuductName"></label>
-        <input asp-for="ProuductName" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Size"></label>
-        <input asp-for="Size" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Price"></label>
-        <input asp-for="Price" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="ImagUrl"></label>
-        <input asp-for="ImagUrl" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-warning">Save Changes</button>
-        <a asp-action="Index" asp-fragment="ProductView" class="btn btn-secondary">Cancel</a>
-</form>
+        <div class="form-group">
+            <label asp-for="ProuductName"></label>
+            <input asp-for="ProuductName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Size"></label>
+            <input asp-for="Size" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" />
+        </div>
+
+        @if (!string.IsNullOrEmpty(Model.ImagUrl))
+        {
+            <div class="form-group">
+                <label>Current Image:</label><br />
+                <img src="@Model.ImagUrl" width="150" /><br />
+            </div>
+        }
+
+        <div class="form-group">
+            <label>Upload New Image</label>
+            <input type="file" name="ImageFile" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-warning">Save Changes</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+
 
 </div>
 
